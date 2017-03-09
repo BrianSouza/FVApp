@@ -1,4 +1,6 @@
+using MvvmCross.Platform;
 using MvvmCross.Platform.IoC;
+using MvvmCross.Plugins.Validation;
 
 namespace FVApp.Core
 {
@@ -10,6 +12,8 @@ namespace FVApp.Core
                 .EndingWith("Service")
                 .AsInterfaces()
                 .RegisterAsLazySingleton();
+
+            Mvx.RegisterType<IValidator, Validator>();
 
             RegisterAppStart<ViewModels.FirstViewModel>();
         }

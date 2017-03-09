@@ -9,8 +9,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FVApp.Droid", "FVApp.Droid\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FVApp.Droid.Test", "FVApp.Droid.Test\FVApp.Droid.Test.csproj", "{2CF13567-D4E9-49A6-9B15-9175770FC3F6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FVApp.Dados", "FVApp.Dados\FVApp.Dados.csproj", "{67C567D8-79F0-44DF-A35E-9330B1994A55}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,10 +31,6 @@ Global
 		{2CF13567-D4E9-49A6-9B15-9175770FC3F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2CF13567-D4E9-49A6-9B15-9175770FC3F6}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2CF13567-D4E9-49A6-9B15-9175770FC3F6}.Release|Any CPU.Deploy.0 = Release|Any CPU
-		{67C567D8-79F0-44DF-A35E-9330B1994A55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{67C567D8-79F0-44DF-A35E-9330B1994A55}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{67C567D8-79F0-44DF-A35E-9330B1994A55}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{67C567D8-79F0-44DF-A35E-9330B1994A55}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
