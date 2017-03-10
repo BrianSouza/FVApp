@@ -47,6 +47,29 @@ namespace FVApp.Droid
 			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxListView = global::FVApp.Droid.Resource.Styleable.MvxListView;
 			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxListView_MvxDropDownItemTemplate = global::FVApp.Droid.Resource.Styleable.MvxListView_MvxDropDownItemTemplate;
 			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxListView_MvxItemTemplate = global::FVApp.Droid.Resource.Styleable.MvxListView_MvxItemTemplate;
+			global::MvvmCross.Plugins.Validation.Droid.Resource.Attribute.MvxBind = global::FVApp.Droid.Resource.Attribute.MvxBind;
+			global::MvvmCross.Plugins.Validation.Droid.Resource.Attribute.MvxDropDownItemTemplate = global::FVApp.Droid.Resource.Attribute.MvxDropDownItemTemplate;
+			global::MvvmCross.Plugins.Validation.Droid.Resource.Attribute.MvxGroupItemTemplate = global::FVApp.Droid.Resource.Attribute.MvxGroupItemTemplate;
+			global::MvvmCross.Plugins.Validation.Droid.Resource.Attribute.MvxItemTemplate = global::FVApp.Droid.Resource.Attribute.MvxItemTemplate;
+			global::MvvmCross.Plugins.Validation.Droid.Resource.Attribute.MvxLang = global::FVApp.Droid.Resource.Attribute.MvxLang;
+			global::MvvmCross.Plugins.Validation.Droid.Resource.Attribute.MvxSource = global::FVApp.Droid.Resource.Attribute.MvxSource;
+			global::MvvmCross.Plugins.Validation.Droid.Resource.Attribute.MvxTemplate = global::FVApp.Droid.Resource.Attribute.MvxTemplate;
+			global::MvvmCross.Plugins.Validation.Droid.Resource.Id.MvvmCrossTagId = global::FVApp.Droid.Resource.Id.MvvmCrossTagId;
+			global::MvvmCross.Plugins.Validation.Droid.Resource.Id.MvxBindingTagUnique = global::FVApp.Droid.Resource.Id.MvxBindingTagUnique;
+			global::MvvmCross.Plugins.Validation.Droid.Resource.String.ApplicationName = global::FVApp.Droid.Resource.String.ApplicationName;
+			global::MvvmCross.Plugins.Validation.Droid.Resource.String.Hello = global::FVApp.Droid.Resource.String.Hello;
+			global::MvvmCross.Plugins.Validation.Droid.Resource.Styleable.MvxBinding = global::FVApp.Droid.Resource.Styleable.MvxBinding;
+			global::MvvmCross.Plugins.Validation.Droid.Resource.Styleable.MvxBinding_MvxBind = global::FVApp.Droid.Resource.Styleable.MvxBinding_MvxBind;
+			global::MvvmCross.Plugins.Validation.Droid.Resource.Styleable.MvxBinding_MvxLang = global::FVApp.Droid.Resource.Styleable.MvxBinding_MvxLang;
+			global::MvvmCross.Plugins.Validation.Droid.Resource.Styleable.MvxControl = global::FVApp.Droid.Resource.Styleable.MvxControl;
+			global::MvvmCross.Plugins.Validation.Droid.Resource.Styleable.MvxControl_MvxTemplate = global::FVApp.Droid.Resource.Styleable.MvxControl_MvxTemplate;
+			global::MvvmCross.Plugins.Validation.Droid.Resource.Styleable.MvxExpandableListView = global::FVApp.Droid.Resource.Styleable.MvxExpandableListView;
+			global::MvvmCross.Plugins.Validation.Droid.Resource.Styleable.MvxExpandableListView_MvxGroupItemTemplate = global::FVApp.Droid.Resource.Styleable.MvxExpandableListView_MvxGroupItemTemplate;
+			global::MvvmCross.Plugins.Validation.Droid.Resource.Styleable.MvxImageView = global::FVApp.Droid.Resource.Styleable.MvxImageView;
+			global::MvvmCross.Plugins.Validation.Droid.Resource.Styleable.MvxImageView_MvxSource = global::FVApp.Droid.Resource.Styleable.MvxImageView_MvxSource;
+			global::MvvmCross.Plugins.Validation.Droid.Resource.Styleable.MvxListView = global::FVApp.Droid.Resource.Styleable.MvxListView;
+			global::MvvmCross.Plugins.Validation.Droid.Resource.Styleable.MvxListView_MvxDropDownItemTemplate = global::FVApp.Droid.Resource.Styleable.MvxListView_MvxDropDownItemTemplate;
+			global::MvvmCross.Plugins.Validation.Droid.Resource.Styleable.MvxListView_MvxItemTemplate = global::FVApp.Droid.Resource.Styleable.MvxListView_MvxItemTemplate;
 		}
 		
 		public partial class Attribute
@@ -86,11 +109,11 @@ namespace FVApp.Droid
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f040000
-			public const int MvvmCrossTagId = 2130968576;
+			// aapt resource value: 0x7f050000
+			public const int MvvmCrossTagId = 2131034112;
 			
-			// aapt resource value: 0x7f040001
-			public const int MvxBindingTagUnique = 2130968577;
+			// aapt resource value: 0x7f050001
+			public const int MvxBindingTagUnique = 2131034113;
 			
 			static Id()
 			{
@@ -143,11 +166,11 @@ namespace FVApp.Droid
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f060001
-			public const int ApplicationName = 2131099649;
+			// aapt resource value: 0x7f040001
+			public const int ApplicationName = 2130968577;
 			
-			// aapt resource value: 0x7f060000
-			public const int Hello = 2131099648;
+			// aapt resource value: 0x7f040000
+			public const int Hello = 2130968576;
 			
 			static String()
 			{
@@ -162,8 +185,8 @@ namespace FVApp.Droid
 		public partial class Style
 		{
 			
-			// aapt resource value: 0x7f050000
-			public const int Theme_Splash = 2131034112;
+			// aapt resource value: 0x7f060000
+			public const int Theme_Splash = 2131099648;
 			
 			static Style()
 			{
