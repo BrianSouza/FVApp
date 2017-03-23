@@ -70,6 +70,8 @@ namespace FVApp.Droid
 			global::MvvmCross.Plugins.Validation.Droid.Resource.Styleable.MvxListView = global::FVApp.Droid.Resource.Styleable.MvxListView;
 			global::MvvmCross.Plugins.Validation.Droid.Resource.Styleable.MvxListView_MvxDropDownItemTemplate = global::FVApp.Droid.Resource.Styleable.MvxListView_MvxDropDownItemTemplate;
 			global::MvvmCross.Plugins.Validation.Droid.Resource.Styleable.MvxListView_MvxItemTemplate = global::FVApp.Droid.Resource.Styleable.MvxListView_MvxItemTemplate;
+			global::SQLite.Net.Platform.XamarinAndroid.Resource.String.ApplicationName = global::FVApp.Droid.Resource.String.ApplicationName;
+			global::SQLite.Net.Platform.XamarinAndroid.Resource.String.Hello = global::FVApp.Droid.Resource.String.Hello;
 		}
 		
 		public partial class Attribute

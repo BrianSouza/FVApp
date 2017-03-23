@@ -1,3 +1,5 @@
+using FVApp.Core.Dados;
+using FVApp.Core.Dados.Interface;
 using MvvmCross.Platform;
 using MvvmCross.Platform.IoC;
 using MvvmCross.Plugins.Validation;
@@ -14,6 +16,10 @@ namespace FVApp.Core
                 .RegisterAsLazySingleton();
 
             Mvx.RegisterType<IValidator, Validator>();
+            Mvx.RegisterType<IDataBaseManager, DataBaseManager>();
+            Mvx.RegisterType<IParceirosDados, ParceirosDados>();
+            Mvx.RegisterType<ICondicoesPagamentoDados, CondicoesPagamentoDados>();
+            Mvx.RegisterType<IFilialDados, FilialDados>();
 
             RegisterAppStart<ViewModels.FirstViewModel>();
         }

@@ -35,6 +35,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="App.cs" />
+    <Compile Include="Dados\BaseDados.cs" />
+    <Compile Include="Dados\CondicoesPagamentoDados.cs" />
     <Compile Include="Dados\DataBaseManager.cs" />
     <Compile Include="Dados\Entidades\CondicaoPagamento.cs" />
     <Compile Include="Dados\Entidades\Filial.cs" />
@@ -43,8 +45,18 @@
     <Compile Include="Dados\Entidades\Parceiro.cs" />
     <Compile Include="Dados\Entidades\Pedido.cs" />
     <Compile Include="Dados\Entidades\PedidoLinhas.cs" />
+    <Compile Include="Dados\FilialDados.cs" />
+    <Compile Include="Dados\FormasPagamentosDados.cs" />
+    <Compile Include="Dados\Interface\ICondicoesPagamentoDados.cs" />
     <Compile Include="Dados\Interface\IConfigDados.cs" />
+    <Compile Include="Dados\Interface\IDataBaseManager.cs" />
+    <Compile Include="Dados\Interface\IFilialDados.cs" />
+    <Compile Include="Dados\Interface\IFormasPagamentoDados.cs" />
+    <Compile Include="Dados\Interface\IItensDados.cs" />
     <Compile Include="Dados\Interface\IKeyObject.cs" />
+    <Compile Include="Dados\Interface\IParceirosDados.cs" />
+    <Compile Include="Dados\ItensDados.cs" />
+    <Compile Include="Dados\ParceirosDados.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\FirstViewModel.cs" />
     <Compile Include="ViewModels\ParceiroViewModel.cs" />

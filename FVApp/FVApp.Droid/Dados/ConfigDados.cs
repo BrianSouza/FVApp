@@ -33,6 +33,7 @@ namespace FVApp.Droid.Dados
         public ISQLitePlatform Plataforma
         {
             get
+
             {
                 if (plataforma == null)
                 {

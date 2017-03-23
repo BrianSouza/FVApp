@@ -16,6 +16,8 @@ namespace FVApp.Core.Dados.Entidades
         public double Quantidade { get; set; }
 
         public double ValorUnitario { get; set; }
+
+        public double ValorTotal { get; set; }
         
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,15 +10,14 @@ using MvvmCross.Platform;
 
 namespace FVApp.Core.Dados
 {
-    public class DataBaseManager :IDisposable
+    public class DataBaseManager :IDisposable , IDataBaseManager
     {
         public SQLite.Net.SQLiteConnection _conexao;
         public DataBaseManager()
         {
             var config = Mvx.Resolve<IConfigDados>();
             _conexao = new SQLite.Net.SQLiteConnection(config.Plataforma, System.IO.Path.Combine(config.DiretorioDB, "FVAppDB.db3"));
-
-            _conexao.CreateTable<Parceiro>();
+            CriarTabelas();
         }
 
         public int Insert<T>(T tabela)
@@ -36,11 +36,13 @@ namespace FVApp.Core.Dados
 
         public void CriarTabelas()
         {
+            _conexao.CreateTable<Parceiro>();
+
         }
 
-        public List<T> GetAll<T>() where T : class , IKeyObject,new()
+        public ObservableCollection<T> GetAll<T>() where T : class , IKeyObject,new()
         {
-            return _conexao.Table<T>().AsEnumerable<T>().ToList();
+            return new ObservableCollection(_conexao.Table<T>().AsEnumerable<T>().ToList());
         }
 
         public T GetItem<T>(string key) where T : class, IKeyObject, new()
