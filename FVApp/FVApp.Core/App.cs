@@ -20,6 +20,10 @@ namespace FVApp.Core
             Mvx.RegisterType<IParceirosDados, ParceirosDados>();
             Mvx.RegisterType<ICondicoesPagamentoDados, CondicoesPagamentoDados>();
             Mvx.RegisterType<IFilialDados, FilialDados>();
+            Mvx.RegisterType<IFormasPagamentoDados, FormasPagamentosDados>();
+            Mvx.RegisterType<IItensDados, ItensDados>();
+
+
 
             RegisterAppStart<ViewModels.FirstViewModel>();
         }
