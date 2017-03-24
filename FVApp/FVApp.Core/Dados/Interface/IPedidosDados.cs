@@ -8,14 +8,14 @@ using FVApp.Core.Dados.Entidades;
 
 namespace FVApp.Core.Dados.Interface
 {
-    public interface IParceirosDados
+    interface IPedidosDados
     {
-        bool SalvarParceiro(Parceiro pn);
+        bool SalvarPedidos(Pedido ped);
 
-        bool DeletarParceiro(Parceiro pn);
+        bool DeletarPedidos(Pedido ped);
 
-        Parceiro RetornarParceiro(string cardCode);
+        Pedido RetornarPedidos(string id);
 
-        ObservableCollection<Parceiro> RetornarParceiros();
+        ObservableCollection<Pedido> RetornarPedidos();
     }
 }

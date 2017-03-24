@@ -24,6 +24,7 @@ namespace FVApp.Core.Dados
         {
             return dbmService.GetAll<Parceiro>();
 
+
         }
 
         public bool SalvarParceiro(Parceiro pn)

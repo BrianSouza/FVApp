@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using FVApp.Core.Dados.Entidades;
 using FVApp.Core.Dados.Interface;
 using MvvmCross.Platform;
@@ -22,16 +19,25 @@ namespace FVApp.Core.Dados
 
         public int Insert<T>(T tabela)
         {
-            return _conexao.Insert(tabela);
+            int count = _conexao.Insert(tabela);
+            return count;
+        }
+
+        public int Insert<T>(ObservableCollection<T> tabela)
+        {
+            int count = _conexao.InsertAll(tabela, true);
+            return count;
         }
 
         public int Update<T>(T tabela)
         {
-            return _conexao.Update(tabela);
+            int count = _conexao.Update(tabela);
+            return count;
         }
         public int Delete<T>(T tabela)
         {
-            return _conexao.Delete(tabela);
+            int count = _conexao.Delete(tabela);
+            return count;
         }
 
         public void CriarTabelas()
@@ -42,7 +48,7 @@ namespace FVApp.Core.Dados
 
         public ObservableCollection<T> GetAll<T>() where T : class , IKeyObject,new()
         {
-            return new ObservableCollection(_conexao.Table<T>().AsEnumerable<T>().ToList());
+            return new ObservableCollection<T>(_conexao.Table<T>().AsEnumerable<T>().ToList());
         }
 
         public T GetItem<T>(string key) where T : class, IKeyObject, new()
