@@ -8,7 +8,7 @@ using FVApp.Core.Dados.Entidades;
 
 namespace FVApp.Core.Dados.Interface
 {
-    interface IItensDados
+    public interface IItensDados
     {
         bool SalvarItens(Itens item);
 

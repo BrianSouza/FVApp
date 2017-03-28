@@ -4,8 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using FVApp.Core.Dados;
+using FVApp.Core.Dados.Entidades;
+using FVApp.Core.Dados.Interface;
 using MvvmCross.Core.ViewModels;
 using MvvmCross.FieldBinding;
+using MvvmCross.Platform;
 using MvvmCross.Plugins.Validation;
 using MvvmCross.Plugins.Validation.ForFieldBinding;
 
@@ -60,6 +64,9 @@ namespace FVApp.Core.ViewModels
         [NCFieldRequired("Informe o CEP.")]
         public INC<string> CEP = new NC<string>();
 
+        [NCFieldRequired("Informe o CEP.")]
+        public INC<string> Empresa = new NC<string>();
+
         private string _Telefone;
         public string Telefone
         {
@@ -67,29 +74,57 @@ namespace FVApp.Core.ViewModels
             set { SetProperty(ref _Telefone, value); }
         }
 
+
         IMvxToastService toastService;
         IValidator validator;
-
-        public ParceiroViewModel(IValidator validator, IMvxToastService toastService)
+        IParceirosDados pnService;
+        public Parceiro pn;
+        public ParceiroViewModel()
         {
-            this.toastService = toastService;
-            this.validator = validator;
+            this.toastService = Mvx.Resolve<IMvxToastService>();
+            this.validator = Mvx.Resolve<IValidator>();
+            this.pnService = Mvx.Resolve<IParceirosDados>();
         }
+        
 
         public override void Start()
         {
             Salvar = new MvxCommand(SalvarParceiro);
         }
 
-        public IMvxCommand  Salvar
+        public IMvxCommand Salvar
         {
             get;
             private set;
         }
 
-        private void SalvarParceiro()
+        public void SalvarParceiro()
         {
+            if (pn == null)
+                pn = GetParceiro();
 
+            pnService.SalvarParceiro(pn);
+        }
+
+        private Parceiro GetParceiro()
+        {
+            pn = new Parceiro
+            {
+                CardCode = this.CardCode,
+                CardName = this.CardName.ToString(),
+                Bairro = this.Bairro.ToString(),
+                CEP = this.CEP.ToString(),
+                Cidade = this.Cidade.ToString(),
+                Complemento = this.Complemento,
+                //TODO: definir como receber empresa
+                Empresa = this.Empresa.ToString(),
+                Endereco = this.Endereco.ToString(),
+                Estado = this.Estado.ToString(),
+                Numero = this.Numero.ToString(),
+                Telefone = this.Telefone
+            };
+
+            return pn;
         }
     }
 }

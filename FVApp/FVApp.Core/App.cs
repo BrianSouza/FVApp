@@ -25,7 +25,7 @@ namespace FVApp.Core
 
 
 
-            RegisterAppStart<ViewModels.FirstViewModel>();
+            RegisterAppStart<ViewModels.ParceiroViewModel>();
         }
     }
 }

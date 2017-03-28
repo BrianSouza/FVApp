@@ -8,7 +8,7 @@ using FVApp.Core.Dados.Entidades;
 
 namespace FVApp.Core.Dados.Interface
 {
-    interface IFormasPagamentoDados
+    public interface IFormasPagamentoDados
     {
         bool SalvarFormaPagamento(FormaPagamento pn);
 

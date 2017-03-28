@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace FVApp.Core.Dados.Interface
 {
-    interface IDataBaseManager
+    public interface IDataBaseManager
     {
         int Insert<T>(T tabela);
 

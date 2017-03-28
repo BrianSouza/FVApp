@@ -4,7 +4,7 @@ using FVApp.Core.Dados.Entidades;
 
 namespace FVApp.Core.Dados.Interface
 {
-    interface ICondicoesPagamentoDados
+    public interface ICondicoesPagamentoDados
     {
         bool SalvarCondicao(CondicaoPagamento pn);
 

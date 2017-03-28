@@ -8,7 +8,7 @@ using FVApp.Core.Dados.Entidades;
 
 namespace FVApp.Core.Dados.Interface
 {
-    interface IPedidosLinhasDados
+    public interface IPedidosLinhasDados
     {
         
             bool SalvarLinhasPedidos(Collection<PedidoLinhas> linhas);

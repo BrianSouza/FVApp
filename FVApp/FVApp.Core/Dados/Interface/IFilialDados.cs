@@ -4,7 +4,7 @@ using FVApp.Core.Dados.Entidades;
 
 namespace FVApp.Core.Dados.Interface
 {
-    interface IFilialDados
+    public interface IFilialDados
     {
         bool SalvarFilial(Filial filial);
 
