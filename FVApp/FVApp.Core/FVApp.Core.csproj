@@ -62,6 +62,7 @@
     <Compile Include="Dados\ParceirosDados.cs" />
     <Compile Include="Dados\PedidosLinhasDados.cs" />
     <Compile Include="Entidades\CondPagto.cs" />
+    <Compile Include="Entidades\Empresa.cs" />
     <Compile Include="Entidades\FormPgto.cs" />
     <Compile Include="Entidades\Ped.cs" />
     <Compile Include="Entidades\PedItens.cs" />

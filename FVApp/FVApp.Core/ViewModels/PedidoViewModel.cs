@@ -1,9 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using FVApp.Core.Dados;
+using FVApp.Core.Dados.Entidades;
+using FVApp.Core.Dados.Interface;
 using FVApp.Core.Entidades;
 using FVApp.Core.Services;
 using MvvmCross.Core.ViewModels;
@@ -18,13 +22,15 @@ namespace FVApp.Core.ViewModels
     public class PedidoViewModel : MvxViewModel
     {
         ISaveAndLoad _SaL;
-        IMvxToastService toastService;
+        IMvxToastService _ToastService;
         Ped _Ped = null;
+        IParceirosDados _pnDados;
 
         public PedidoViewModel()
         {
             _SaL = Mvx.Resolve<ISaveAndLoad>();
-            toastService = Mvx.Resolve<IMvxToastService>();
+            _ToastService = Mvx.Resolve<IMvxToastService>();
+            _pnDados = Mvx.Resolve<IParceirosDados>();
             CarregaArquivoPedido();
         }
 
@@ -40,10 +46,17 @@ namespace FVApp.Core.ViewModels
         }
 
         [NCFieldRequired("Selecione um parceiro.")]
-        public INC<string> CardCode = new NC<string>();
+        public INC<Parceiro> SelectedParceiro = new NC<Parceiro>();
 
-        [NCFieldRequired("Selecione um parceiro.")]
-        public INC<string> CardName = new NC<string>();
+        private ObservableCollection<Parceiro> _Parceiros;
+        public ObservableCollection<Parceiro> Parceiros
+        {
+            get { return _Parceiros; }
+            set
+            {
+                SetProperty(ref _Parceiros, value);
+            }
+        }
 
         public ICommand NavegarProximaTela
         {
@@ -62,14 +75,14 @@ namespace FVApp.Core.ViewModels
             }
             catch (Exception e)
             {
-                toastService.DisplayError(e.Message);
+                _ToastService.DisplayError(e.Message);
             }
             
         }
 
         private bool ValidaSeSelecionouParceiro()
         {
-            if (!string.IsNullOrEmpty(CardCode.ToString()) || !string.IsNullOrEmpty(CardName.ToString()))
+            if (SelectedParceiro != null)
             {
                 return true;
             }
@@ -80,6 +93,9 @@ namespace FVApp.Core.ViewModels
         {
             if(_SaL.ValidateExist("Pedido.txt"))
             {
+                _Ped.CardCode = SelectedParceiro.Value.CardCode;
+                _Ped.CardName = SelectedParceiro.Value.CardName;
+
                 string jsonPedido = _SaL.LoadText("Pedido.txt");
                 _Ped = JsonConvert.DeserializeObject<Ped>(jsonPedido);
             }
@@ -89,6 +105,19 @@ namespace FVApp.Core.ViewModels
         {
             string ped = JsonConvert.SerializeObject(_Ped);
             _SaL.SaveText("Pedido.txt", ped);
+        }
+
+        private void CarregarParceiros()
+        {
+            try
+            {
+                Parceiros = _pnDados.RetornarParceiros();
+                
+            }
+            catch (Exception)
+            {
+                _ToastService.DisplayError("Erro ao carregar parceiros de negócio.");
+            }
         }
     }
 }
