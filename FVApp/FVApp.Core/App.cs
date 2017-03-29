@@ -16,7 +16,6 @@ namespace FVApp.Core
                 .RegisterAsLazySingleton();
 
             Mvx.RegisterType<IValidator, Validator>();
-            
             Mvx.RegisterType<IDataBaseManager, DataBaseManager>();
             Mvx.RegisterType<IParceirosDados, ParceirosDados>();
             Mvx.RegisterType<ICondicoesPagamentoDados, CondicoesPagamentoDados>();

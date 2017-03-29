@@ -8,6 +8,8 @@ using MvvmCross.Plugins.Validation.Droid;
 using FVApp.Core.Dados.Interface;
 using FVApp.Core.Dados;
 using FVApp.Droid.Dados;
+using FVApp.Core.Services;
+using FVApp.Droid.Services;
 
 namespace FVApp.Droid
 {
@@ -25,6 +27,7 @@ namespace FVApp.Droid
             Mvx.RegisterType<IConfigDados>(() => new ConfigDados());
             Mvx.RegisterType<IDataBaseManager, DataBaseManager>();
             Mvx.RegisterType<IParceirosDados, ParceirosDados>();
+            Mvx.RegisterType<ISaveAndLoad, SaveAndLoad>();
         }
 
         protected override IMvxApplication CreateApp()
