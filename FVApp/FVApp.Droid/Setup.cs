@@ -5,6 +5,9 @@ using MvvmCross.Platform.Platform;
 using MvvmCross.Platform;
 using MvvmCross.Plugins.Validation;
 using MvvmCross.Plugins.Validation.Droid;
+using FVApp.Core.Dados.Interface;
+using FVApp.Core.Dados;
+using FVApp.Droid.Dados;
 
 namespace FVApp.Droid
 {
@@ -19,6 +22,9 @@ namespace FVApp.Droid
             base.InitializePlatformServices();
 
             Mvx.RegisterType<IMvxToastService>(() => new MvxAndroidToastService(ApplicationContext));
+            Mvx.RegisterType<IConfigDados>(() => new ConfigDados());
+            Mvx.RegisterType<IDataBaseManager, DataBaseManager>();
+            Mvx.RegisterType<IParceirosDados, ParceirosDados>();
         }
 
         protected override IMvxApplication CreateApp()

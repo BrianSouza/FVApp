@@ -18,8 +18,17 @@ namespace FVApp.Droid.Views
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
-            base.OnCreate(savedInstanceState);
-            SetContentView(Resource.Layout.ParceiroView);
+            try
+            {
+                base.OnCreate(savedInstanceState);
+                SetContentView(Resource.Layout.ParceiroView);
+            }
+            catch (Exception e)
+            {
+
+                throw;
+            }
+            
         }
     }
 }
