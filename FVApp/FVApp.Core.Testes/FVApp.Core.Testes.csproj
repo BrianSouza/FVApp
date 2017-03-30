@@ -93,6 +93,7 @@
     <Compile Include="Bootstrap\MessengerPluginBootstrap.cs" />
     <Compile Include="MockDispatcher.cs" />
     <Compile Include="ParceirosTestes.cs" />
+    <Compile Include="PedidoViewModelTestes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -89,16 +89,19 @@ namespace FVApp.Core.ViewModels
             else return false;
         }
 
-        private void CarregaArquivoPedido()
+        public bool CarregaArquivoPedido()
         {
-            if(_SaL.ValidateExist("Pedido.txt"))
+            if (_SaL.ValidateExist("Pedido.txt"))
             {
                 _Ped.CardCode = SelectedParceiro.Value.CardCode;
                 _Ped.CardName = SelectedParceiro.Value.CardName;
 
                 string jsonPedido = _SaL.LoadText("Pedido.txt");
                 _Ped = JsonConvert.DeserializeObject<Ped>(jsonPedido);
+                return true;
             }
+            else
+                return false;
         }
 
         private void SalvarTxtPedido()
