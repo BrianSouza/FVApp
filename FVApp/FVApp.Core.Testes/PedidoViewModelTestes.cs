@@ -48,7 +48,7 @@ namespace FVApp.Core.Testes
         [Test]
         public void Testando_Salvar_txt()
         {
-
+            Assert.IsNull(pedDados.Object.CarregaArquivoPedido());
         }
     }
 }
