@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,6 +22,6 @@ namespace FVApp.Core.Entidades
 
         public CondPagto CP { get; set; }
 
-        public PedItens PItens { get; set; }
+        public ObservableCollection<PedItens> PItens { get; set; }
     }
 }

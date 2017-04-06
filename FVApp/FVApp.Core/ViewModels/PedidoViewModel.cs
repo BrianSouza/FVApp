@@ -89,7 +89,7 @@ namespace FVApp.Core.ViewModels
             else return false;
         }
 
-        public bool CarregaArquivoPedido()
+        private bool CarregaArquivoPedido()
         {
             if (_SaL.ValidateExist("Pedido.txt"))
             {
