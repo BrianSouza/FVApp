@@ -15,6 +15,16 @@ namespace FVApp.Core.ViewModels
     {
         ISaveAndLoad _SaL;
         Ped _Ped;
+        bool Salvo = false;
+
+        public Ped Pedido
+        {
+            get { return _Ped; }
+            set
+            {
+                SetProperty(ref _Ped,value);
+            }
+        }
 
         public PedidoConfirmacaoViewModel()
         {
@@ -32,6 +42,37 @@ namespace FVApp.Core.ViewModels
             }
             else
                 return false;
+        }
+
+        public MvxCommand Salvar()
+        {
+            return new MvxCommand(VoltarParaOMenu,Validacao);
+        }
+
+        private void VoltarParaOMenu()
+        {
+
+        }
+
+        private bool Validacao()
+        {
+            bool valido = true;
+
+            if (_Ped == null)
+                valido = false;
+
+            if (!Salvo)
+                valido = false;
+
+            if (valido)
+                DeletarTxt();
+
+            return valido;
+        }
+
+        private void DeletarTxt()
+        {
+            _SaL.ExcludeFile("Pedido.txt");
         }
     }
 }
