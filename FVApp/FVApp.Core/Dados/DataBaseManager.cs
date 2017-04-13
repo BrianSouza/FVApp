@@ -3,18 +3,46 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using FVApp.Core.Dados.Entidades;
 using FVApp.Core.Dados.Interface;
+using FVApp.Core.Entidades;
+using FVApp.Core.Services;
 using MvvmCross.Platform;
+using Newtonsoft.Json;
 
 namespace FVApp.Core.Dados
 {
-    public class DataBaseManager :IDisposable , IDataBaseManager
+    public class DataBaseManager : IDisposable, IDataBaseManager
     {
         public SQLite.Net.SQLiteConnection _conexao;
+        private ISaveAndLoad _SaL;
+
         public DataBaseManager()
         {
+            string nomeBase = string.Empty;
+            nomeBase = GetNomeBase();
+
             var config = Mvx.Resolve<IConfigDados>();
-            _conexao = new SQLite.Net.SQLiteConnection(config.Plataforma, System.IO.Path.Combine(config.DiretorioDB, "FVAppDB.db3"));
+            _conexao = new SQLite.Net.SQLiteConnection(config.Plataforma, System.IO.Path.Combine(config.DiretorioDB, nomeBase));
             CriarTabelas();
+        }
+
+        private string GetNomeBase()
+        {
+            _SaL = Mvx.Resolve<ISaveAndLoad>();
+            Config _Config = null;
+            if (_SaL.ValidateExist("FVAppConfig.txt"))
+            {
+                string jsonConfig = _SaL.LoadText("FVAppConfig.txt");
+                _Config = JsonConvert.DeserializeObject<Config>(jsonConfig);
+            }
+            else
+                throw new Exception("Não foi encontrado arquivo de configuração.");
+
+            if (_Config.AmbienteDemo)
+                return "DEMOFVAppDB.db3";
+            else
+                return "FVAppDB.db3";
+
+
         }
 
         public int Insert<T>(T tabela)
@@ -46,7 +74,7 @@ namespace FVApp.Core.Dados
 
         }
 
-        public ObservableCollection<T> GetAll<T>() where T : class , IKeyObject,new()
+        public ObservableCollection<T> GetAll<T>() where T : class, IKeyObject, new()
         {
             return new ObservableCollection<T>(_conexao.Table<T>().AsEnumerable<T>().ToList());
         }

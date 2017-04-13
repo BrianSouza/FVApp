@@ -62,12 +62,14 @@
     <Compile Include="Dados\ParceirosDados.cs" />
     <Compile Include="Dados\PedidosLinhasDados.cs" />
     <Compile Include="Entidades\CondPagto.cs" />
+    <Compile Include="Entidades\Config.cs" />
     <Compile Include="Entidades\Empresa.cs" />
     <Compile Include="Entidades\FormPgto.cs" />
     <Compile Include="Entidades\Ped.cs" />
     <Compile Include="Entidades\PedItens.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\ISaveAndLoad.cs" />
+    <Compile Include="ViewModels\ConfigViewModel.cs" />
     <Compile Include="ViewModels\ParceiroViewModel.cs" />
     <Compile Include="ViewModels\PedidoConfirmacaoViewModel.cs" />
     <Compile Include="ViewModels\PedidoFinanceiroViewModel.cs" />
