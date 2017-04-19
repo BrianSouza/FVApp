@@ -84,6 +84,7 @@ namespace FVApp.Core.ViewModels
             return new MvxCommand(SalvarTxtConfig,ValidaArquivoConfig);
         }
 
+        
 
     }
 }
