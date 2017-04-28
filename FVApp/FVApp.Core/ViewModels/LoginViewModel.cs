@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using FVApp.Core.Services;
 using MvvmCross.Core.ViewModels;
 
 namespace FVApp.Core.ViewModels
 {
     public class LoginViewModel : MvxViewModel
     {
+        ISaveAndLoad _SaL;
         public LoginViewModel()
         {
 

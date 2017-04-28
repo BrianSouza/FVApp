@@ -10,10 +10,14 @@ namespace FVApp.Core.Dados
         public bool DeletarParceiro(Parceiro pn)
         {
             if (dbmService.Delete<Parceiro>(pn) > 0)
+            {
                 return true;
+            }
             else
                 return false;
         }
+
+        
 
         public Parceiro RetornarParceiro(string cardCode)
         {

@@ -24,10 +24,15 @@ namespace FVApp.Core.Dados.Entidades
         public string Estado { get; set; }
 
         public string CEP { get; set; }
-
+        public string NomeContato { get; set; }
         public string Telefone { get; set; }
 
         public string Empresa { get; set; }
-        
+
+        public string Documento { get; set; }
+        public string TipoDocumento { get; set; }
+
+        public string TipoParceiro { get; set; }
+
     }
 }

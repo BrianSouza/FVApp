@@ -64,8 +64,24 @@ namespace FVApp.Core.ViewModels
         [NCFieldRequired("Informe o CEP.")]
         public INC<string> CEP = new NC<string>();
 
-        [NCFieldRequired("Informe o CEP.")]
+        [NCFieldRequired("Informe a Empresa.")]
         public INC<string> Empresa = new NC<string>();
+
+        [NCFieldRequired("Informe o CNPJ ou CPF.")]
+        public INC<string> Documento = new NC<string>();
+
+        [NCFieldRequired("Informe o tipo de documento.")]
+        public INC<string> TipoDocumento = new NC<string>();
+
+        [NCFieldRequired("Informe o tipo do Parceiro.")]
+        public INC<string> TipoParceiro = new NC<string>();
+
+        private string _NomeContato;
+        public string NomeContato
+        {
+            get { return _Telefone; }
+            set { SetProperty(ref _NomeContato, value); }
+        }
 
         private string _Telefone;
         public string Telefone
@@ -122,6 +138,7 @@ namespace FVApp.Core.ViewModels
                 Estado = this.Estado.ToString(),
                 Numero = this.Numero.ToString(),
                 Telefone = this.Telefone
+
             };
 
             return pn;
