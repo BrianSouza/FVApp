@@ -17,7 +17,7 @@ namespace FVApp.Core.Dados.Interface
 
             ObservableCollection<PedidoLinhas> RetornarLinhasPedidos(string pedido);
 
-            ObservableCollection<PedidoLinhas> RetornarPedidos();
+            ObservableCollection<PedidoLinhas> RetornarLinhasPedidos();
         
     }
 }

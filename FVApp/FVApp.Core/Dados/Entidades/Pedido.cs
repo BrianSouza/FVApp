@@ -7,6 +7,8 @@ namespace FVApp.Core.Dados.Entidades
     {
         public string Key { get; set; }
 
+        public string DocEntry { get; set; }
+
         public string CardCode { get; set;}
 
         public string CardName { get; set; }

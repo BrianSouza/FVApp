@@ -18,13 +18,13 @@ namespace FVApp.Core.Dados
 
         public ObservableCollection<PedidoLinhas> RetornarLinhasPedidos(string pedido)
         {
-            var allLines = RetornarPedidos();
+            var allLines = RetornarLinhasPedidos();
             var linhasPedido = allLines.Where(T0 => T0.KeyPedido.Equals(pedido)).ToList();
             ObservableCollection<PedidoLinhas> linhas = new ObservableCollection<PedidoLinhas>(linhasPedido);
             return linhas;
         }
 
-        public ObservableCollection<PedidoLinhas> RetornarPedidos()
+        public ObservableCollection<PedidoLinhas> RetornarLinhasPedidos()
         {
             return dbmService.GetAll<PedidoLinhas>();
 

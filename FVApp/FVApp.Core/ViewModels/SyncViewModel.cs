@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using FVApp.Core.Dados.Entidades;
 using FVApp.Core.Dados.Interface;
 using MvvmCross.Core.ViewModels;
 using MvvmCross.Platform;
@@ -118,7 +118,7 @@ namespace FVApp.Core.ViewModels
             {
                 if (Empresas)
                 {
-
+                    SincronizarEmpresas();
                 }
 
                 if (Parceiros)
@@ -137,7 +137,7 @@ namespace FVApp.Core.ViewModels
 
                 if (Pedidos)
                 {
-
+                    SincronizarPedido();
                 }
             }
             catch (Exception e)
@@ -148,9 +148,44 @@ namespace FVApp.Core.ViewModels
             }
             
         }
+        private void SincronizarEmpresas()
+        {
+            var empresas = filialDados.RetornarFiliais();
+
+            foreach (var item in empresas)
+            {
+                filialDados.DeletarFilial(item);
+            }
+
+            //retorna lista de filiais para sincronizar e usar essa lista para adicionar as novas sincronizações
+
+            //foreach (var item in collection)
+            //{
+            //    filialDados.SalvarFilial(item);
+            //}
+        }
 
         private void SincronizarPedido()
         {
+            var pedidos = pedDados.RetornarPedidos();
+            var pedidosParaSincronizar = pedidos.Where(t0 => t0.DocEntry.IsNullOrEmpty()).ToList();
+            var linhasPedidosParaSincronizar = pedLinhasDados.RetornarLinhasPedidos();
+
+            //sincronizar o pedidosParaSincronizar/linhasPedidosParaSincronizar e retornar a mesma lista com o docentry preenchido.
+
+            foreach (var item in pedidosParaSincronizar)
+            {
+                List<PedidoLinhas> linhas = linhasPedidosParaSincronizar.Where(t0 => t0.KeyPedido.Equals(item.Key)).ToList();
+                if(linhas.Count > 0)
+                {
+                    if (pedDados.SalvarPedidos(item))
+                    {
+                        ObservableCollection<PedidoLinhas> linhasOC = new ObservableCollection<PedidoLinhas>(linhas);
+                        pedLinhasDados.SalvarLinhasPedidos(linhasOC);
+                    }
+                }
+
+            }
 
         }
 
@@ -166,14 +201,14 @@ namespace FVApp.Core.ViewModels
                 }
             }
 
-            foreach (var formNova in collection)//Coleção vinda do serviço
-            {
-                if (formPagtoDados.SalvarFormaPagamento(formNova))
-                {
-                    toastService.DisplayError($"Ocorreu um erro ao incluir a condição de pgamento {formNova.Descricao}.");
-                    break;
-                }
-            }
+            //foreach (var formNova in collection)//Coleção vinda do serviço
+            //{
+            //    if (formPagtoDados.SalvarFormaPagamento(formNova))
+            //    {
+            //        toastService.DisplayError($"Ocorreu um erro ao incluir a condição de pgamento {formNova.Descricao}.");
+            //        break;
+            //    }
+            //}
         }
 
         private void SincronizarCP()
@@ -188,14 +223,14 @@ namespace FVApp.Core.ViewModels
                 }
             }
 
-            foreach (var condNova in collection)//Coleção vinda do serviço
-            {
-                if (condDados.SalvarCondicao(condNova))
-                {
-                    toastService.DisplayError($"Ocorreu um erro ao incluir a condição de pgamento {condNova.Descricao}.");
-                    break;
-                }
-            }
+            //foreach (var condNova in collection)//Coleção vinda do serviço
+            //{
+            //    if (condDados.SalvarCondicao(condNova))
+            //    {
+            //        toastService.DisplayError($"Ocorreu um erro ao incluir a condição de pgamento {condNova.Descricao}.");
+            //        break;
+            //    }
+            //}
         }
 
         private void SincronizarPN()
@@ -204,15 +239,15 @@ namespace FVApp.Core.ViewModels
             var parceirosNovos = todosParceiros.Where(t0 => t0.CardCode.IsNullOrEmpty()).ToList();
             //passar os novos parceiros para o serviço de integracao
 
-            //após receber os parceiro a ser sincronizados, deletar os atuais do mobile e acrescentar a nova lista
-            foreach (var pnNovo in collection)//Coleção vinda do serviço
-            {
-                if (!parcDados.SalvarParceiro(pnNovo))
-                {
-                    toastService.DisplayError($"Ocorreu um erro ao incluir o parceiro {pnNovo.CardName}.");
-                    break;
-                }
-            }
+            ////após receber os parceiro a ser sincronizados, deletar os atuais do mobile e acrescentar a nova lista
+            //foreach (var pnNovo in collection)//Coleção vinda do serviço
+            //{
+            //    if (!parcDados.SalvarParceiro(pnNovo))
+            //    {
+            //        toastService.DisplayError($"Ocorreu um erro ao incluir o parceiro {pnNovo.CardName}.");
+            //        break;
+            //    }
+            //}
 
 
             foreach (var pn in todosParceiros)
