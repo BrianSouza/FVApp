@@ -108,6 +108,31 @@ namespace FVApp.Droid
 			}
 		}
 		
+		public partial class Color
+		{
+			
+			// aapt resource value: 0x7f060002
+			public const int brancoTexto = 2131099650;
+			
+			// aapt resource value: 0x7f060000
+			public const int cinzaFundo = 2131099648;
+			
+			// aapt resource value: 0x7f060003
+			public const int cinzaTexto = 2131099651;
+			
+			// aapt resource value: 0x7f060001
+			public const int verdePadraoApp = 2131099649;
+			
+			static Color()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Color()
+			{
+			}
+		}
+		
 		public partial class Id
 		{
 			
@@ -131,13 +156,10 @@ namespace FVApp.Droid
 		{
 			
 			// aapt resource value: 0x7f030000
-			public const int FirstView = 2130903040;
+			public const int ParceiroView = 2130903040;
 			
 			// aapt resource value: 0x7f030001
-			public const int ParceiroView = 2130903041;
-			
-			// aapt resource value: 0x7f030002
-			public const int SplashScreen = 2130903042;
+			public const int SplashScreen = 2130903041;
 			
 			static Layout()
 			{
@@ -190,8 +212,8 @@ namespace FVApp.Droid
 		public partial class Style
 		{
 			
-			// aapt resource value: 0x7f060000
-			public const int Theme_Splash = 2131099648;
+			// aapt resource value: 0x7f070000
+			public const int Theme_Splash = 2131165184;
 			
 			static Style()
 			{

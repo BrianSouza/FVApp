@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <color name="cinzaFundo">#4F4F4F</color>
+  <color name="verdePadraoApp">#10D67D</color>
+  <color name="brancoTexto">#FFFFFF</color>
+  <color name="cinzaTexto">#B3AFAF</color>
+</resources>
