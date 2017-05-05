@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using FVApp.Core.Services;
 using MvvmCross.Core.ViewModels;
+using MvvmCross.Platform;
 
 namespace FVApp.Core.ViewModels
 {
@@ -13,7 +14,7 @@ namespace FVApp.Core.ViewModels
         ISaveAndLoad _SaL;
         public LoginViewModel()
         {
-
+            _SaL = Mvx.Resolve<ISaveAndLoad>();
         }
 
         private string _Usuario;

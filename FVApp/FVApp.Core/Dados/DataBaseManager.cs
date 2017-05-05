@@ -13,10 +13,12 @@ namespace FVApp.Core.Dados
     public class DataBaseManager : IDisposable, IDataBaseManager
     {
         public SQLite.Net.SQLiteConnection _conexao;
+
         private ISaveAndLoad _SaL;
 
         public DataBaseManager()
         {
+            _SaL = Mvx.Resolve<ISaveAndLoad>();
             string nomeBase = string.Empty;
             nomeBase = GetNomeBase();
 
@@ -27,7 +29,7 @@ namespace FVApp.Core.Dados
 
         private string GetNomeBase()
         {
-            _SaL = Mvx.Resolve<ISaveAndLoad>();
+            
             Config _Config = null;
             if (_SaL.ValidateExist("FVAppConfig.txt"))
             {
@@ -35,7 +37,9 @@ namespace FVApp.Core.Dados
                 _Config = JsonConvert.DeserializeObject<Config>(jsonConfig);
             }
             else
-                throw new Exception("Não foi encontrado arquivo de configuração.");
+            {
+               _Config = CriarArquivoConfig();
+            }
 
             if (_Config.AmbienteDemo)
                 return "DEMOFVAppDB.db3";
@@ -43,6 +47,20 @@ namespace FVApp.Core.Dados
                 return "FVAppDB.db3";
 
 
+        }
+
+        private Config CriarArquivoConfig()
+        {
+            Config config = new Config()
+            {
+                AmbienteDemo = true,
+                UrlProducao = ""
+            };
+
+            var _Config = JsonConvert.SerializeObject(config);
+            _SaL.SaveText("FVAppConfig.txt", _Config);
+
+            return config;
         }
 
         public int Insert<T>(T tabela)
@@ -62,6 +80,7 @@ namespace FVApp.Core.Dados
             int count = _conexao.Update(tabela);
             return count;
         }
+
         public int Delete<T>(T tabela)
         {
             int count = _conexao.Delete(tabela);

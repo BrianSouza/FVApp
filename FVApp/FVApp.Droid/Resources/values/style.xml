@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <style name="fvappStyle" parent="android:Theme.Material">
+    <item name="android:colorPrimary">@color/verdePadraoApp</item>
+    <item name="android:windowBackground">@color/cinzaFundo</item>
+    <item name="android:textColorPrimary">@color/brancoTexto</item>
+    <item name="android:colorAccent">@color/verdeControles</item>
+    <item name="android:statusBarColor">@color/verdePadraoApp</item>
+    <item name="android:colorPrimaryDark">@color/verdePadraoApp</item>
+    <item name="android:navigationBarColor">@color/cinzaFundo</item>
+  </style>
+</resources>

@@ -5,8 +5,8 @@ using MvvmCross.Droid.Views;
 namespace FVApp.Droid
 {
     [Activity(
-        Label = "FVApp"
-        , MainLauncher = true
+        //Label = "FVApp"
+         MainLauncher = true
         , Icon = "@mipmap/icon"
         //, Theme = "@style/Theme.Splash"
         , NoHistory = true

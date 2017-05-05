@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,15 +13,15 @@ using MvvmCross.Droid.Views;
 
 namespace FVApp.Droid.Views
 {
-    [Activity(Label = "Parceiros")]
-    public class ParceiroView : MvxActivity
+    [Activity(Label = "LoginView")]
+    public class LoginView : MvxActivity
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
             try
             {
                 base.OnCreate(savedInstanceState);
-                SetContentView(Resource.Layout.ParceiroView);
+                SetContentView(Resource.Layout.LoginView);
             }
             catch (Exception e)
             {

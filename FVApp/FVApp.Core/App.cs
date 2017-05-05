@@ -23,7 +23,7 @@ namespace FVApp.Core
             Mvx.RegisterType<IFormasPagamentoDados, FormasPagamentosDados>();
             Mvx.RegisterType<IItensDados, ItensDados>();
 
-            RegisterAppStart<ViewModels.ParceiroViewModel>();
+            RegisterAppStart<ViewModels.LoginViewModel>();
         }
         
     }
