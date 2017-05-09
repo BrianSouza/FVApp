@@ -1751,8 +1751,8 @@ namespace FVApp.Droid
 			// aapt resource value: 0x7f0b000a
 			public const int MvxBindingTagUnique = 2131427338;
 			
-			// aapt resource value: 0x7f0b005d
-			public const int action0 = 2131427421;
+			// aapt resource value: 0x7f0b005f
+			public const int action0 = 2131427423;
 			
 			// aapt resource value: 0x7f0b0049
 			public const int action_bar = 2131427401;
@@ -1775,17 +1775,17 @@ namespace FVApp.Droid
 			// aapt resource value: 0x7f0b0026
 			public const int action_bar_title = 2131427366;
 			
-			// aapt resource value: 0x7f0b005a
-			public const int action_container = 2131427418;
+			// aapt resource value: 0x7f0b005c
+			public const int action_container = 2131427420;
 			
 			// aapt resource value: 0x7f0b004a
 			public const int action_context_bar = 2131427402;
 			
-			// aapt resource value: 0x7f0b0061
-			public const int action_divider = 2131427425;
+			// aapt resource value: 0x7f0b0063
+			public const int action_divider = 2131427427;
 			
-			// aapt resource value: 0x7f0b005b
-			public const int action_image = 2131427419;
+			// aapt resource value: 0x7f0b005d
+			public const int action_image = 2131427421;
 			
 			// aapt resource value: 0x7f0b0002
 			public const int action_menu_divider = 2131427330;
@@ -1802,11 +1802,11 @@ namespace FVApp.Droid
 			// aapt resource value: 0x7f0b0028
 			public const int action_mode_close_button = 2131427368;
 			
-			// aapt resource value: 0x7f0b005c
-			public const int action_text = 2131427420;
+			// aapt resource value: 0x7f0b005e
+			public const int action_text = 2131427422;
 			
-			// aapt resource value: 0x7f0b006a
-			public const int actions = 2131427434;
+			// aapt resource value: 0x7f0b006c
+			public const int actions = 2131427436;
 			
 			// aapt resource value: 0x7f0b0029
 			public const int activity_chooser_view_content = 2131427369;
@@ -1829,14 +1829,14 @@ namespace FVApp.Droid
 			// aapt resource value: 0x7f0b0030
 			public const int buttonPanel = 2131427376;
 			
-			// aapt resource value: 0x7f0b005e
-			public const int cancel_action = 2131427422;
+			// aapt resource value: 0x7f0b0060
+			public const int cancel_action = 2131427424;
 			
 			// aapt resource value: 0x7f0b0040
 			public const int checkbox = 2131427392;
 			
-			// aapt resource value: 0x7f0b0066
-			public const int chronometer = 2131427430;
+			// aapt resource value: 0x7f0b0068
+			public const int chronometer = 2131427432;
 			
 			// aapt resource value: 0x7f0b0020
 			public const int collapseActionView = 2131427360;
@@ -1865,8 +1865,14 @@ namespace FVApp.Droid
 			// aapt resource value: 0x7f0b001d
 			public const int end = 2131427357;
 			
-			// aapt resource value: 0x7f0b0070
-			public const int end_padder = 2131427440;
+			// aapt resource value: 0x7f0b0072
+			public const int end_padder = 2131427442;
+			
+			// aapt resource value: 0x7f0b005a
+			public const int etLogin = 2131427418;
+			
+			// aapt resource value: 0x7f0b005b
+			public const int etSenha = 2131427419;
 			
 			// aapt resource value: 0x7f0b002a
 			public const int expand_activities_button = 2131427370;
@@ -1883,8 +1889,8 @@ namespace FVApp.Droid
 			// aapt resource value: 0x7f0b002e
 			public const int icon = 2131427374;
 			
-			// aapt resource value: 0x7f0b006b
-			public const int icon_group = 2131427435;
+			// aapt resource value: 0x7f0b006d
+			public const int icon_group = 2131427437;
 			
 			// aapt resource value: 0x7f0b0021
 			public const int ifRoom = 2131427361;
@@ -1895,14 +1901,14 @@ namespace FVApp.Droid
 			// aapt resource value: 0x7f0b0058
 			public const int imageView1 = 2131427416;
 			
-			// aapt resource value: 0x7f0b0067
-			public const int info = 2131427431;
-			
-			// aapt resource value: 0x7f0b006c
-			public const int line1 = 2131427436;
+			// aapt resource value: 0x7f0b0069
+			public const int info = 2131427433;
 			
 			// aapt resource value: 0x7f0b006e
-			public const int line3 = 2131427438;
+			public const int line1 = 2131427438;
+			
+			// aapt resource value: 0x7f0b0070
+			public const int line3 = 2131427440;
 			
 			// aapt resource value: 0x7f0b000b
 			public const int listMode = 2131427339;
@@ -1913,11 +1919,11 @@ namespace FVApp.Droid
 			// aapt resource value: 0x7f0b0059
 			public const int llLogin = 2131427417;
 			
-			// aapt resource value: 0x7f0b0071
-			public const int logo = 2131427441;
+			// aapt resource value: 0x7f0b0073
+			public const int logo = 2131427443;
 			
-			// aapt resource value: 0x7f0b0060
-			public const int media_actions = 2131427424;
+			// aapt resource value: 0x7f0b0062
+			public const int media_actions = 2131427426;
 			
 			// aapt resource value: 0x7f0b001e
 			public const int middle = 2131427358;
@@ -1934,14 +1940,14 @@ namespace FVApp.Droid
 			// aapt resource value: 0x7f0b000c
 			public const int normal = 2131427340;
 			
-			// aapt resource value: 0x7f0b0069
-			public const int notification_background = 2131427433;
+			// aapt resource value: 0x7f0b006b
+			public const int notification_background = 2131427435;
 			
-			// aapt resource value: 0x7f0b0063
-			public const int notification_main_column = 2131427427;
+			// aapt resource value: 0x7f0b0065
+			public const int notification_main_column = 2131427429;
 			
-			// aapt resource value: 0x7f0b0062
-			public const int notification_main_column_container = 2131427426;
+			// aapt resource value: 0x7f0b0064
+			public const int notification_main_column_container = 2131427428;
 			
 			// aapt resource value: 0x7f0b0032
 			public const int parentPanel = 2131427378;
@@ -1955,11 +1961,11 @@ namespace FVApp.Droid
 			// aapt resource value: 0x7f0b0042
 			public const int radio = 2131427394;
 			
-			// aapt resource value: 0x7f0b0068
-			public const int right_icon = 2131427432;
+			// aapt resource value: 0x7f0b006a
+			public const int right_icon = 2131427434;
 			
-			// aapt resource value: 0x7f0b0064
-			public const int right_side = 2131427428;
+			// aapt resource value: 0x7f0b0066
+			public const int right_side = 2131427430;
 			
 			// aapt resource value: 0x7f0b0017
 			public const int screen = 2131427351;
@@ -2033,8 +2039,8 @@ namespace FVApp.Droid
 			// aapt resource value: 0x7f0b001a
 			public const int src_over = 2131427354;
 			
-			// aapt resource value: 0x7f0b005f
-			public const int status_bar_latest_event_content = 2131427423;
+			// aapt resource value: 0x7f0b0061
+			public const int status_bar_latest_event_content = 2131427425;
 			
 			// aapt resource value: 0x7f0b0043
 			public const int submenuarrow = 2131427395;
@@ -2045,11 +2051,11 @@ namespace FVApp.Droid
 			// aapt resource value: 0x7f0b000d
 			public const int tabMode = 2131427341;
 			
-			// aapt resource value: 0x7f0b006f
-			public const int text = 2131427439;
+			// aapt resource value: 0x7f0b0071
+			public const int text = 2131427441;
 			
-			// aapt resource value: 0x7f0b006d
-			public const int text2 = 2131427437;
+			// aapt resource value: 0x7f0b006f
+			public const int text2 = 2131427439;
 			
 			// aapt resource value: 0x7f0b0037
 			public const int textSpacerNoButtons = 2131427383;
@@ -2057,8 +2063,8 @@ namespace FVApp.Droid
 			// aapt resource value: 0x7f0b0036
 			public const int textSpacerNoTitle = 2131427382;
 			
-			// aapt resource value: 0x7f0b0065
-			public const int time = 2131427429;
+			// aapt resource value: 0x7f0b0067
+			public const int time = 2131427431;
 			
 			// aapt resource value: 0x7f0b002f
 			public const int title = 2131427375;
@@ -2286,7 +2292,7 @@ namespace FVApp.Droid
 		{
 			
 			// aapt resource value: 0x7f030000
-			public const int Border = 2130903040;
+			public const int border = 2130903040;
 			
 			// aapt resource value: 0x7f030001
 			public const int Icon = 2130903041;
@@ -2315,6 +2321,12 @@ namespace FVApp.Droid
 			
 			// aapt resource value: 0x7f060021
 			public const int Hello = 2131099681;
+			
+			// aapt resource value: 0x7f060023
+			public const int Login = 2131099683;
+			
+			// aapt resource value: 0x7f060024
+			public const int Senha = 2131099684;
 			
 			// aapt resource value: 0x7f060000
 			public const int abc_action_bar_home_description = 2131099648;
@@ -3484,8 +3496,14 @@ namespace FVApp.Droid
 			// aapt resource value: 0x7f08015e
 			public const int Widget_AppCompat_Toolbar_Button_Navigation = 2131231070;
 			
+			// aapt resource value: 0x7f080162
+			public const int editTextStyle = 2131231074;
+			
 			// aapt resource value: 0x7f080160
 			public const int fvappStyle = 2131231072;
+			
+			// aapt resource value: 0x7f080161
+			public const int linearStyle = 2131231073;
 			
 			static Style()
 			{

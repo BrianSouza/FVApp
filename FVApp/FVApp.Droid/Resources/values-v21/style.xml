@@ -8,5 +8,23 @@
     <item name="android:statusBarColor">@color/verdePadraoApp</item>
     <item name="android:colorPrimaryDark">@color/verdePadraoApp</item>
     <item name="android:navigationBarColor">@color/cinzaFundo</item>
+    
+  </style>
+
+  <style name="linearStyle">
+    <item name="android:layout_marginLeft">10dp</item>
+    <item name="android:layout_marginRight">10dp</item>
+    <item name="android:background">@mipmap/border</item>
+  </style>
+  
+  <style name="editTextStyle" >
+    <item name="android:background">@color/brancoTexto</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:padding">10dip</item>
+    <item name="android:textColorHint">@color/cinzaTexto</item>
+    <item name="android:textColor">@color/verdePadraoApp</item>
+    <item name="android:layout_marginTop">10dp</item>
+    <item name="android:layout_marginLeft">5dp</item>
+    <item name="android:layout_marginRight">5dp</item>
   </style>
 </resources>
