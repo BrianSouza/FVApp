@@ -50,11 +50,17 @@
     <item name="android:textColor">@color/brancoTexto</item>
   </style>
     
-  <style name="btn" >
-    <item name="android:background">@color/verdePadraoApp</item>
+  <style name="btnConfig" >
     <item name="android:textStyle">bold</item>
     <item name="android:textColor">@color/brancoTexto</item>
-  
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_alignParentRight">true</item>
+    <item name="android:layout_alignParentBottom">true</item>
+    <item name="android:layout_marginRight">20dp</item>
+    <item name="android:layout_marginBottom">5dp</item>
+    <item name="android:background">@color/cinzaFundo</item>
+
   </style>
 
 </resources>

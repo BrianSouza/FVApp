@@ -51,16 +51,11 @@
         android:minHeight="25px"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/relativeLayout1">
-        <Button
-            android:text="@string/Login"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentBottom="true"
+        android:id="@+id/rlConfig">
+        <ImageButton
+            android:src="@mipmap/settings"
+            android:text="@string/Config"
             android:id="@+id/btnConfig"
-            style="@style/btn"
-            android:layout_marginRight="30dp"
-            android:layout_marginBottom="5dp"/>
+            style="@style/btnConfig" />
     </RelativeLayout>
 </LinearLayout>
