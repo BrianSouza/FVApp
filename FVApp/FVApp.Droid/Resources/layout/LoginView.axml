@@ -57,6 +57,6 @@
             android:text="@string/Config"
             android:id="@+id/btnConfig"
             style="@style/btnConfig"
-            local:MvxBind="onClick Config;" />
+            local:MvxBind="Click Config" />
     </RelativeLayout>
 </LinearLayout>
