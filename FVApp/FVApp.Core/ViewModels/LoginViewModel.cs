@@ -59,5 +59,13 @@ namespace FVApp.Core.ViewModels
             else
                 return true;
         }
+
+        public IMvxCommand Config
+        {
+            get
+            {
+                return new MvxCommand(() =>  ShowViewModel<ConfigViewModel>());
+            }
+        }
     }
 }

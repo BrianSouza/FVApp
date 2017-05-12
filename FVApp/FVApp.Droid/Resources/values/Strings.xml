@@ -4,6 +4,8 @@
   <string name="Login">Login</string>
   <string name="Senha">Senha</string>
   <string name="Config">Configuração</string>
+  <string name="Demo">Demonstração</string>
+  <string name="EndProd">Informe endereço de Produção</string>
 
 
 </resources>
