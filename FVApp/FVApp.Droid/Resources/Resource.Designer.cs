@@ -47,6 +47,29 @@ namespace FVApp.Droid
 			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxListView = global::FVApp.Droid.Resource.Styleable.MvxListView;
 			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxListView_MvxDropDownItemTemplate = global::FVApp.Droid.Resource.Styleable.MvxListView_MvxDropDownItemTemplate;
 			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxListView_MvxItemTemplate = global::FVApp.Droid.Resource.Styleable.MvxListView_MvxItemTemplate;
+			global::MvvmCross.Droid.Support.Core.UI.Resource.String.library_name = global::FVApp.Droid.Resource.String.library_name;
+			global::MvvmCross.Droid.Support.Fragment.Resource.Attribute.MvxBind = global::FVApp.Droid.Resource.Attribute.MvxBind;
+			global::MvvmCross.Droid.Support.Fragment.Resource.Attribute.MvxDropDownItemTemplate = global::FVApp.Droid.Resource.Attribute.MvxDropDownItemTemplate;
+			global::MvvmCross.Droid.Support.Fragment.Resource.Attribute.MvxGroupItemTemplate = global::FVApp.Droid.Resource.Attribute.MvxGroupItemTemplate;
+			global::MvvmCross.Droid.Support.Fragment.Resource.Attribute.MvxItemTemplate = global::FVApp.Droid.Resource.Attribute.MvxItemTemplate;
+			global::MvvmCross.Droid.Support.Fragment.Resource.Attribute.MvxLang = global::FVApp.Droid.Resource.Attribute.MvxLang;
+			global::MvvmCross.Droid.Support.Fragment.Resource.Attribute.MvxSource = global::FVApp.Droid.Resource.Attribute.MvxSource;
+			global::MvvmCross.Droid.Support.Fragment.Resource.Attribute.MvxTemplate = global::FVApp.Droid.Resource.Attribute.MvxTemplate;
+			global::MvvmCross.Droid.Support.Fragment.Resource.Id.MvvmCrossTagId = global::FVApp.Droid.Resource.Id.MvvmCrossTagId;
+			global::MvvmCross.Droid.Support.Fragment.Resource.Id.MvxBindingTagUnique = global::FVApp.Droid.Resource.Id.MvxBindingTagUnique;
+			global::MvvmCross.Droid.Support.Fragment.Resource.String.library_name = global::FVApp.Droid.Resource.String.library_name;
+			global::MvvmCross.Droid.Support.Fragment.Resource.Styleable.MvxBinding = global::FVApp.Droid.Resource.Styleable.MvxBinding;
+			global::MvvmCross.Droid.Support.Fragment.Resource.Styleable.MvxBinding_MvxBind = global::FVApp.Droid.Resource.Styleable.MvxBinding_MvxBind;
+			global::MvvmCross.Droid.Support.Fragment.Resource.Styleable.MvxBinding_MvxLang = global::FVApp.Droid.Resource.Styleable.MvxBinding_MvxLang;
+			global::MvvmCross.Droid.Support.Fragment.Resource.Styleable.MvxControl = global::FVApp.Droid.Resource.Styleable.MvxControl;
+			global::MvvmCross.Droid.Support.Fragment.Resource.Styleable.MvxControl_MvxTemplate = global::FVApp.Droid.Resource.Styleable.MvxControl_MvxTemplate;
+			global::MvvmCross.Droid.Support.Fragment.Resource.Styleable.MvxExpandableListView = global::FVApp.Droid.Resource.Styleable.MvxExpandableListView;
+			global::MvvmCross.Droid.Support.Fragment.Resource.Styleable.MvxExpandableListView_MvxGroupItemTemplate = global::FVApp.Droid.Resource.Styleable.MvxExpandableListView_MvxGroupItemTemplate;
+			global::MvvmCross.Droid.Support.Fragment.Resource.Styleable.MvxImageView = global::FVApp.Droid.Resource.Styleable.MvxImageView;
+			global::MvvmCross.Droid.Support.Fragment.Resource.Styleable.MvxImageView_MvxSource = global::FVApp.Droid.Resource.Styleable.MvxImageView_MvxSource;
+			global::MvvmCross.Droid.Support.Fragment.Resource.Styleable.MvxListView = global::FVApp.Droid.Resource.Styleable.MvxListView;
+			global::MvvmCross.Droid.Support.Fragment.Resource.Styleable.MvxListView_MvxDropDownItemTemplate = global::FVApp.Droid.Resource.Styleable.MvxListView_MvxDropDownItemTemplate;
+			global::MvvmCross.Droid.Support.Fragment.Resource.Styleable.MvxListView_MvxItemTemplate = global::FVApp.Droid.Resource.Styleable.MvxListView_MvxItemTemplate;
 			global::MvvmCross.Plugins.Validation.Droid.Resource.Attribute.MvxBind = global::FVApp.Droid.Resource.Attribute.MvxBind;
 			global::MvvmCross.Plugins.Validation.Droid.Resource.Attribute.MvxDropDownItemTemplate = global::FVApp.Droid.Resource.Attribute.MvxDropDownItemTemplate;
 			global::MvvmCross.Plugins.Validation.Droid.Resource.Attribute.MvxGroupItemTemplate = global::FVApp.Droid.Resource.Attribute.MvxGroupItemTemplate;
@@ -2147,6 +2170,9 @@ namespace FVApp.Droid
 			// aapt resource value: 0x7f0b003c
 			public const int title_template = 2131427388;
 			
+			// aapt resource value: 0x7f0b007a
+			public const int toolbarPrincipal = 2131427450;
+			
 			// aapt resource value: 0x7f0b0025
 			public const int top = 2131427365;
 			
@@ -2353,6 +2379,9 @@ namespace FVApp.Droid
 			// aapt resource value: 0x7f040031
 			public const int support_simple_spinner_dropdown_item = 2130968625;
 			
+			// aapt resource value: 0x7f040032
+			public const int toolBarPrincipal = 2130968626;
+			
 			static Layout()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -2397,23 +2426,23 @@ namespace FVApp.Droid
 			// aapt resource value: 0x7f090022
 			public const int ApplicationName = 2131296290;
 			
-			// aapt resource value: 0x7f090025
-			public const int Config = 2131296293;
-			
 			// aapt resource value: 0x7f090026
-			public const int Demo = 2131296294;
+			public const int Config = 2131296294;
 			
 			// aapt resource value: 0x7f090027
-			public const int EndProd = 2131296295;
+			public const int Demo = 2131296295;
+			
+			// aapt resource value: 0x7f090028
+			public const int EndProd = 2131296296;
 			
 			// aapt resource value: 0x7f090021
 			public const int Hello = 2131296289;
 			
-			// aapt resource value: 0x7f090023
-			public const int Login = 2131296291;
-			
 			// aapt resource value: 0x7f090024
-			public const int Senha = 2131296292;
+			public const int Login = 2131296292;
+			
+			// aapt resource value: 0x7f090025
+			public const int Senha = 2131296293;
 			
 			// aapt resource value: 0x7f090000
 			public const int abc_action_bar_home_description = 2131296256;
@@ -2507,6 +2536,9 @@ namespace FVApp.Droid
 			
 			// aapt resource value: 0x7f090012
 			public const int abc_toolbar_collapse_description = 2131296274;
+			
+			// aapt resource value: 0x7f090023
+			public const int library_name = 2131296291;
 			
 			// aapt resource value: 0x7f090013
 			public const int search_menu_title = 2131296275;

@@ -10,10 +10,11 @@ using FVApp.Core.Dados;
 using FVApp.Droid.Dados;
 using FVApp.Core.Services;
 using FVApp.Droid.Services;
+using MvvmCross.Droid.Support.V7.AppCompat;
 
 namespace FVApp.Droid
 {
-    public class Setup : MvxAndroidSetup
+    public class Setup : MvxAppCompatSetup //MvxAndroidSetup
     {
         public Setup(Context applicationContext) : base(applicationContext)
         {
