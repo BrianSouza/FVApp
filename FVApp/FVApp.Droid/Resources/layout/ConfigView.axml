@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-  <include layout="@layout/toolbarPrincipal" />
+    <include
+        layout="@layout/toolbarBackCheck" />
     <android.support.v7.widget.CardView
         android:layout_width="fill_parent"
-        cardview:cardElevation="4dp"
-        cardview:cardCornerRadius="5dp"
+        local:cardElevation="4dp"
+        local:cardCornerRadius="5dp"
         android:layout_height="wrap_content"
-        cardview:cardBackgroundColor="#10D67D"
+        local:cardBackgroundColor="#10D67D"
         android:layout_margin="10dp"
         android:layout_centerInParent="true">
         <LinearLayout
@@ -35,11 +36,12 @@
                 <Switch
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/switch1"
+                    android:id="@+id/swDemo"
                     android:layout_row="0"
                     android:layout_column="1"
                     android:thumbTextPadding="@dimen/cardview_default_radius"
-                    android:layout_marginLeft="190dp" />
+                    android:layout_marginLeft="190dp"
+                    local:MvxBind="Checked AmbienteDemo" />
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -48,7 +50,9 @@
                     style="@style/editTextStyleSenha"
                     android:layout_row="1"
                     android:layout_column="0"
-                    android:layout_columnSpan="2" />
+                    android:layout_columnSpan="2"
+                    local:MvxBind="Text UrlProducao;Enabled HabilitarURL"
+                    android:inputType="textUri" />
             </GridLayout>
         </LinearLayout>
     </android.support.v7.widget.CardView>

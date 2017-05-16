@@ -6,6 +6,7 @@
   <string name="Config">Configuração</string>
   <string name="Demo">Demonstração</string>
   <string name="EndProd">Informe endereço de Produção</string>
-
+  <string name="Voltar">Voltar</string>
+  <string name="Salvar">Salvar</string>
 
 </resources>

@@ -12,16 +12,25 @@ namespace FVApp.Core.ViewModels
         ISaveAndLoad _SaL;
         bool _AmbienteDemo;
         Config _Config;
-
+        bool _HabilitarURL;
+        public bool HabilitarURL
+        {
+            get { return _HabilitarURL; }
+            set
+            {
+                SetProperty(ref _HabilitarURL, value);
+            }
+        }
         public bool AmbienteDemo
         {
             get { return _AmbienteDemo; }
             set
             {
                 SetProperty(ref _AmbienteDemo, value);
+                HabilitarURL = value == true ? false : true;
+                if (value) UrlProducao = string.Empty;
             }
         }
-
         string _UrlProducao;
         public string UrlProducao
         {
@@ -31,25 +40,24 @@ namespace FVApp.Core.ViewModels
                 SetProperty(ref _UrlProducao, value);
             }
         }
-
         public ConfigViewModel()
         {
+            _Config = new Config();
             _SaL = Mvx.Resolve<ISaveAndLoad>();
+            CarregaArquivoConfig();
         }
-        private bool CarregaArquivoConfig()
+        private void CarregaArquivoConfig()
         {
             if (_SaL.ValidateExist("FVAppConfig.txt"))
             {
                 string jsonConfig = _SaL.LoadText("FVAppConfig.txt");
                 _Config = JsonConvert.DeserializeObject<Config>(jsonConfig);
-                return true;
+                AmbienteDemo = _Config.AmbienteDemo;
+                UrlProducao = _Config.UrlProducao;
             }
-            else
-                return false;
         }
         private void SalvarTxtConfig()
         {
-
             _Config.AmbienteDemo = AmbienteDemo;
             _Config.UrlProducao = UrlProducao;
 
@@ -58,12 +66,11 @@ namespace FVApp.Core.ViewModels
                 _SaL.ExcludeFile("FVAppConfig.txt");
             }
 
-
             string config = JsonConvert.SerializeObject(_Config);
             _SaL.SaveText("FVAppConfig.txt", config);
 
+            ShowViewModel<LoginViewModel>();
         }
-
         private bool ValidaArquivoConfig()
         {
             bool existeArquivoConfig = _SaL.ValidateExist("FVAppConfig.txt");
@@ -78,13 +85,15 @@ namespace FVApp.Core.ViewModels
             else
                 return false;
         }
-
-        public IMvxCommand SalvarConfiguracao()
+        public IMvxCommand SalvarConfiguracao
         {
-            return new MvxCommand(SalvarTxtConfig,ValidaArquivoConfig);
+            get
+            {
+                return new MvxCommand(SalvarTxtConfig, ValidaArquivoConfig);
+            }
         }
 
-        
+
 
     }
 }

@@ -1909,6 +1909,9 @@ namespace FVApp.Droid
 			// aapt resource value: 0x7f0b005f
 			public const int btnLogin = 2131427423;
 			
+			// aapt resource value: 0x7f0b007c
+			public const int btnSalvarConfig = 2131427452;
+			
 			// aapt resource value: 0x7f0b0030
 			public const int buttonPanel = 2131427376;
 			
@@ -2059,6 +2062,9 @@ namespace FVApp.Droid
 			// aapt resource value: 0x7f0b0060
 			public const int rlConfig = 2131427424;
 			
+			// aapt resource value: 0x7f0b007b
+			public const int rlSalvar = 2131427451;
+			
 			// aapt resource value: 0x7f0b0017
 			public const int screen = 2131427351;
 			
@@ -2141,7 +2147,7 @@ namespace FVApp.Droid
 			public const int submit_area = 2131427412;
 			
 			// aapt resource value: 0x7f0b0059
-			public const int switch1 = 2131427417;
+			public const int swDemo = 2131427417;
 			
 			// aapt resource value: 0x7f0b000d
 			public const int tabMode = 2131427341;
@@ -2171,7 +2177,7 @@ namespace FVApp.Droid
 			public const int title_template = 2131427388;
 			
 			// aapt resource value: 0x7f0b007a
-			public const int toolbarPrincipal = 2131427450;
+			public const int toolbarBackCheck = 2131427450;
 			
 			// aapt resource value: 0x7f0b0025
 			public const int top = 2131427365;
@@ -2380,7 +2386,7 @@ namespace FVApp.Droid
 			public const int support_simple_spinner_dropdown_item = 2130968625;
 			
 			// aapt resource value: 0x7f040032
-			public const int toolBarPrincipal = 2130968626;
+			public const int toolbarBackCheck = 2130968626;
 			
 			static Layout()
 			{
@@ -2399,13 +2405,13 @@ namespace FVApp.Droid
 			public const int abConfig = 2130903040;
 			
 			// aapt resource value: 0x7f030001
-			public const int Icon = 2130903041;
+			public const int check = 2130903041;
 			
 			// aapt resource value: 0x7f030002
-			public const int settings = 2130903042;
+			public const int Icon = 2130903042;
 			
 			// aapt resource value: 0x7f030003
-			public const int splash = 2130903043;
+			public const int settings = 2130903043;
 			
 			// aapt resource value: 0x7f030004
 			public const int splashArray = 2130903044;
@@ -2441,8 +2447,14 @@ namespace FVApp.Droid
 			// aapt resource value: 0x7f090024
 			public const int Login = 2131296292;
 			
+			// aapt resource value: 0x7f09002a
+			public const int Salvar = 2131296298;
+			
 			// aapt resource value: 0x7f090025
 			public const int Senha = 2131296293;
+			
+			// aapt resource value: 0x7f090029
+			public const int Voltar = 2131296297;
 			
 			// aapt resource value: 0x7f090000
 			public const int abc_action_bar_home_description = 2131296256;
@@ -3384,9 +3396,6 @@ namespace FVApp.Droid
 			// aapt resource value: 0x7f060113
 			public const int Theme_AppCompat_NoActionBar = 2131099923;
 			
-			// aapt resource value: 0x7f060163
-			public const int Theme_Splash = 2131100003;
-			
 			// aapt resource value: 0x7f060114
 			public const int ThemeOverlay_AppCompat = 2131099924;
 			
@@ -3630,23 +3639,26 @@ namespace FVApp.Droid
 			// aapt resource value: 0x7f060162
 			public const int Widget_AppCompat_Toolbar_Button_Navigation = 2131100002;
 			
-			// aapt resource value: 0x7f060169
-			public const int btnConfig = 2131100009;
-			
 			// aapt resource value: 0x7f060168
-			public const int btnLogin = 2131100008;
-			
-			// aapt resource value: 0x7f060166
-			public const int editTextStyleLogin = 2131100006;
+			public const int btnConfig = 2131100008;
 			
 			// aapt resource value: 0x7f060167
-			public const int editTextStyleSenha = 2131100007;
+			public const int btnLogin = 2131100007;
 			
-			// aapt resource value: 0x7f060164
-			public const int fvappStyle = 2131100004;
+			// aapt resource value: 0x7f060169
+			public const int btnToolBar = 2131100009;
 			
 			// aapt resource value: 0x7f060165
-			public const int linearStyle = 2131100005;
+			public const int editTextStyleLogin = 2131100005;
+			
+			// aapt resource value: 0x7f060166
+			public const int editTextStyleSenha = 2131100006;
+			
+			// aapt resource value: 0x7f060163
+			public const int fvappStyle = 2131100003;
+			
+			// aapt resource value: 0x7f060164
+			public const int linearStyle = 2131100004;
 			
 			static Style()
 			{

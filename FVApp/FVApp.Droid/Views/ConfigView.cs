@@ -15,30 +15,25 @@ namespace FVApp.Droid.Views
             try
             {
                 base.OnCreate(savedInstanceState);
-               
             }
             catch (Exception)
             {
-
                 throw;
             }
-
         }
         protected override void OnViewModelSet()
         {
             try
             {
                 SetContentView(Resource.Layout.ConfigView);
-                var tbPrincipal = FindViewById<Toolbar>(Resource.Id.toolbarPrincipal);
+                var tbPrincipal = FindViewById<Toolbar>(Resource.Id.toolbarBackCheck);
                 SetSupportActionBar(tbPrincipal);
-                SupportActionBar.SetDisplayHomeAsUpEnabled(true);
+                //SupportActionBar.SetDisplayHomeAsUpEnabled(true);
             }
             catch (Exception e)
             {
-
                 throw;
             }
-            
         }
     }
 }
