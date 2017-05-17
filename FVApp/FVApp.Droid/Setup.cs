@@ -29,6 +29,8 @@ namespace FVApp.Droid
             Mvx.RegisterType<IDataBaseManager, DataBaseManager>();
             Mvx.RegisterType<IParceirosDados, ParceirosDados>();
             Mvx.RegisterType<ISaveAndLoad, SaveAndLoad>();
+            var db = Mvx.Resolve<IDataBaseManager>();
+           
         }
 
         protected override IMvxApplication CreateApp()

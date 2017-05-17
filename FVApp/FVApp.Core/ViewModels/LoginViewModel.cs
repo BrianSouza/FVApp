@@ -6,12 +6,14 @@ using System.Threading.Tasks;
 using FVApp.Core.Services;
 using MvvmCross.Core.ViewModels;
 using MvvmCross.Platform;
+using FVApp.Core.Dados.Interface;
 
 namespace FVApp.Core.ViewModels
 {
     public class LoginViewModel : MvxViewModel
     {
         ISaveAndLoad _SaL;
+        
         public LoginViewModel()
         {
             _SaL = Mvx.Resolve<ISaveAndLoad>();
