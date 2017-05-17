@@ -92,7 +92,13 @@ namespace FVApp.Core.ViewModels
                 return new MvxCommand(SalvarTxtConfig, ValidaArquivoConfig);
             }
         }
-
+        public IMvxCommand Voltar
+        {
+            get
+            {
+                return new MvxCommand(() => ShowViewModel<LoginViewModel>());
+            }
+        }
 
 
     }

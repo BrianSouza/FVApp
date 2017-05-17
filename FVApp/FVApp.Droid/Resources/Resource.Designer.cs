@@ -1909,8 +1909,11 @@ namespace FVApp.Droid
 			// aapt resource value: 0x7f0b005f
 			public const int btnLogin = 2131427423;
 			
+			// aapt resource value: 0x7f0b007d
+			public const int btnSalvarConfig = 2131427453;
+			
 			// aapt resource value: 0x7f0b007c
-			public const int btnSalvarConfig = 2131427452;
+			public const int btnVoltarConfig = 2131427452;
 			
 			// aapt resource value: 0x7f0b0030
 			public const int buttonPanel = 2131427376;
@@ -2062,9 +2065,6 @@ namespace FVApp.Droid
 			// aapt resource value: 0x7f0b0060
 			public const int rlConfig = 2131427424;
 			
-			// aapt resource value: 0x7f0b007b
-			public const int rlSalvar = 2131427451;
-			
 			// aapt resource value: 0x7f0b0017
 			public const int screen = 2131427351;
 			
@@ -2151,6 +2151,9 @@ namespace FVApp.Droid
 			
 			// aapt resource value: 0x7f0b000d
 			public const int tabMode = 2131427341;
+			
+			// aapt resource value: 0x7f0b007b
+			public const int tbl01 = 2131427451;
 			
 			// aapt resource value: 0x7f0b0077
 			public const int text = 2131427447;
@@ -2405,16 +2408,19 @@ namespace FVApp.Droid
 			public const int abConfig = 2130903040;
 			
 			// aapt resource value: 0x7f030001
-			public const int check = 2130903041;
+			public const int back = 2130903041;
 			
 			// aapt resource value: 0x7f030002
-			public const int Icon = 2130903042;
+			public const int check = 2130903042;
 			
 			// aapt resource value: 0x7f030003
-			public const int settings = 2130903043;
+			public const int Icon = 2130903043;
 			
 			// aapt resource value: 0x7f030004
-			public const int splashArray = 2130903044;
+			public const int settings = 2130903044;
+			
+			// aapt resource value: 0x7f030005
+			public const int splashArray = 2130903045;
 			
 			static Mipmap()
 			{
@@ -3332,6 +3338,9 @@ namespace FVApp.Droid
 			
 			// aapt resource value: 0x7f06016a
 			public const int TextView = 2131100010;
+			
+			// aapt resource value: 0x7f06016b
+			public const int TextView2 = 2131100011;
 			
 			// aapt resource value: 0x7f060106
 			public const int Theme_AppCompat = 2131099910;
