@@ -78,11 +78,33 @@
     <item name="android:layout_marginRight">5dp</item>
     <item name="android:layout_marginTop">5dp</item>
     <item name="android:layout_marginBottom">20dp</item>
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+
   </style>
 
   <style name="TextView2" >
     <item name="android:textStyle">bold</item>
     <item name="android:padding">10dip</item>
+    <item name="android:textColor">@color/brancoTexto</item>
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+
+  </style>
+
+  <style name="btnMenu" >
+    <item name="android:layout_marginLeft">20dp</item>
+    <item name="android:layout_marginRight">20dp</item>
+    <item name="android:background">@color/verdePadraoApp</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:textColor">@color/brancoTexto</item>
+  </style>
+
+  <style name="btnMenu2" >
+    <item name="android:layout_marginLeft">20dp</item>
+    <item name="android:layout_marginRight">20dp</item>
+    <item name="android:background">@color/cinzaMenu</item>
+    <item name="android:textStyle">bold</item>
     <item name="android:textColor">@color/brancoTexto</item>
   </style>
 </resources>

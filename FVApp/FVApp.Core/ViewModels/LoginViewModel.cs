@@ -43,7 +43,7 @@ namespace FVApp.Core.ViewModels
         {
             get
             {
-                return new MvxCommand(Logar,ValidaLogin);
+                return new MvxCommand(Logar);
             }
         }
 

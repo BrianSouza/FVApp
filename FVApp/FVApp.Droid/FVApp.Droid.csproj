@@ -188,6 +188,7 @@
     <Compile Include="SplashScreen.cs" />
     <Compile Include="Views\ConfigView.cs" />
     <Compile Include="Views\LoginView.cs" />
+    <Compile Include="Views\MenuView.cs" />
     <Compile Include="Views\ParceiroView.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -207,9 +208,17 @@
     <AndroidResource Include="Resources\layout\toolbarBackCheck.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
+    <AndroidResource Include="Resources\layout\MenuView.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\toolBarMenu.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\values\Strings.xml" />
+    <AndroidResource Include="Resources\values\Strings.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\mipmap\Icon.png" />

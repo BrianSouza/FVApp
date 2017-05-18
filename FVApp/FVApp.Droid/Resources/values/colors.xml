@@ -5,4 +5,5 @@
   <color name="brancoTexto">#FFFFFF</color>
   <color name="cinzaTexto">#B3AFAF</color>
   <color name="verdeControles">#009688</color>
+  <color name="cinzaMenu">#BCB8B8</color>
 </resources>

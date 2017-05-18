@@ -8,5 +8,8 @@
   <string name="EndProd">Informe endereço de Produção</string>
   <string name="Voltar">Voltar</string>
   <string name="Salvar">Salvar</string>
+  <string name="Parc">Parceiros</string>
+  <string name="Ped">Pedidos</string>
+  <string name="Sync">Sincronizar</string>
 
 </resources>

@@ -38,12 +38,13 @@
                 android:id="@+id/etSenha"
                 android:hint="@string/Senha"
                 style="@style/editTextStyleSenha" />
-            <Button
-                android:text="@string/Login"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/btnLogin"
-                style="@style/btnLogin" />
+          <Button
+              android:text="@string/Login"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/btnLogin"
+              style="@style/btnLogin"
+              local:MvxBind="Click Login"/>
         </LinearLayout>
     </android.support.v7.widget.CardView>
     <RelativeLayout

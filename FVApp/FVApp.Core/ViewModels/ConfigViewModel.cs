@@ -99,7 +99,5 @@ namespace FVApp.Core.ViewModels
                 return new MvxCommand(() => ShowViewModel<LoginViewModel>());
             }
         }
-
-
     }
 }
