@@ -15,7 +15,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <ImageButton
-                android:src="@mipmap/back"
+                android:src="@drawable/back"
                 android:text="@string/Salvar"
                 android:id="@+id/btnVoltarConfig"
                 style="@style/btnToolBar"
@@ -26,7 +26,7 @@
                 android:layout_gravity="center"
                 style="@style/TextView2" />
             <ImageButton
-                android:src="@mipmap/check"
+                android:src="@drawable/check"
                 android:text="@string/Voltar"
                 android:id="@+id/btnSalvarConfig"
                 style="@style/btnToolBar"

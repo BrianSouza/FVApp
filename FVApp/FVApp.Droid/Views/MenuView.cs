@@ -6,7 +6,7 @@ using MvvmCross.Droid.Support.V7.AppCompat;
 
 namespace FVApp.Droid.Views
 {
-    [Activity(Label = "MenuView")]
+    [Activity()]
     public class MenuView : MvxAppCompatActivity
     {
         protected override void OnCreate(Bundle savedInstanceState)
@@ -22,7 +22,6 @@ namespace FVApp.Droid.Views
             SetContentView(Resource.Layout.MenuView);
             var tbMenu = FindViewById<Toolbar>(Resource.Id.toolBarOnlyTitle);
             SetSupportActionBar(tbMenu);
-
         }
     }
 }

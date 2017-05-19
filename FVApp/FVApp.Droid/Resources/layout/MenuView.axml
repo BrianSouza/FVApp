@@ -1,40 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:local="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <include
         layout="@layout/toolBarMenu" />
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <TableLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:shrinkColumns="*"
-            android:stretchColumns="*">
-            <TableRow>
-                <Button
-                    android:text="@string/Parc"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/btnParc"
-                    style="@style/btnMenu" />
-                <Button
-                    android:text="@string/Ped"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/btnPed"
-                    style="@style/btnMenu" />
-            </TableRow>
-            <TableRow>
-                <Button
-                    android:text="@string/Ped"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/btnSync"
-                    style="@style/btnMenu2" />
-            </TableRow>
-        </TableLayout>
-    </RelativeLayout>
-</LinearLayout>
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:shrinkColumns="*"
+        android:stretchColumns="*"
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true">
+        <TableRow
+            android:layout_gravity="center">
+            <Button
+                android:id="@+id/btnParc"
+                style="@style/btnMenu"
+                android:text="@string/Parc"
+                android:paddingLeft="20dip"
+                android:paddingTop="20dip"
+                android:background="@drawable/radiusMenu" />
+            <Button
+                android:text="@string/Ped"
+                android:paddingLeft="20dip"
+                android:paddingTop="20dip"
+                android:id="@+id/btnPed"
+                style="@style/btnMenu"
+                android:background="@drawable/radiusMenu"
+                android:layout_marginRight="20dp" />
+        </TableRow>
+        <TableRow
+            android:layout_gravity="center">
+            <Button
+                android:id="@+id/btnSync"
+                style="@style/btnMenu2"
+                android:background="@drawable/radiusMenuCinza"
+                android:text="@string/Sync"
+                android:paddingLeft="20dip"
+                android:paddingTop="20dip" />
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>

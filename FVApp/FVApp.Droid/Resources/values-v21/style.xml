@@ -92,19 +92,24 @@
 
   </style>
 
-  <style name="btnMenu" >
+  <style name="btnMenu">
+    <item name="android:gravity">left</item>
+    <item name="android:layout_marginBottom">20dp</item>
     <item name="android:layout_marginLeft">20dp</item>
-    <item name="android:layout_marginRight">20dp</item>
-    <item name="android:background">@color/verdePadraoApp</item>
     <item name="android:textStyle">bold</item>
     <item name="android:textColor">@color/brancoTexto</item>
+    <item name="android:layout_width">143dp</item>
+    <item name="android:layout_height">146dp</item>
   </style>
 
   <style name="btnMenu2" >
+    <item name="android:gravity">left</item>
+    <item name="android:layout_marginBottom">20dp</item>
     <item name="android:layout_marginLeft">20dp</item>
     <item name="android:layout_marginRight">20dp</item>
-    <item name="android:background">@color/cinzaMenu</item>
     <item name="android:textStyle">bold</item>
     <item name="android:textColor">@color/brancoTexto</item>
+    <item name="android:layout_width">143dp</item>
+    <item name="android:layout_height">146dp</item>
   </style>
 </resources>
