@@ -16,30 +16,34 @@
         <TableRow
             android:layout_gravity="center">
             <Button
-                android:id="@+id/btnParc"
-                style="@style/btnMenu"
                 android:text="@string/Parc"
                 android:paddingLeft="20dip"
                 android:paddingTop="20dip"
-                android:background="@drawable/radiusMenu" />
+                android:layout_marginRight="20dp"
+                android:id="@+id/btnParc"
+                style="@style/btnMenu"
+                android:background="@layout/radiusmenu"
+                local:MvxBind="Click NavegarParaParceiros"/>
             <Button
                 android:text="@string/Ped"
                 android:paddingLeft="20dip"
                 android:paddingTop="20dip"
                 android:id="@+id/btnPed"
                 style="@style/btnMenu"
-                android:background="@drawable/radiusMenu"
-                android:layout_marginRight="20dp" />
+                android:background="@layout/radiusmenu"
+                android:layout_marginRight="20dp"
+                local:MvxBind="Click NavegarParaPedidos"/>
         </TableRow>
         <TableRow
             android:layout_gravity="center">
             <Button
                 android:id="@+id/btnSync"
                 style="@style/btnMenu2"
-                android:background="@drawable/radiusMenuCinza"
+                android:background="@layout/radiusmenucinza"
                 android:text="@string/Sync"
                 android:paddingLeft="20dip"
-                android:paddingTop="20dip" />
+                android:paddingTop="20dip"
+                local:MvxBind="Click NavegarParaSync"/>
         </TableRow>
     </TableLayout>
 </RelativeLayout>

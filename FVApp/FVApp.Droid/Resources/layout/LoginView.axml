@@ -54,7 +54,7 @@
         android:layout_height="match_parent"
         android:id="@+id/rlConfig">
         <ImageButton
-            android:src="@drawable/settings"
+            android:src="@mipmap/settings"
             android:text="@string/Config"
             android:id="@+id/btnConfig"
             style="@style/btnConfig"
