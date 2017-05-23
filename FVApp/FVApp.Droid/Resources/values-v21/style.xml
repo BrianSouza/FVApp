@@ -42,11 +42,13 @@
   </style>
 
   <style name="btnLogin" >
-    <item name="android:layout_marginLeft">5dp</item>
-    <item name="android:layout_marginRight">5dp</item>
+    <item name="android:layout_marginLeft">115dp</item>
+    <item name="android:layout_marginRight">115dp</item>
     <item name="android:layout_marginTop">5dp</item>
     <item name="android:layout_marginBottom">20dp</item>
-    <item name="android:background">@color/verdePadraoApp</item>
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:background">@layout/btnlogin</item>
     <item name="android:textStyle">bold</item>
     <item name="android:textColor">@color/brancoTexto</item>
   </style>
