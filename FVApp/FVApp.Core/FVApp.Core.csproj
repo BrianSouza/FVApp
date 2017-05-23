@@ -72,6 +72,7 @@
     <Compile Include="ViewModels\ConfigViewModel.cs" />
     <Compile Include="ViewModels\LoginViewModel.cs" />
     <Compile Include="ViewModels\MenuViewModel.cs" />
+    <Compile Include="ViewModels\ParceirosViewModel.cs" />
     <Compile Include="ViewModels\ParceiroViewModel.cs" />
     <Compile Include="ViewModels\PedidoConfirmacaoViewModel.cs" />
     <Compile Include="ViewModels\PedidoFinanceiroViewModel.cs" />

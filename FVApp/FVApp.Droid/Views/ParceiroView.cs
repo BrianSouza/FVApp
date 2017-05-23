@@ -21,14 +21,13 @@ namespace FVApp.Droid.Views
             try
             {
                 base.OnCreate(savedInstanceState);
-                SetContentView(Resource.Layout.ParceiroView);
+                //SetContentView(Resource.Layout.ParceiroView);
             }
             catch (Exception e)
             {
 
                 throw;
             }
-            
         }
     }
 }

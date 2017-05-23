@@ -189,6 +189,7 @@
     <Compile Include="Views\ConfigView.cs" />
     <Compile Include="Views\LoginView.cs" />
     <Compile Include="Views\MenuView.cs" />
+    <Compile Include="Views\ParceirosView.cs" />
     <Compile Include="Views\ParceiroView.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -196,9 +197,6 @@
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
     <AndroidResource Include="Resources\layout\SplashScreen.axml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
-    <AndroidResource Include="Resources\layout\ParceiroView.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\LoginView.axml">
@@ -223,6 +221,12 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\btnlogin.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\radiusfundobranco.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\ParceirosView.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
