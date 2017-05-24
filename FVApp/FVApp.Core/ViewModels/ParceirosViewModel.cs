@@ -16,6 +16,19 @@ namespace FVApp.Core.ViewModels
 
         }
 
+        private Parceiro _SelectedParceiro;
+        public Parceiro SelectedParceiro
+        {
+            get
+            {
+                return _SelectedParceiro;
+            }
+            set
+            {
+                SetProperty(ref _SelectedParceiro, value);
+            }
+        }
+
         private ObservableCollection<Parceiro> _ListaParceiros;
         public ObservableCollection<Parceiro> ListaParceiros
         {

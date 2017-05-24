@@ -1906,6 +1906,9 @@ namespace FVApp.Droid
 			// aapt resource value: 0x7f0b0024
 			public const int bottom = 2131427364;
 			
+			// aapt resource value: 0x7f0b0082
+			public const int btnAddParc = 2131427458;
+			
 			// aapt resource value: 0x7f0b0061
 			public const int btnConfig = 2131427425;
 			
@@ -1918,14 +1921,17 @@ namespace FVApp.Droid
 			// aapt resource value: 0x7f0b0063
 			public const int btnPed = 2131427427;
 			
-			// aapt resource value: 0x7f0b0082
-			public const int btnSalvarConfig = 2131427458;
+			// aapt resource value: 0x7f0b0084
+			public const int btnSalvarConfig = 2131427460;
 			
 			// aapt resource value: 0x7f0b0064
 			public const int btnSync = 2131427428;
 			
+			// aapt resource value: 0x7f0b0083
+			public const int btnVoltarConfig = 2131427459;
+			
 			// aapt resource value: 0x7f0b0081
-			public const int btnVoltarConfig = 2131427457;
+			public const int btnVoltarParc = 2131427457;
 			
 			// aapt resource value: 0x7f0b0030
 			public const int buttonPanel = 2131427376;
@@ -2197,8 +2203,8 @@ namespace FVApp.Droid
 			// aapt resource value: 0x7f0b003c
 			public const int title_template = 2131427388;
 			
-			// aapt resource value: 0x7f0b0083
-			public const int toolBarOnlyTitle = 2131427459;
+			// aapt resource value: 0x7f0b0085
+			public const int toolBarOnlyTitle = 2131427461;
 			
 			// aapt resource value: 0x7f0b007f
 			public const int toolbarBackCheck = 2131427455;
@@ -2425,10 +2431,13 @@ namespace FVApp.Droid
 			public const int support_simple_spinner_dropdown_item = 2130968630;
 			
 			// aapt resource value: 0x7f040037
-			public const int toolbarBackCheck = 2130968631;
+			public const int toolbarBackAdd = 2130968631;
 			
 			// aapt resource value: 0x7f040038
-			public const int toolBarMenu = 2130968632;
+			public const int toolbarBackCheck = 2130968632;
+			
+			// aapt resource value: 0x7f040039
+			public const int toolBarMenu = 2130968633;
 			
 			static Layout()
 			{
@@ -2456,10 +2465,13 @@ namespace FVApp.Droid
 			public const int Icon = 2130903043;
 			
 			// aapt resource value: 0x7f030004
-			public const int settings = 2130903044;
+			public const int plus = 2130903044;
 			
 			// aapt resource value: 0x7f030005
-			public const int splashArray = 2130903045;
+			public const int settings = 2130903045;
+			
+			// aapt resource value: 0x7f030006
+			public const int splashArray = 2130903046;
 			
 			static Mipmap()
 			{
@@ -2473,6 +2485,9 @@ namespace FVApp.Droid
 		
 		public partial class String
 		{
+			
+			// aapt resource value: 0x7f09002e
+			public const int Add = 2131296302;
 			
 			// aapt resource value: 0x7f090022
 			public const int ApplicationName = 2131296290;

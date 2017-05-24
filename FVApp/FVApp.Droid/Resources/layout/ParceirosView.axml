@@ -4,18 +4,22 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-  <LinearLayout
-      android:orientation="vertical"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content" />
-  <SearchView
-      android:minWidth="25px"
-      android:minHeight="25px"
-      style="@style/searchview"
-      android:id="@+id/svParc" />
-  <ListView
-      android:minWidth="25px"
-      android:minHeight="25px"
-      android:id="@+id/lvParceiros"
-      style="@style/listiview" />
+    <include
+        layout="@layout/toolbarBackAdd" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <SearchView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        style="@style/searchview"
+        android:id="@+id/svParc" 
+        local:MvxBind="Text Filtro"/>
+    <Mvx.MvxListView
+       local:MvxBind="ItemsSource ListaParceiros;SelectedItem SelectedParceiro;"
+       android:minWidth="25px"
+        android:minHeight="25px"
+        android:id="@+id/lvParceiros"
+        style="@style/listiview" />
 </LinearLayout>
