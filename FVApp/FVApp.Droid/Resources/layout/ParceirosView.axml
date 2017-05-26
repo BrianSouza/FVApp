@@ -10,15 +10,18 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
-    <SearchView
-        android:minWidth="25px"
-        android:minHeight="25px"
+    <android.support.v7.widget.SearchView
+        android:id="@+id/svParc"
         style="@style/searchview"
-        android:id="@+id/svParc" 
-        local:MvxBind="Text Filtro"/>
+        local:MvxBind="Query Filtro"
+        android:inputType="text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true" />
     <Mvx.MvxListView
-       local:MvxBind="ItemsSource ListaParceiros;SelectedItem SelectedParceiro;"
-       android:minWidth="25px"
+        local:MvxBind="ItemsSource ListaParceiros;SelectedItem SelectedParceiro;"
+        android:minWidth="25px"
         android:minHeight="25px"
         android:id="@+id/lvParceiros"
         style="@style/listiview" />

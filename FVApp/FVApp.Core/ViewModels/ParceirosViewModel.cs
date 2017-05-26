@@ -1,5 +1,8 @@
-﻿using FVApp.Core.Dados.Entidades;
+﻿using FVApp.Core.Dados;
+using FVApp.Core.Dados.Entidades;
+using FVApp.Core.Dados.Interface;
 using MvvmCross.Core.ViewModels;
+using MvvmCross.Platform;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -11,9 +14,10 @@ namespace FVApp.Core.ViewModels
 {
     public class ParceirosViewModel : MvxViewModel
     {
+        private IParceirosDados _PNDados;
         public ParceirosViewModel()
         {
-
+            _PNDados = Mvx.Resolve<IParceirosDados>();
         }
 
         private Parceiro _SelectedParceiro;
@@ -55,6 +59,18 @@ namespace FVApp.Core.ViewModels
             }
         }
 
-       
+       private ObservableCollection<Parceiro> GetParceiros()
+        {
+            var parceiros = _PNDados.RetornarParceiros();
+
+            if (string.IsNullOrEmpty(Filtro))
+                return parceiros;
+            else
+            {
+                var pnFiltrado = parceiros.Where(t0 => t0.CardName.StartsWith(Filtro));
+                return new ObservableCollection<Parceiro>(pnFiltrado);
+            }
+
+        }
     }
 }
