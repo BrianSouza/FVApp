@@ -2410,40 +2410,46 @@ namespace FVApp.Droid
 			public const int ParceirosView = 2130968623;
 			
 			// aapt resource value: 0x7f040030
-			public const int radiusfundobranco = 2130968624;
+			public const int ParceiroView = 2130968624;
 			
 			// aapt resource value: 0x7f040031
-			public const int radiusfundoverde = 2130968625;
+			public const int radiusfundobranco = 2130968625;
 			
 			// aapt resource value: 0x7f040032
-			public const int radiusmenu = 2130968626;
+			public const int radiusfundoverde = 2130968626;
 			
 			// aapt resource value: 0x7f040033
-			public const int radiusmenucinza = 2130968627;
+			public const int radiusmenu = 2130968627;
 			
 			// aapt resource value: 0x7f040034
-			public const int select_dialog_item_material = 2130968628;
+			public const int radiusmenucinza = 2130968628;
 			
 			// aapt resource value: 0x7f040035
-			public const int select_dialog_multichoice_material = 2130968629;
+			public const int select_dialog_item_material = 2130968629;
 			
 			// aapt resource value: 0x7f040036
-			public const int select_dialog_singlechoice_material = 2130968630;
+			public const int select_dialog_multichoice_material = 2130968630;
 			
 			// aapt resource value: 0x7f040037
-			public const int SplashScreen = 2130968631;
+			public const int select_dialog_singlechoice_material = 2130968631;
 			
 			// aapt resource value: 0x7f040038
-			public const int support_simple_spinner_dropdown_item = 2130968632;
+			public const int SplashScreen = 2130968632;
 			
 			// aapt resource value: 0x7f040039
-			public const int toolbarBackAdd = 2130968633;
+			public const int support_simple_spinner_dropdown_item = 2130968633;
 			
 			// aapt resource value: 0x7f04003a
-			public const int toolbarBackCheck = 2130968634;
+			public const int toolbarBackAdd = 2130968634;
 			
 			// aapt resource value: 0x7f04003b
-			public const int toolBarMenu = 2130968635;
+			public const int toolbarBackCheck = 2130968635;
+			
+			// aapt resource value: 0x7f04003c
+			public const int toolbarBackFwd = 2130968636;
+			
+			// aapt resource value: 0x7f04003d
+			public const int toolBarMenu = 2130968637;
 			
 			static Layout()
 			{
@@ -2468,16 +2474,19 @@ namespace FVApp.Droid
 			public const int check = 2130903042;
 			
 			// aapt resource value: 0x7f030003
-			public const int Icon = 2130903043;
+			public const int fwd = 2130903043;
 			
 			// aapt resource value: 0x7f030004
-			public const int plus = 2130903044;
+			public const int Icon = 2130903044;
 			
 			// aapt resource value: 0x7f030005
-			public const int settings = 2130903045;
+			public const int plus = 2130903045;
 			
 			// aapt resource value: 0x7f030006
-			public const int splashArray = 2130903046;
+			public const int settings = 2130903046;
+			
+			// aapt resource value: 0x7f030007
+			public const int splashArray = 2130903047;
 			
 			static Mipmap()
 			{

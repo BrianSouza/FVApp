@@ -23,7 +23,7 @@
                 android:id="@+id/btnParc"
                 style="@style/btnMenu"
                 android:background="@layout/radiusmenu"
-                local:MvxBind="Click NavegarParaParceiros"/>
+                local:MvxBind="Click NavegarParaParceiros" />
             <Button
                 android:text="@string/Ped"
                 android:paddingLeft="20dip"
@@ -32,7 +32,7 @@
                 style="@style/btnMenu"
                 android:background="@layout/radiusmenu"
                 android:layout_marginRight="20dp"
-                local:MvxBind="Click NavegarParaPedidos"/>
+                local:MvxBind="Click NavegarParaPedidos" />
         </TableRow>
         <TableRow
             android:layout_gravity="center">
@@ -43,7 +43,7 @@
                 android:text="@string/Sync"
                 android:paddingLeft="20dip"
                 android:paddingTop="20dip"
-                local:MvxBind="Click NavegarParaSync"/>
+                local:MvxBind="Click NavegarParaSync" />
         </TableRow>
     </TableLayout>
 </RelativeLayout>

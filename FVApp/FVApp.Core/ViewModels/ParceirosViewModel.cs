@@ -59,7 +59,7 @@ namespace FVApp.Core.ViewModels
             }
         }
 
-       private ObservableCollection<Parceiro> GetParceiros()
+        private ObservableCollection<Parceiro> GetParceiros()
         {
             var parceiros = _PNDados.RetornarParceiros();
 
@@ -71,6 +71,22 @@ namespace FVApp.Core.ViewModels
                 return new ObservableCollection<Parceiro>(pnFiltrado);
             }
 
+        }
+
+        public MvxCommand Voltar
+        {
+            get
+            {
+                return new MvxCommand(() => ShowViewModel<ViewModels.MenuViewModel>());
+            }
+        }
+
+        public MvxCommand Add
+        {
+            get
+            {
+                return new MvxCommand(() => ShowViewModel<ViewModels.ParceiroViewModel>());
+            }
         }
     }
 }

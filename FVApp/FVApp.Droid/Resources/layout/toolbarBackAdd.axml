@@ -25,7 +25,7 @@
                 android:text="@string/Config"
                 android:layout_gravity="center"
                 style="@style/TextView2" />
-          <ImageButton
+            <ImageButton
                 android:src="@mipmap/plus"
                 android:text="@string/Add"
                 android:id="@+id/btnAddParc"
