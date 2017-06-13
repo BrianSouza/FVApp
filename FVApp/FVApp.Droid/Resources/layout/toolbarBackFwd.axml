@@ -1,7 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbarBackFwd"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-</LinearLayout>
+    android:layout_height="wrap_content"
+    android:background="@color/verdePadraoApp">
+  <TableLayout
+      android:id="@+id/tbl01"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:shrinkColumns="*"
+      android:stretchColumns="*">
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+      <ImageButton
+          android:src="@mipmap/back"
+          android:text="@string/Voltar"
+          android:id="@+id/btnVoltar"
+          style="@style/btnToolBar"
+          local:MvxBind="Click Voltar"
+          android:layout_gravity="left" />
+      <TextView
+          android:text="@string/Parceiro"
+          android:layout_gravity="center"
+          style="@style/TextView2" />
+     
+      <ImageButton
+          android:src="@mipmap/fwd"
+          android:text="@string/Voltar"
+          android:id="@+id/btnFwd"
+          style="@style/btnToolBar"
+          local:MvxBind="Click NavegarFwd"
+          android:layout_gravity="right" />
+    </TableRow>
+  </TableLayout>
+</android.support.v7.widget.Toolbar>
