@@ -12,5 +12,15 @@
   <string name="Ped">Pedidos</string>
   <string name="Sync">Sincronizar</string>
   <string name="Add">Adicionar</string>
+  <string name="Parceiro">Parceiro</string>
+  <string name="CodPn">Cód. SAP</string>
+  <string name="RazSoc">Razão Social</string>
+  <string name="InfFisc">Informações Fiscais</string>
+  <string name="NumDoc">Número Documento</string>
+  <string name="Filial">Filial</string>
+  <string name="Cliente">Cliente</string>
+  <string name="Fornecedor">Fornecedor</string>
+  <string name="CPF">CPF</string>
+  <string name="CNPJ">CNPJ</string>
 
 </resources>

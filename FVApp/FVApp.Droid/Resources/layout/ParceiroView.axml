@@ -5,6 +5,90 @@
     android:layout_height="match_parent">
     <include
         layout="@layout/toolbarBackCheck" />
-  
-  
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@layout/bordaVerde">
+        <TextView
+            android:text="@string/Parceiro"
+            android:textSize="14dip"
+            style="@style/TextView" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etCodPn"
+            android:hint="@string/CodPn"
+            style="@style/editTextStyleLogin" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etRazSocial"
+            android:hint="@string/RazSoc"
+            style="@style/editTextStyleLogin" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@layout/bordaVerde">
+        <TextView
+            android:text="@string/InfFisc"
+            android:textSize="14dip"
+            style="@style/TextView" />
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etFilial"
+            android:hint="@string/Filial"
+            style="@style/editTextStyleLogin" />
+        <RadioGroup
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioGroup1"
+            android:orientation="horizontal">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/Fornecedor"
+                android:id="@+id/rbFornecedor" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Cliente"
+                android:id="@+id/rbCliente"
+                android:layout_gravity="right" />
+        </RadioGroup>
+        <RadioGroup
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioGroup1"
+            android:orientation="horizontal">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/CNPJ"
+                android:id="@+id/rbCNPJ" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/CPF"
+                android:id="@+id/rbCPF"
+                android:layout_gravity="right" />
+        </RadioGroup>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etNumDoc"
+            android:hint="@string/NumDoc"
+            style="@style/editTextStyleLogin" />
+    </LinearLayout>
 </LinearLayout>

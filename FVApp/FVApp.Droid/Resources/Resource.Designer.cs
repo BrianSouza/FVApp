@@ -1906,11 +1906,14 @@ namespace FVApp.Droid
 			// aapt resource value: 0x7f0b0024
 			public const int bottom = 2131427364;
 			
-			// aapt resource value: 0x7f0b0082
-			public const int btnAddParc = 2131427458;
+			// aapt resource value: 0x7f0b008b
+			public const int btnAddParc = 2131427467;
 			
 			// aapt resource value: 0x7f0b0061
 			public const int btnConfig = 2131427425;
+			
+			// aapt resource value: 0x7f0b0090
+			public const int btnFwd = 2131427472;
 			
 			// aapt resource value: 0x7f0b005f
 			public const int btnLogin = 2131427423;
@@ -1921,17 +1924,20 @@ namespace FVApp.Droid
 			// aapt resource value: 0x7f0b0064
 			public const int btnPed = 2131427428;
 			
-			// aapt resource value: 0x7f0b0084
-			public const int btnSalvarConfig = 2131427460;
+			// aapt resource value: 0x7f0b008d
+			public const int btnSalvarConfig = 2131427469;
 			
 			// aapt resource value: 0x7f0b0065
 			public const int btnSync = 2131427429;
 			
-			// aapt resource value: 0x7f0b0083
-			public const int btnVoltarConfig = 2131427459;
+			// aapt resource value: 0x7f0b008f
+			public const int btnVoltar = 2131427471;
 			
-			// aapt resource value: 0x7f0b0081
-			public const int btnVoltarParc = 2131427457;
+			// aapt resource value: 0x7f0b008c
+			public const int btnVoltarConfig = 2131427468;
+			
+			// aapt resource value: 0x7f0b008a
+			public const int btnVoltarParc = 2131427466;
 			
 			// aapt resource value: 0x7f0b0030
 			public const int buttonPanel = 2131427376;
@@ -1975,11 +1981,23 @@ namespace FVApp.Droid
 			// aapt resource value: 0x7f0b007c
 			public const int end_padder = 2131427452;
 			
+			// aapt resource value: 0x7f0b007f
+			public const int etCodPn = 2131427455;
+			
+			// aapt resource value: 0x7f0b0081
+			public const int etFilial = 2131427457;
+			
 			// aapt resource value: 0x7f0b005d
 			public const int etLogin = 2131427421;
 			
+			// aapt resource value: 0x7f0b0087
+			public const int etNumDoc = 2131427463;
+			
 			// aapt resource value: 0x7f0b005a
 			public const int etProd = 2131427418;
+			
+			// aapt resource value: 0x7f0b0080
+			public const int etRazSocial = 2131427456;
 			
 			// aapt resource value: 0x7f0b005e
 			public const int etSenha = 2131427422;
@@ -2032,8 +2050,8 @@ namespace FVApp.Droid
 			// aapt resource value: 0x7f0b005c
 			public const int llLogin = 2131427420;
 			
-			// aapt resource value: 0x7f0b007f
-			public const int logo = 2131427455;
+			// aapt resource value: 0x7f0b0088
+			public const int logo = 2131427464;
 			
 			// aapt resource value: 0x7f0b007e
 			public const int lvParceiros = 2131427454;
@@ -2076,6 +2094,21 @@ namespace FVApp.Droid
 			
 			// aapt resource value: 0x7f0b0042
 			public const int radio = 2131427394;
+			
+			// aapt resource value: 0x7f0b0082
+			public const int radioGroup1 = 2131427458;
+			
+			// aapt resource value: 0x7f0b0085
+			public const int rbCNPJ = 2131427461;
+			
+			// aapt resource value: 0x7f0b0086
+			public const int rbCPF = 2131427462;
+			
+			// aapt resource value: 0x7f0b0084
+			public const int rbCliente = 2131427460;
+			
+			// aapt resource value: 0x7f0b0083
+			public const int rbFornecedor = 2131427459;
 			
 			// aapt resource value: 0x7f0b0074
 			public const int right_icon = 2131427444;
@@ -2203,11 +2236,14 @@ namespace FVApp.Droid
 			// aapt resource value: 0x7f0b003c
 			public const int title_template = 2131427388;
 			
-			// aapt resource value: 0x7f0b0085
-			public const int toolBarOnlyTitle = 2131427461;
+			// aapt resource value: 0x7f0b0091
+			public const int toolBarOnlyTitle = 2131427473;
 			
-			// aapt resource value: 0x7f0b0080
-			public const int toolbarBackCheck = 2131427456;
+			// aapt resource value: 0x7f0b0089
+			public const int toolbarBackCheck = 2131427465;
+			
+			// aapt resource value: 0x7f0b008e
+			public const int toolbarBackFwd = 2131427470;
 			
 			// aapt resource value: 0x7f0b0025
 			public const int top = 2131427365;
@@ -2347,109 +2383,112 @@ namespace FVApp.Droid
 			public const int abc_select_dialog_material = 2130968602;
 			
 			// aapt resource value: 0x7f04001b
-			public const int btnlogin = 2130968603;
+			public const int bordaVerde = 2130968603;
 			
 			// aapt resource value: 0x7f04001c
-			public const int ConfigView = 2130968604;
+			public const int btnlogin = 2130968604;
 			
 			// aapt resource value: 0x7f04001d
-			public const int LoginView = 2130968605;
+			public const int ConfigView = 2130968605;
 			
 			// aapt resource value: 0x7f04001e
-			public const int lvlayoutpn = 2130968606;
+			public const int LoginView = 2130968606;
 			
 			// aapt resource value: 0x7f04001f
-			public const int MenuView = 2130968607;
+			public const int lvlayoutpn = 2130968607;
 			
 			// aapt resource value: 0x7f040020
-			public const int notification_action = 2130968608;
+			public const int MenuView = 2130968608;
 			
 			// aapt resource value: 0x7f040021
-			public const int notification_action_tombstone = 2130968609;
+			public const int notification_action = 2130968609;
 			
 			// aapt resource value: 0x7f040022
-			public const int notification_media_action = 2130968610;
+			public const int notification_action_tombstone = 2130968610;
 			
 			// aapt resource value: 0x7f040023
-			public const int notification_media_cancel_action = 2130968611;
+			public const int notification_media_action = 2130968611;
 			
 			// aapt resource value: 0x7f040024
-			public const int notification_template_big_media = 2130968612;
+			public const int notification_media_cancel_action = 2130968612;
 			
 			// aapt resource value: 0x7f040025
-			public const int notification_template_big_media_custom = 2130968613;
+			public const int notification_template_big_media = 2130968613;
 			
 			// aapt resource value: 0x7f040026
-			public const int notification_template_big_media_narrow = 2130968614;
+			public const int notification_template_big_media_custom = 2130968614;
 			
 			// aapt resource value: 0x7f040027
-			public const int notification_template_big_media_narrow_custom = 2130968615;
+			public const int notification_template_big_media_narrow = 2130968615;
 			
 			// aapt resource value: 0x7f040028
-			public const int notification_template_custom_big = 2130968616;
+			public const int notification_template_big_media_narrow_custom = 2130968616;
 			
 			// aapt resource value: 0x7f040029
-			public const int notification_template_icon_group = 2130968617;
+			public const int notification_template_custom_big = 2130968617;
 			
 			// aapt resource value: 0x7f04002a
-			public const int notification_template_lines_media = 2130968618;
+			public const int notification_template_icon_group = 2130968618;
 			
 			// aapt resource value: 0x7f04002b
-			public const int notification_template_media = 2130968619;
+			public const int notification_template_lines_media = 2130968619;
 			
 			// aapt resource value: 0x7f04002c
-			public const int notification_template_media_custom = 2130968620;
+			public const int notification_template_media = 2130968620;
 			
 			// aapt resource value: 0x7f04002d
-			public const int notification_template_part_chronometer = 2130968621;
+			public const int notification_template_media_custom = 2130968621;
 			
 			// aapt resource value: 0x7f04002e
-			public const int notification_template_part_time = 2130968622;
+			public const int notification_template_part_chronometer = 2130968622;
 			
 			// aapt resource value: 0x7f04002f
-			public const int ParceirosView = 2130968623;
+			public const int notification_template_part_time = 2130968623;
 			
 			// aapt resource value: 0x7f040030
-			public const int ParceiroView = 2130968624;
+			public const int ParceirosView = 2130968624;
 			
 			// aapt resource value: 0x7f040031
-			public const int radiusfundobranco = 2130968625;
+			public const int ParceiroView = 2130968625;
 			
 			// aapt resource value: 0x7f040032
-			public const int radiusfundoverde = 2130968626;
+			public const int radiusfundobranco = 2130968626;
 			
 			// aapt resource value: 0x7f040033
-			public const int radiusmenu = 2130968627;
+			public const int radiusfundoverde = 2130968627;
 			
 			// aapt resource value: 0x7f040034
-			public const int radiusmenucinza = 2130968628;
+			public const int radiusmenu = 2130968628;
 			
 			// aapt resource value: 0x7f040035
-			public const int select_dialog_item_material = 2130968629;
+			public const int radiusmenucinza = 2130968629;
 			
 			// aapt resource value: 0x7f040036
-			public const int select_dialog_multichoice_material = 2130968630;
+			public const int select_dialog_item_material = 2130968630;
 			
 			// aapt resource value: 0x7f040037
-			public const int select_dialog_singlechoice_material = 2130968631;
+			public const int select_dialog_multichoice_material = 2130968631;
 			
 			// aapt resource value: 0x7f040038
-			public const int SplashScreen = 2130968632;
+			public const int select_dialog_singlechoice_material = 2130968632;
 			
 			// aapt resource value: 0x7f040039
-			public const int support_simple_spinner_dropdown_item = 2130968633;
+			public const int SplashScreen = 2130968633;
 			
 			// aapt resource value: 0x7f04003a
-			public const int toolbarBackAdd = 2130968634;
+			public const int support_simple_spinner_dropdown_item = 2130968634;
 			
 			// aapt resource value: 0x7f04003b
-			public const int toolbarBackCheck = 2130968635;
+			public const int toolbarBackAdd = 2130968635;
 			
 			// aapt resource value: 0x7f04003c
-			public const int toolbarBackFwd = 2130968636;
+			public const int toolbarBackCheck = 2130968636;
 			
 			// aapt resource value: 0x7f04003d
-			public const int toolBarMenu = 2130968637;
+			public const int toolbarBackFwd = 2130968637;
+			
+			// aapt resource value: 0x7f04003e
+			public const int toolBarMenu = 2130968638;
 			
 			static Layout()
 			{
@@ -2507,6 +2546,18 @@ namespace FVApp.Droid
 			// aapt resource value: 0x7f090022
 			public const int ApplicationName = 2131296290;
 			
+			// aapt resource value: 0x7f090038
+			public const int CNPJ = 2131296312;
+			
+			// aapt resource value: 0x7f090037
+			public const int CPF = 2131296311;
+			
+			// aapt resource value: 0x7f090035
+			public const int Cliente = 2131296309;
+			
+			// aapt resource value: 0x7f090030
+			public const int CodPn = 2131296304;
+			
 			// aapt resource value: 0x7f090026
 			public const int Config = 2131296294;
 			
@@ -2516,17 +2567,35 @@ namespace FVApp.Droid
 			// aapt resource value: 0x7f090028
 			public const int EndProd = 2131296296;
 			
+			// aapt resource value: 0x7f090034
+			public const int Filial = 2131296308;
+			
+			// aapt resource value: 0x7f090036
+			public const int Fornecedor = 2131296310;
+			
 			// aapt resource value: 0x7f090021
 			public const int Hello = 2131296289;
+			
+			// aapt resource value: 0x7f090032
+			public const int InfFisc = 2131296306;
 			
 			// aapt resource value: 0x7f090024
 			public const int Login = 2131296292;
 			
+			// aapt resource value: 0x7f090033
+			public const int NumDoc = 2131296307;
+			
 			// aapt resource value: 0x7f09002b
 			public const int Parc = 2131296299;
 			
+			// aapt resource value: 0x7f09002f
+			public const int Parceiro = 2131296303;
+			
 			// aapt resource value: 0x7f09002c
 			public const int Ped = 2131296300;
+			
+			// aapt resource value: 0x7f090031
+			public const int RazSoc = 2131296305;
 			
 			// aapt resource value: 0x7f09002a
 			public const int Salvar = 2131296298;
