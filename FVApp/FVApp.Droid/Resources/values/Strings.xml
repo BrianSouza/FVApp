@@ -22,5 +22,16 @@
   <string name="Fornecedor">Fornecedor</string>
   <string name="CPF">CPF</string>
   <string name="CNPJ">CNPJ</string>
+  <string name="Endereco">Endereço</string>
+  <string name="Logr">Logradouro</string>
+  <string name="Num">Número</string>
+  <string name="Compl">Complemento</string>
+  <string name="Bairro">Bairro</string>
+  <string name="Cidade">Cidade</string>
+  <string name="Estado">Estado</string>
+  <string name="CEP">CEP</string>
+  <string name="Contato">Contato</string>
+  <string name="Nome">Nome</string>
+  <string name="Telefone">Telefone</string>
 
 </resources>

@@ -12,6 +12,7 @@ using MvvmCross.FieldBinding;
 using MvvmCross.Platform;
 using MvvmCross.Plugins.Validation;
 using MvvmCross.Plugins.Validation.ForFieldBinding;
+using System.Collections.ObjectModel;
 
 namespace FVApp.Core.ViewModels
 {
@@ -60,6 +61,16 @@ namespace FVApp.Core.ViewModels
 
         [NCFieldRequired("Informe o estado.")]
         public INC<string> Estado = new NC<string>();
+
+        private ObservableCollection<string> _Estados;
+        public ObservableCollection<string> Estados
+        {
+            get { return _Estados; }
+            set
+            {
+                SetProperty(ref _Estados, value);
+            }
+        }
 
         [NCFieldRequired("Informe o CEP.")]
         public INC<string> CEP = new NC<string>();

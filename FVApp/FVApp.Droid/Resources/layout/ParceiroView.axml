@@ -1,94 +1,206 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <include
-        layout="@layout/toolbarBackCheck" />
+    android:layout_height="match_parent"
+    android:fillViewport="true">
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:background="@layout/bordaVerde">
-        <TextView
-            android:text="@string/Parceiro"
-            android:textSize="14dip"
-            style="@style/TextView" />
-        <EditText
+        android:layout_height="match_parent">
+        <include
+            layout="@layout/toolbarBackCheck" />
+        <LinearLayout
+            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/etCodPn"
-            android:hint="@string/CodPn"
-            style="@style/editTextStyleLogin" />
-        <EditText
+            android:layout_margin="10dp"
+            android:background="@layout/bordaVerde">
+            <TextView
+                android:text="@string/Parceiro"
+                android:textSize="14dip"
+                style="@style/TextView" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etCodPn"
+                android:hint="@string/CodPn"
+                style="@style/editTextStyle"
+                local:MvxBind="Click CardCode" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etRazSocial"
+                android:hint="@string/RazSoc"
+                style="@style/editTextStyle"
+                android:layout_marginBottom="20dp"
+                local:MvxBind="Click CardName" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/etRazSocial"
-            android:hint="@string/RazSoc"
-            style="@style/editTextStyleLogin" />
+            android:layout_margin="10dp"
+            android:background="@layout/bordaVerde">
+            <TextView
+                android:text="@string/InfFisc"
+                android:textSize="14dip"
+                style="@style/TextView" />
+            <Mvx.MvxSpinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etFilial"
+                android:hint="@string/Filial"
+                style="@style/editTextStyle"
+                local:MvxBind="ItemsSource Estados; SelectedItem Estado"/>
+            <RadioGroup
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioGroup1"
+                android:orientation="horizontal">
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:shrinkColumns="*"
+                    android:stretchColumns="*"
+                    android:layout_centerVertical="true"
+                    android:layout_centerInParent="true"
+                    android:layout_centerHorizontal="true">
+                    <TableRow
+                        android:layout_gravity="center">
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="@string/Fornecedor"
+                            android:id="@+id/rbFornecedor" />
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Cliente"
+                            android:id="@+id/rbCliente" />
+                    </TableRow>
+                </TableLayout>
+            </RadioGroup>
+            <RadioGroup
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioGroup1"
+                android:orientation="horizontal">
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:shrinkColumns="*"
+                    android:stretchColumns="*"
+                    android:layout_centerVertical="true"
+                    android:layout_centerInParent="true"
+                    android:layout_centerHorizontal="true">
+                    <TableRow
+                        android:layout_gravity="center">
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="@string/CNPJ"
+                            android:id="@+id/rbCNPJ" />
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/CPF"
+                            android:id="@+id/rbCPF"
+                            android:layout_marginLeft="16dp" />
+                    </TableRow>
+                </TableLayout>
+            </RadioGroup>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etNumDoc"
+                android:hint="@string/NumDoc"
+                style="@style/editTextStyle"
+                android:layout_marginBottom="20dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@layout/bordaVerde">
+            <TextView
+                android:text="@string/Endereco"
+                android:textSize="14dip"
+                style="@style/TextView" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etLogr"
+                android:hint="@string/Logr"
+                style="@style/editTextStyle" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etNum"
+                android:hint="@string/Num"
+                style="@style/editTextStyle" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etCompl"
+                android:hint="@string/Compl"
+                style="@style/editTextStyle" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etBairro"
+                android:hint="@string/Bairro"
+                style="@style/editTextStyle" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etCidade"
+                android:hint="@string/Cidade"
+                style="@style/editTextStyle" />
+          <Mvx.MvxSpinner
+              android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spEstado"
+                android:hint="@string/Estado"
+                style="@style/editTextStyle" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etCEP"
+                android:hint="@string/CEP"
+                style="@style/editTextStyle"
+                android:layout_marginBottom="20dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@layout/bordaVerde">
+            <TextView
+                android:text="@string/Contato"
+                android:textSize="14dip"
+                style="@style/TextView" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etNome"
+                android:hint="@string/Nome"
+                style="@style/editTextStyle" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etFone"
+                android:hint="@string/Telefone"
+                style="@style/editTextStyle"
+                android:layout_marginBottom="20dp" />
+        </LinearLayout>
     </LinearLayout>
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:background="@layout/bordaVerde">
-        <TextView
-            android:text="@string/InfFisc"
-            android:textSize="14dip"
-            style="@style/TextView" />
-        <Spinner
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/etFilial"
-            android:hint="@string/Filial"
-            style="@style/editTextStyleLogin" />
-        <RadioGroup
-            android:minWidth="25px"
-            android:minHeight="25px"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/radioGroup1"
-            android:orientation="horizontal">
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:checked="true"
-                android:text="@string/Fornecedor"
-                android:id="@+id/rbFornecedor" />
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/Cliente"
-                android:id="@+id/rbCliente"
-                android:layout_gravity="right" />
-        </RadioGroup>
-        <RadioGroup
-            android:minWidth="25px"
-            android:minHeight="25px"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/radioGroup1"
-            android:orientation="horizontal">
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:checked="true"
-                android:text="@string/CNPJ"
-                android:id="@+id/rbCNPJ" />
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/CPF"
-                android:id="@+id/rbCPF"
-                android:layout_gravity="right" />
-        </RadioGroup>
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/etNumDoc"
-            android:hint="@string/NumDoc"
-            style="@style/editTextStyleLogin" />
-    </LinearLayout>
-</LinearLayout>
+</ScrollView>
