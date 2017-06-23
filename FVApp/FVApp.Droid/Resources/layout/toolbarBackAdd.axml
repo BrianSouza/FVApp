@@ -22,7 +22,7 @@
                 local:MvxBind="Click Voltar"
                 android:layout_gravity="left" />
             <TextView
-                android:text="@string/Config"
+                android:text=""
                 android:layout_gravity="center"
                 style="@style/TextView2" />
             <ImageButton

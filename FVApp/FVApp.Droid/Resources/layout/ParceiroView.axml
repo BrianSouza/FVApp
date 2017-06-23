@@ -52,8 +52,12 @@
                 android:id="@+id/etFilial"
                 android:hint="@string/Filial"
                 style="@style/editTextStyle"
-                local:MvxBind="ItemsSource Estados; SelectedItem Estado"/>
-            <RadioGroup
+                local:MvxBind="ItemsSource Estados; SelectedItem Estado" />
+            <Mvx.MvxRadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="40dp" />
+        <!--<RadioGroup
                 android:minWidth="25px"
                 android:minHeight="25px"
                 android:layout_width="match_parent"
@@ -115,7 +119,7 @@
                             android:layout_marginLeft="16dp" />
                     </TableRow>
                 </TableLayout>
-            </RadioGroup>
+            </RadioGroup>-->
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -164,8 +168,8 @@
                 android:id="@+id/etCidade"
                 android:hint="@string/Cidade"
                 style="@style/editTextStyle" />
-          <Mvx.MvxSpinner
-              android:layout_width="match_parent"
+            <Mvx.MvxSpinner
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/spEstado"
                 android:hint="@string/Estado"

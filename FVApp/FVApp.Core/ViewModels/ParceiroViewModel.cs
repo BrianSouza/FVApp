@@ -101,6 +101,30 @@ namespace FVApp.Core.ViewModels
             set { SetProperty(ref _Telefone, value); }
         }
 
+        private bool _Cliente;
+        public bool Cliente
+        {
+            get
+            {
+                return _Cliente;
+            }
+            set
+            {
+                SetProperty(ref _Cliente, value);
+            }
+        }
+        private bool _Fornecedor;
+        public bool Fornecedor
+        {
+            get
+            {
+                return _Fornecedor;
+            }
+            set
+            {
+                SetProperty(ref _Fornecedor, value);
+            }
+        }
 
         IMvxToastService toastService;
         IValidator validator;

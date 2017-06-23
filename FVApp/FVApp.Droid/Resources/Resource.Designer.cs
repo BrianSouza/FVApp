@@ -1906,14 +1906,14 @@ namespace FVApp.Droid
 			// aapt resource value: 0x7f0b0024
 			public const int bottom = 2131427364;
 			
-			// aapt resource value: 0x7f0b0094
-			public const int btnAddParc = 2131427476;
+			// aapt resource value: 0x7f0b008f
+			public const int btnAddParc = 2131427471;
 			
 			// aapt resource value: 0x7f0b0061
 			public const int btnConfig = 2131427425;
 			
-			// aapt resource value: 0x7f0b0099
-			public const int btnFwd = 2131427481;
+			// aapt resource value: 0x7f0b0094
+			public const int btnFwd = 2131427476;
 			
 			// aapt resource value: 0x7f0b005f
 			public const int btnLogin = 2131427423;
@@ -1924,20 +1924,20 @@ namespace FVApp.Droid
 			// aapt resource value: 0x7f0b0064
 			public const int btnPed = 2131427428;
 			
-			// aapt resource value: 0x7f0b0096
-			public const int btnSalvarConfig = 2131427478;
+			// aapt resource value: 0x7f0b0091
+			public const int btnSalvarConfig = 2131427473;
 			
 			// aapt resource value: 0x7f0b0065
 			public const int btnSync = 2131427429;
 			
-			// aapt resource value: 0x7f0b0098
-			public const int btnVoltar = 2131427480;
-			
-			// aapt resource value: 0x7f0b0095
-			public const int btnVoltarConfig = 2131427477;
-			
 			// aapt resource value: 0x7f0b0093
-			public const int btnVoltarParc = 2131427475;
+			public const int btnVoltar = 2131427475;
+			
+			// aapt resource value: 0x7f0b0090
+			public const int btnVoltarConfig = 2131427472;
+			
+			// aapt resource value: 0x7f0b008e
+			public const int btnVoltarParc = 2131427470;
 			
 			// aapt resource value: 0x7f0b0030
 			public const int buttonPanel = 2131427376;
@@ -1981,41 +1981,41 @@ namespace FVApp.Droid
 			// aapt resource value: 0x7f0b007c
 			public const int end_padder = 2131427452;
 			
-			// aapt resource value: 0x7f0b008b
-			public const int etBairro = 2131427467;
+			// aapt resource value: 0x7f0b0086
+			public const int etBairro = 2131427462;
 			
-			// aapt resource value: 0x7f0b008e
-			public const int etCEP = 2131427470;
+			// aapt resource value: 0x7f0b0089
+			public const int etCEP = 2131427465;
 			
-			// aapt resource value: 0x7f0b008c
-			public const int etCidade = 2131427468;
+			// aapt resource value: 0x7f0b0087
+			public const int etCidade = 2131427463;
 			
 			// aapt resource value: 0x7f0b007f
 			public const int etCodPn = 2131427455;
 			
-			// aapt resource value: 0x7f0b008a
-			public const int etCompl = 2131427466;
+			// aapt resource value: 0x7f0b0085
+			public const int etCompl = 2131427461;
 			
 			// aapt resource value: 0x7f0b0081
 			public const int etFilial = 2131427457;
 			
-			// aapt resource value: 0x7f0b0090
-			public const int etFone = 2131427472;
+			// aapt resource value: 0x7f0b008b
+			public const int etFone = 2131427467;
 			
 			// aapt resource value: 0x7f0b005d
 			public const int etLogin = 2131427421;
 			
-			// aapt resource value: 0x7f0b0088
-			public const int etLogr = 2131427464;
+			// aapt resource value: 0x7f0b0083
+			public const int etLogr = 2131427459;
 			
-			// aapt resource value: 0x7f0b008f
-			public const int etNome = 2131427471;
+			// aapt resource value: 0x7f0b008a
+			public const int etNome = 2131427466;
 			
-			// aapt resource value: 0x7f0b0089
-			public const int etNum = 2131427465;
+			// aapt resource value: 0x7f0b0084
+			public const int etNum = 2131427460;
 			
-			// aapt resource value: 0x7f0b0087
-			public const int etNumDoc = 2131427463;
+			// aapt resource value: 0x7f0b0082
+			public const int etNumDoc = 2131427458;
 			
 			// aapt resource value: 0x7f0b005a
 			public const int etProd = 2131427418;
@@ -2074,8 +2074,8 @@ namespace FVApp.Droid
 			// aapt resource value: 0x7f0b005c
 			public const int llLogin = 2131427420;
 			
-			// aapt resource value: 0x7f0b0091
-			public const int logo = 2131427473;
+			// aapt resource value: 0x7f0b008c
+			public const int logo = 2131427468;
 			
 			// aapt resource value: 0x7f0b007e
 			public const int lvParceiros = 2131427454;
@@ -2118,21 +2118,6 @@ namespace FVApp.Droid
 			
 			// aapt resource value: 0x7f0b0042
 			public const int radio = 2131427394;
-			
-			// aapt resource value: 0x7f0b0082
-			public const int radioGroup1 = 2131427458;
-			
-			// aapt resource value: 0x7f0b0085
-			public const int rbCNPJ = 2131427461;
-			
-			// aapt resource value: 0x7f0b0086
-			public const int rbCPF = 2131427462;
-			
-			// aapt resource value: 0x7f0b0084
-			public const int rbCliente = 2131427460;
-			
-			// aapt resource value: 0x7f0b0083
-			public const int rbFornecedor = 2131427459;
 			
 			// aapt resource value: 0x7f0b0074
 			public const int right_icon = 2131427444;
@@ -2200,8 +2185,8 @@ namespace FVApp.Droid
 			// aapt resource value: 0x7f0b0013
 			public const int showTitle = 2131427347;
 			
-			// aapt resource value: 0x7f0b008d
-			public const int spEstado = 2131427469;
+			// aapt resource value: 0x7f0b0088
+			public const int spEstado = 2131427464;
 			
 			// aapt resource value: 0x7f0b0031
 			public const int spacer = 2131427377;
@@ -2263,14 +2248,14 @@ namespace FVApp.Droid
 			// aapt resource value: 0x7f0b003c
 			public const int title_template = 2131427388;
 			
-			// aapt resource value: 0x7f0b009a
-			public const int toolBarOnlyTitle = 2131427482;
+			// aapt resource value: 0x7f0b0095
+			public const int toolBarOnlyTitle = 2131427477;
+			
+			// aapt resource value: 0x7f0b008d
+			public const int toolbarBackCheck = 2131427469;
 			
 			// aapt resource value: 0x7f0b0092
-			public const int toolbarBackCheck = 2131427474;
-			
-			// aapt resource value: 0x7f0b0097
-			public const int toolbarBackFwd = 2131427479;
+			public const int toolbarBackFwd = 2131427474;
 			
 			// aapt resource value: 0x7f0b0025
 			public const int top = 2131427365;
