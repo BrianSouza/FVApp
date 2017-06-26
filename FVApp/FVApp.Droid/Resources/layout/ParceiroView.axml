@@ -53,11 +53,11 @@
                 android:hint="@string/Filial"
                 style="@style/editTextStyle"
                 local:MvxBind="ItemsSource Estados; SelectedItem Estado" />
-            <Mvx.MvxRadioGroup
+        <!--<Mvx.MvxRadioGroup
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:textSize="40dp" />
-        <!--<RadioGroup
+                android:textSize="40dp" />-->
+            <RadioGroup
                 android:minWidth="25px"
                 android:minHeight="25px"
                 android:layout_width="match_parent"
@@ -79,12 +79,14 @@
                             android:layout_height="wrap_content"
                             android:checked="true"
                             android:text="@string/Fornecedor"
-                            android:id="@+id/rbFornecedor" />
+                            android:id="@+id/rbFornecedor"
+                            local:MvxBind="Checked Fornecedor" />
                         <RadioButton
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/Cliente"
-                            android:id="@+id/rbCliente" />
+                            android:id="@+id/rbCliente"
+                            local:MvxBind="Checked Cliente" />
                     </TableRow>
                 </TableLayout>
             </RadioGroup>
@@ -110,16 +112,18 @@
                             android:layout_height="wrap_content"
                             android:checked="true"
                             android:text="@string/CNPJ"
-                            android:id="@+id/rbCNPJ" />
+                            android:id="@+id/rbCNPJ"
+                            local:MvxBind="Checked CNPJ" />
                         <RadioButton
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/CPF"
                             android:id="@+id/rbCPF"
-                            android:layout_marginLeft="16dp" />
+                            android:layout_marginLeft="16dp"
+                            local:MvxBind="Checked CPF" />
                     </TableRow>
                 </TableLayout>
-            </RadioGroup>-->
+            </RadioGroup>
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

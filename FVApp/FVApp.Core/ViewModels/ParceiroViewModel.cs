@@ -126,6 +126,25 @@ namespace FVApp.Core.ViewModels
             }
         }
 
+        private bool _CPF;
+        public bool CPF
+        {
+            get { return _CPF; }
+            set
+            {
+                SetProperty(ref _CPF, value);
+            }
+        }
+        private bool _CNPJ;
+        public bool CNPJ
+        {
+            get { return _CNPJ; }
+            set
+            {
+                SetProperty(ref _CNPJ, value);
+            }
+        }
+
         IMvxToastService toastService;
         IValidator validator;
         IParceirosDados pnService;
