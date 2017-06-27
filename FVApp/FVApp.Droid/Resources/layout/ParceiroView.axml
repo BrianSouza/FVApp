@@ -51,8 +51,8 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/etFilial"
                 android:hint="@string/Filial"
-                style="@style/editTextStyle"
-                local:MvxBind="ItemsSource Estados; SelectedItem Estado" />
+                style="@style/spinnerStyle"
+                local:MvxBind="ItemsSource Estados; SelectedItem Estado"/>
         <!--<Mvx.MvxRadioGroup
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"

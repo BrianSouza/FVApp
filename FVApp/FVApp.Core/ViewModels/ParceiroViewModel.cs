@@ -59,8 +59,17 @@ namespace FVApp.Core.ViewModels
         [NCFieldRequired("Informe a cidade.")]
         public INC<string> Cidade = new NC<string>();
 
-        [NCFieldRequired("Informe o estado.")]
-        public INC<string> Estado = new NC<string>();
+        //[NCFieldRequired("Informe o estado.")]
+        //public INC<string> Estado = new NC<string>();
+        private string _Estado;
+        public string Estado
+        {
+            get { return _Estado; }
+            set
+            {
+                SetProperty(ref _Estado, value);
+            }
+        }
 
         private ObservableCollection<string> _Estados;
         public ObservableCollection<string> Estados
@@ -154,6 +163,11 @@ namespace FVApp.Core.ViewModels
             this.toastService = Mvx.Resolve<IMvxToastService>();
             this.validator = Mvx.Resolve<IValidator>();
             this.pnService = Mvx.Resolve<IParceirosDados>();
+
+            Estados = new ObservableCollection<string>
+            {
+                "AC","AL","AP","AM","BA","CE","DF","ES","GO","MA","MT","MS","MG","PA","PB","PR","PE","PI","RJ","RN","RS","RO","RR","SC","SP","SE","TO"
+            };
         }
         
 

@@ -3891,6 +3891,9 @@ namespace FVApp.Droid
 			// aapt resource value: 0x7f06016f
 			public const int searchview = 2131100015;
 			
+			// aapt resource value: 0x7f060171
+			public const int spinnerStyle = 2131100017;
+			
 			static Style()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
