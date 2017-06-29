@@ -85,7 +85,7 @@ namespace FVApp.Core.ViewModels
             else
                 return false;
         }
-        public IMvxCommand SalvarConfiguracao
+        public IMvxCommand Salvar
         {
             get
             {

@@ -37,14 +37,37 @@ namespace FVApp.Core.ViewModels
                 SetProperty(ref _CardCode, value);
             }
         }
-        [NCFieldRequired("Informe a razão social.")]
-        public INC<string> CardName = new NC<string>();
 
-        [NCFieldRequired("Informe o endereço.")]
-        public INC<string> Endereco = new NC<string>();
+        private string _CardName;
+        public string CardName
+        {
+            get { return _CardName; }
+            set
+            {
+                SetProperty(ref _CardName, value);
+            }
+        }
 
-        [NCFieldRequired("Informe o número.")]
-        public INC<string> Numero = new NC<string>();
+        private string _Endereco;
+        public string Endereco
+        {
+            get { return _Endereco; }
+            set
+            {
+                SetProperty(ref _Endereco, value);
+            }
+        }
+
+        private string _Numero;
+        public string Numero
+        {
+            get { return _Numero; }
+            set
+            {
+                SetProperty(ref _Numero, value);
+            }
+        }
+
 
         private string _Complemento;
         public string Complemento
@@ -53,14 +76,26 @@ namespace FVApp.Core.ViewModels
             set { SetProperty(ref _Complemento, value); }
         }
 
-        [NCFieldRequired("Informe o bairro.")]
-        public INC<string> Bairro = new NC<string>();
+        private string _Bairro;
+        public string Bairro
+        {
+            get { return _Bairro; }
+            set
+            {
+                SetProperty(ref _Bairro, value);
+            }
+        }
 
-        [NCFieldRequired("Informe a cidade.")]
-        public INC<string> Cidade = new NC<string>();
+        private string _Cidade;
+        public string Cidade
+        {
+            get { return _Cidade; }
+            set
+            {
+                SetProperty(ref _Cidade, value);
+            }
+        }
 
-        //[NCFieldRequired("Informe o estado.")]
-        //public INC<string> Estado = new NC<string>();
         private string _Estado;
         public string Estado
         {
@@ -81,20 +116,64 @@ namespace FVApp.Core.ViewModels
             }
         }
 
-        [NCFieldRequired("Informe o CEP.")]
-        public INC<string> CEP = new NC<string>();
+        private string _Empresa;
+        public string Empresa
+        {
+            get { return _Empresa; }
+            set
+            {
+                SetProperty(ref _Empresa, value);
+            }
+        }
+        private ObservableCollection<string> _Empresas;
+        public ObservableCollection<string> Empresas
+        {
+            get { return _Empresas; }
+            set
+            {
+                SetProperty(ref _Empresas, value);
+            }
+        }
+        private string _CEP;
+        public string CEP
+        {
+            get { return _CEP; }
+            set
+            {
+                SetProperty(ref _CEP, value);
+            }
+        }
 
-        [NCFieldRequired("Informe a Empresa.")]
-        public INC<string> Empresa = new NC<string>();
 
-        [NCFieldRequired("Informe o CNPJ ou CPF.")]
-        public INC<string> Documento = new NC<string>();
+        private string _Documento;
+        public string Documento
+        {
+            get { return _Documento; }
+            set
+            {
+                SetProperty(ref _Documento, value);
+            }
+        }
 
-        [NCFieldRequired("Informe o tipo de documento.")]
-        public INC<string> TipoDocumento = new NC<string>();
+        private string _TipoDocumento;
+        public string TipoDocumento
+        {
+            get { return _TipoDocumento; }
+            set
+            {
+                SetProperty(ref _TipoDocumento, value);
+            }
+        }
 
-        [NCFieldRequired("Informe o tipo do Parceiro.")]
-        public INC<string> TipoParceiro = new NC<string>();
+        private string _TipoParceiro;
+        public string TipoParceiro
+        {
+            get { return _TipoParceiro; }
+            set
+            {
+                SetProperty(ref _TipoParceiro, value);
+            }
+        }
 
         private string _NomeContato;
         public string NomeContato
@@ -120,6 +199,11 @@ namespace FVApp.Core.ViewModels
             set
             {
                 SetProperty(ref _Cliente, value);
+                if(value)
+                {
+                    Fornecedor = false;
+                    TipoParceiro = "C";
+                }
             }
         }
         private bool _Fornecedor;
@@ -132,6 +216,11 @@ namespace FVApp.Core.ViewModels
             set
             {
                 SetProperty(ref _Fornecedor, value);
+                if (value)
+                {
+                    Cliente = false;
+                    TipoParceiro = "S";
+                }
             }
         }
 
@@ -142,6 +231,11 @@ namespace FVApp.Core.ViewModels
             set
             {
                 SetProperty(ref _CPF, value);
+                if (value)
+                {
+                    CNPJ = false;
+                    TipoDocumento = "CPF";
+                }
             }
         }
         private bool _CNPJ;
@@ -151,6 +245,11 @@ namespace FVApp.Core.ViewModels
             set
             {
                 SetProperty(ref _CNPJ, value);
+                if (value)
+                {
+                    CPF = false;
+                    TipoDocumento = "CNPJ";
+                }
             }
         }
 
@@ -184,7 +283,7 @@ namespace FVApp.Core.ViewModels
 
         public void SalvarParceiro()
         {
-            if (pn == null)
+            //if (pn == null)
                 pn = GetParceiro();
 
             pnService.SalvarParceiro(pn);

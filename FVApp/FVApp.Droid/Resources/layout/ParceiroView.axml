@@ -26,7 +26,7 @@
                 android:id="@+id/etCodPn"
                 android:hint="@string/CodPn"
                 style="@style/editTextStyle"
-                local:MvxBind="Click CardCode" />
+                local:MvxBind="Text CardCode" />
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -34,7 +34,7 @@
                 android:hint="@string/RazSoc"
                 style="@style/editTextStyle"
                 android:layout_marginBottom="20dp"
-                local:MvxBind="Click CardName" />
+                local:MvxBind="Text CardName" />
         </LinearLayout>
         <LinearLayout
             android:orientation="vertical"
@@ -52,18 +52,8 @@
                 android:id="@+id/etFilial"
                 android:hint="@string/Filial"
                 style="@style/spinnerStyle"
-                local:MvxBind="ItemsSource Estados; SelectedItem Estado"/>
-        <!--<Mvx.MvxRadioGroup
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:textSize="40dp" />-->
-            <RadioGroup
-                android:minWidth="25px"
-                android:minHeight="25px"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/radioGroup1"
-                android:orientation="horizontal">
+                local:MvxBind="ItemsSource Empresas; SelectedItem Empresa" />
+            
                 <TableLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -89,14 +79,7 @@
                             local:MvxBind="Checked Cliente" />
                     </TableRow>
                 </TableLayout>
-            </RadioGroup>
-            <RadioGroup
-                android:minWidth="25px"
-                android:minHeight="25px"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/radioGroup1"
-                android:orientation="horizontal">
+            
                 <TableLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -123,7 +106,6 @@
                             local:MvxBind="Checked CPF" />
                     </TableRow>
                 </TableLayout>
-            </RadioGroup>
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -147,44 +129,51 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/etLogr"
                 android:hint="@string/Logr"
-                style="@style/editTextStyle" />
+                style="@style/editTextStyle"
+                local:MvxBind="Text Endereco" />
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/etNum"
                 android:hint="@string/Num"
-                style="@style/editTextStyle" />
+                style="@style/editTextStyle"
+                local:MvxBind="Text Numero" />
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/etCompl"
                 android:hint="@string/Compl"
-                style="@style/editTextStyle" />
+                style="@style/editTextStyle"
+                local:MvxBind="Text Complemento" />
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/etBairro"
                 android:hint="@string/Bairro"
-                style="@style/editTextStyle" />
+                style="@style/editTextStyle"
+                local:MvxBind="Text Bairro" />
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/etCidade"
                 android:hint="@string/Cidade"
-                style="@style/editTextStyle" />
+                style="@style/editTextStyle"
+                local:MvxBind="Text Cidade" />
             <Mvx.MvxSpinner
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/spEstado"
                 android:hint="@string/Estado"
-                style="@style/editTextStyle" />
+                style="@style/spinnerStyle"
+                local:MvxBind="ItemsSource Estados; SelectedItem Estado" />
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/etCEP"
                 android:hint="@string/CEP"
                 style="@style/editTextStyle"
-                android:layout_marginBottom="20dp" />
+                android:layout_marginBottom="20dp"
+                local:MvxBind="Text CEP" />
         </LinearLayout>
         <LinearLayout
             android:orientation="vertical"
