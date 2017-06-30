@@ -199,7 +199,7 @@ namespace FVApp.Core.ViewModels
             set
             {
                 SetProperty(ref _Cliente, value);
-                if(value)
+                if (value)
                 {
                     Fornecedor = false;
                     TipoParceiro = "C";
@@ -268,7 +268,7 @@ namespace FVApp.Core.ViewModels
                 "AC","AL","AP","AM","BA","CE","DF","ES","GO","MA","MT","MS","MG","PA","PB","PR","PE","PI","RJ","RN","RS","RO","RR","SC","SP","SE","TO"
             };
         }
-        
+
 
         public override void Start()
         {
@@ -284,29 +284,28 @@ namespace FVApp.Core.ViewModels
         public void SalvarParceiro()
         {
             //if (pn == null)
-                pn = GetParceiro();
+            pn = GetParceiro();
 
             pnService.SalvarParceiro(pn);
         }
 
         private Parceiro GetParceiro()
         {
-            pn = new Parceiro
-            {
-                CardCode = this.CardCode,
-                CardName = this.CardName.ToString(),
-                Bairro = this.Bairro.ToString(),
-                CEP = this.CEP.ToString(),
-                Cidade = this.Cidade.ToString(),
-                Complemento = this.Complemento,
-                //TODO: definir como receber empresa
-                Empresa = this.Empresa.ToString(),
-                Endereco = this.Endereco.ToString(),
-                Estado = this.Estado.ToString(),
-                Numero = this.Numero.ToString(),
-                Telefone = this.Telefone
+            pn = new Parceiro();
 
-            };
+            CardCode = this.CardCode;
+            CardName = this.CardName;
+            Bairro = this.Bairro;
+            CEP = this.CEP;
+            Cidade = this.Cidade;
+            Complemento = this.Complemento;
+            //TODO: definir como receber empresa
+            Empresa = this.Empresa;
+            Endereco = this.Endereco;
+            Estado = this.Estado;
+            Numero = this.Numero;
+            Telefone = this.Telefone;
+
 
             return pn;
         }
