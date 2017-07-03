@@ -18,6 +18,7 @@ namespace FVApp.Core.ViewModels
         public ParceirosViewModel()
         {
             _PNDados = Mvx.Resolve<IParceirosDados>();
+            GetParceiros();
         }
 
         private Parceiro _SelectedParceiro;
@@ -61,13 +62,13 @@ namespace FVApp.Core.ViewModels
 
         private ObservableCollection<Parceiro> GetParceiros()
         {
-            var parceiros = _PNDados.RetornarParceiros();
+            ListaParceiros = _PNDados.RetornarParceiros();
 
             if (string.IsNullOrEmpty(Filtro))
-                return parceiros;
+                return ListaParceiros;
             else
             {
-                var pnFiltrado = parceiros.Where(t0 => t0.CardName.StartsWith(Filtro));
+                var pnFiltrado = ListaParceiros.Where(t0 => t0.CardName.StartsWith(Filtro));
                 return new ObservableCollection<Parceiro>(pnFiltrado);
             }
 

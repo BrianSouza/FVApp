@@ -181,6 +181,7 @@
     <Compile Include="Dados\ConfigDados.cs" />
     <Compile Include="DebugTrace.cs" />
     <Compile Include="LinkerPleaseInclude.cs" />
+    <Compile Include="Resources\adapter\LVPNAdapter.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\SaveAndLoad.cs" />
@@ -245,6 +246,9 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\bordaVerde.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\listviewparceiroslayout.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
