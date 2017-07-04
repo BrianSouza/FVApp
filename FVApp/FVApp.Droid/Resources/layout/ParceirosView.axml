@@ -22,6 +22,7 @@
     <Mvx.MvxListView
         android:id="@+id/mvxLVPN"
         local:MvxBind="ItemsSource ListaParceiros;SelectedItem SelectedParceiro;"
+        local:MvxItemTemplate="@layout/listviewparceiroslayout"
         android:minWidth="25px"
         android:minHeight="25px"
         style="@style/listiview"/>

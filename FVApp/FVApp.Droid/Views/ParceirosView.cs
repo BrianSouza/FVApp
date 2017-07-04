@@ -16,9 +16,9 @@ namespace FVApp.Droid.Views
             try
             {
                 base.OnCreate(savedInstanceState);
-                var mvxListView = FindViewById<MvxListView>(Resource.Id.mvxLVPN);
+                //var mvxListView = FindViewById<MvxListView>(Resource.Id.mvxLVPN);
 
-                mvxListView.SetAdapter(new LVPNAdapter(this));
+                //mvxListView.SetAdapter(new LVPNAdapter(this));
             }
             catch (Exception)
             {

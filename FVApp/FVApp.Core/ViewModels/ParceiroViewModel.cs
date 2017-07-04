@@ -293,18 +293,18 @@ namespace FVApp.Core.ViewModels
         {
             pn = new Parceiro();
 
-            CardCode = this.CardCode;
-            CardName = this.CardName;
-            Bairro = this.Bairro;
-            CEP = this.CEP;
-            Cidade = this.Cidade;
-            Complemento = this.Complemento;
+            pn.CardCode = this.CardCode;
+            pn.CardName = this.CardName;
+            pn.Bairro = this.Bairro;
+            pn.CEP = this.CEP;
+            pn.Cidade = this.Cidade;
+            pn.Complemento = this.Complemento;
             //TODO: definir como receber empresa
-            Empresa = this.Empresa;
-            Endereco = this.Endereco;
-            Estado = this.Estado;
-            Numero = this.Numero;
-            Telefone = this.Telefone;
+            pn.Empresa = this.Empresa;
+            pn.Endereco = this.Endereco;
+            pn.Estado = this.Estado;
+            pn.Numero = this.Numero;
+            pn.Telefone = this.Telefone;
 
 
             return pn;
