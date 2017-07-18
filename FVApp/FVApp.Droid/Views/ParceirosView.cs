@@ -16,9 +16,6 @@ namespace FVApp.Droid.Views
             try
             {
                 base.OnCreate(savedInstanceState);
-                //var mvxListView = FindViewById<MvxListView>(Resource.Id.mvxLVPN);
-
-                //mvxListView.SetAdapter(new LVPNAdapter(this));
             }
             catch (Exception)
             {
@@ -30,8 +27,6 @@ namespace FVApp.Droid.Views
             try
             {
                 SetContentView(Resource.Layout.ParceirosView);
-                //var tbPrincipal = FindViewById<Toolbar>(Resource.Id.toolbarBackCheck);
-                //SetSupportActionBar(tbPrincipal);
             }
             catch (Exception e)
             {

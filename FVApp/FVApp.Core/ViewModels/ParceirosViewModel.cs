@@ -31,6 +31,9 @@ namespace FVApp.Core.ViewModels
             set
             {
                 SetProperty(ref _SelectedParceiro, value);
+                if (_SelectedParceiro != null)
+                    ShowViewModel<ViewModels.ParceiroViewModel>(SelectedParceiro);
+
             }
         }
 
@@ -86,7 +89,7 @@ namespace FVApp.Core.ViewModels
         {
             get
             {
-                return new MvxCommand(() => ShowViewModel<ViewModels.ParceiroViewModel>());
+                return new MvxCommand(() => ShowViewModel<ViewModels.ParceiroViewModel>(SelectedParceiro));
             }
         }
     }

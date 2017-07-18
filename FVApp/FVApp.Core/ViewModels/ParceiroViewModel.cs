@@ -259,6 +259,19 @@ namespace FVApp.Core.ViewModels
         public Parceiro pn;
         public ParceiroViewModel()
         {
+            
+            this.toastService = Mvx.Resolve<IMvxToastService>();
+            this.validator = Mvx.Resolve<IValidator>();
+            this.pnService = Mvx.Resolve<IParceirosDados>();
+
+            Estados = new ObservableCollection<string>
+            {
+                "AC","AL","AP","AM","BA","CE","DF","ES","GO","MA","MT","MS","MG","PA","PB","PR","PE","PI","RJ","RN","RS","RO","RR","SC","SP","SE","TO"
+            };
+        }
+
+        public ParceiroViewModel(Parceiro pn)
+        {
             this.toastService = Mvx.Resolve<IMvxToastService>();
             this.validator = Mvx.Resolve<IValidator>();
             this.pnService = Mvx.Resolve<IParceirosDados>();
@@ -274,7 +287,8 @@ namespace FVApp.Core.ViewModels
         {
             Salvar = new MvxCommand(SalvarParceiro);
         }
-
+        
+        
         public IMvxCommand Salvar
         {
             get;
@@ -291,6 +305,7 @@ namespace FVApp.Core.ViewModels
 
         private Parceiro GetParceiro()
         {
+
             pn = new Parceiro();
 
             pn.CardCode = this.CardCode;
@@ -305,9 +320,63 @@ namespace FVApp.Core.ViewModels
             pn.Estado = this.Estado;
             pn.Numero = this.Numero;
             pn.Telefone = this.Telefone;
-
+            pn.TipoParceiro = this.TipoParceiro;
+            pn.TipoDocumento = this.TipoDocumento;
+            pn.Documento = this.Documento;
+            pn.NomeContato = this.NomeContato;
 
             return pn;
+        }
+        public void Init(Parceiro _pn)
+        {
+            pn = _pn;
+            LoadSelectedParceiro();
+        }
+
+        private void LoadSelectedParceiro()
+        {
+            if (pn.CardName != null)
+            {
+                CardCode = pn.CardCode;
+                CardName = pn.CardName;
+                Bairro = pn.Bairro;
+                CEP = pn.CEP;
+                Cidade = pn.Cidade;
+                Complemento = pn.Complemento;
+                Empresa = pn.Empresa;
+                Endereco = pn.Endereco;
+                Estado = pn.Estado;
+                Numero = pn.Numero;
+                Telefone = pn.Telefone;
+                NomeContato = pn.NomeContato;
+                Documento = pn.Documento;
+
+                if (pn.TipoDocumento == "CPF")
+                {
+                    TipoDocumento = "CPF";
+                    CPF = true;
+                    CNPJ = false;
+                }
+                else if (pn.TipoDocumento == "CNPJ")
+                {
+                    TipoDocumento = "CNPJ";
+                    CPF = false;
+                    CNPJ = true;
+                }
+
+                if (pn.TipoParceiro == "S")
+                {
+                    TipoParceiro = pn.TipoParceiro;
+                    Cliente = false;
+                    Fornecedor = true;
+                }
+                else if (pn.TipoParceiro == "C")
+                {
+                    TipoParceiro = pn.TipoParceiro;
+                    Cliente = true;
+                    Fornecedor = false;
+                }
+            }
         }
     }
 }

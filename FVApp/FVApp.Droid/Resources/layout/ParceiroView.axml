@@ -53,59 +53,57 @@
                 android:hint="@string/Filial"
                 style="@style/spinnerStyle"
                 local:MvxBind="ItemsSource Empresas; SelectedItem Empresa" />
-            
-                <TableLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:shrinkColumns="*"
-                    android:stretchColumns="*"
-                    android:layout_centerVertical="true"
-                    android:layout_centerInParent="true"
-                    android:layout_centerHorizontal="true">
-                    <TableRow
-                        android:layout_gravity="center">
-                        <RadioButton
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:checked="true"
-                            android:text="@string/Fornecedor"
-                            android:id="@+id/rbFornecedor"
-                            local:MvxBind="Checked Fornecedor" />
-                        <RadioButton
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/Cliente"
-                            android:id="@+id/rbCliente"
-                            local:MvxBind="Checked Cliente" />
-                    </TableRow>
-                </TableLayout>
-            
-                <TableLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:shrinkColumns="*"
-                    android:stretchColumns="*"
-                    android:layout_centerVertical="true"
-                    android:layout_centerInParent="true"
-                    android:layout_centerHorizontal="true">
-                    <TableRow
-                        android:layout_gravity="center">
-                        <RadioButton
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:checked="true"
-                            android:text="@string/CNPJ"
-                            android:id="@+id/rbCNPJ"
-                            local:MvxBind="Checked CNPJ" />
-                        <RadioButton
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/CPF"
-                            android:id="@+id/rbCPF"
-                            android:layout_marginLeft="16dp"
-                            local:MvxBind="Checked CPF" />
-                    </TableRow>
-                </TableLayout>
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:shrinkColumns="*"
+                android:stretchColumns="*"
+                android:layout_centerVertical="true"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true">
+                <TableRow
+                    android:layout_gravity="center">
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="@string/Fornecedor"
+                        android:id="@+id/rbFornecedor"
+                        local:MvxBind="Checked Fornecedor" />
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Cliente"
+                        android:id="@+id/rbCliente"
+                        local:MvxBind="Checked Cliente" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:shrinkColumns="*"
+                android:stretchColumns="*"
+                android:layout_centerVertical="true"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true">
+                <TableRow
+                    android:layout_gravity="center">
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="@string/CNPJ"
+                        android:id="@+id/rbCNPJ"
+                        local:MvxBind="Checked CNPJ" />
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/CPF"
+                        android:id="@+id/rbCPF"
+                        android:layout_marginLeft="16dp"
+                        local:MvxBind="Checked CPF" />
+                </TableRow>
+            </TableLayout>
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
