@@ -1,201 +1,112 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:fillViewport="true">
+    android:layout_height="match_parent">
+    <include
+        layout="@layout/toolbarBackFwd" />
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <include
-            layout="@layout/toolbarBackCheck" />
-        <LinearLayout
-            android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@layout/bordaVerde">
+        <TextView
+            android:text="@string/Parceiro"
+            android:textSize="14dip"
+            style="@style/TextView" />
+        <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:background="@layout/bordaVerde">
-            <TextView
-                android:text="@string/Parceiro"
-                android:textSize="14dip"
-                style="@style/TextView" />
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/etCodPn"
-                android:hint="@string/CodPn"
-                style="@style/editTextStyle"
-                local:MvxBind="Text CardCode" />
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/etRazSocial"
-                android:hint="@string/RazSoc"
-                style="@style/editTextStyle"
-                android:layout_marginBottom="20dp"
-                local:MvxBind="Text CardName" />
-        </LinearLayout>
-        <LinearLayout
-            android:orientation="vertical"
+            android:id="@+id/etCodPn"
+            android:hint="@string/CodPn"
+            style="@style/editTextStyle"
+            local:MvxBind="Text CardCode" />
+        <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:background="@layout/bordaVerde">
-            <TextView
-                android:text="@string/InfFisc"
-                android:textSize="14dip"
-                style="@style/TextView" />
-            <Mvx.MvxSpinner
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/etFilial"
-                android:hint="@string/Filial"
-                style="@style/spinnerStyle"
-                local:MvxBind="ItemsSource Empresas; SelectedItem Empresa" />
-            <TableLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:shrinkColumns="*"
-                android:stretchColumns="*"
-                android:layout_centerVertical="true"
-                android:layout_centerInParent="true"
-                android:layout_centerHorizontal="true">
-                <TableRow
-                    android:layout_gravity="center">
-                    <RadioButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:checked="true"
-                        android:text="@string/Fornecedor"
-                        android:id="@+id/rbFornecedor"
-                        local:MvxBind="Checked Fornecedor" />
-                    <RadioButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/Cliente"
-                        android:id="@+id/rbCliente"
-                        local:MvxBind="Checked Cliente" />
-                </TableRow>
-            </TableLayout>
-            <TableLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:shrinkColumns="*"
-                android:stretchColumns="*"
-                android:layout_centerVertical="true"
-                android:layout_centerInParent="true"
-                android:layout_centerHorizontal="true">
-                <TableRow
-                    android:layout_gravity="center">
-                    <RadioButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:checked="true"
-                        android:text="@string/CNPJ"
-                        android:id="@+id/rbCNPJ"
-                        local:MvxBind="Checked CNPJ" />
-                    <RadioButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/CPF"
-                        android:id="@+id/rbCPF"
-                        android:layout_marginLeft="16dp"
-                        local:MvxBind="Checked CPF" />
-                </TableRow>
-            </TableLayout>
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/etNumDoc"
-                android:hint="@string/NumDoc"
-                style="@style/editTextStyle"
-                android:layout_marginBottom="20dp" />
-        </LinearLayout>
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:background="@layout/bordaVerde">
-            <TextView
-                android:text="@string/Endereco"
-                android:textSize="14dip"
-                style="@style/TextView" />
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/etLogr"
-                android:hint="@string/Logr"
-                style="@style/editTextStyle"
-                local:MvxBind="Text Endereco" />
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/etNum"
-                android:hint="@string/Num"
-                style="@style/editTextStyle"
-                local:MvxBind="Text Numero" />
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/etCompl"
-                android:hint="@string/Compl"
-                style="@style/editTextStyle"
-                local:MvxBind="Text Complemento" />
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/etBairro"
-                android:hint="@string/Bairro"
-                style="@style/editTextStyle"
-                local:MvxBind="Text Bairro" />
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/etCidade"
-                android:hint="@string/Cidade"
-                style="@style/editTextStyle"
-                local:MvxBind="Text Cidade" />
-            <Mvx.MvxSpinner
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/spEstado"
-                android:hint="@string/Estado"
-                style="@style/spinnerStyle"
-                local:MvxBind="ItemsSource Estados; SelectedItem Estado" />
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/etCEP"
-                android:hint="@string/CEP"
-                style="@style/editTextStyle"
-                android:layout_marginBottom="20dp"
-                local:MvxBind="Text CEP" />
-        </LinearLayout>
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:background="@layout/bordaVerde">
-            <TextView
-                android:text="@string/Contato"
-                android:textSize="14dip"
-                style="@style/TextView" />
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/etNome"
-                android:hint="@string/Nome"
-                style="@style/editTextStyle" />
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/etFone"
-                android:hint="@string/Telefone"
-                style="@style/editTextStyle"
-                android:layout_marginBottom="20dp" />
-        </LinearLayout>
+            android:id="@+id/etRazSocial"
+            android:hint="@string/RazSoc"
+            style="@style/editTextStyle"
+            android:layout_marginBottom="20dp"
+            local:MvxBind="Text CardName" />
     </LinearLayout>
-</ScrollView>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@layout/bordaVerde">
+        <TextView
+            android:text="@string/InfFisc"
+            android:textSize="14dip"
+            style="@style/TextView" />
+        <Mvx.MvxSpinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etFilial"
+            android:hint="@string/Filial"
+            style="@style/spinnerStyle"
+            local:MvxBind="ItemsSource Empresas; SelectedItem Empresa" />
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shrinkColumns="*"
+            android:stretchColumns="*"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true">
+            <TableRow
+                android:layout_gravity="center">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/Fornecedor"
+                    android:id="@+id/rbFornecedor"
+                    local:MvxBind="Checked Fornecedor" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Cliente"
+                    android:id="@+id/rbCliente"
+                    local:MvxBind="Checked Cliente" />
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shrinkColumns="*"
+            android:stretchColumns="*"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true">
+            <TableRow
+                android:layout_gravity="center">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/CNPJ"
+                    android:id="@+id/rbCNPJ"
+                    local:MvxBind="Checked CNPJ" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/CPF"
+                    android:id="@+id/rbCPF"
+                    android:layout_marginLeft="16dp"
+                    local:MvxBind="Checked CPF" />
+            </TableRow>
+        </TableLayout>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etNumDoc"
+            android:hint="@string/NumDoc"
+            style="@style/editTextStyle"
+            android:layout_marginBottom="20dp"
+            local:MvxBind="Text Documento"/>
+    </LinearLayout>
+</LinearLayout>

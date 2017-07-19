@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        layout="@layout/toolbarBackCheck" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@layout/bordaVerde">
+        <TextView
+            android:text="@string/Contato"
+            android:textSize="14dip"
+            style="@style/TextView" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etNome"
+            android:hint="@string/Nome"
+            style="@style/editTextStyle" 
+            local:MvxBind="Text NomeContato"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etFone"
+            android:hint="@string/Telefone"
+            style="@style/editTextStyle"
+            android:layout_marginBottom="20dp" 
+            local:MvxBind="Text Telefone"/>
+    </LinearLayout>
+</LinearLayout>

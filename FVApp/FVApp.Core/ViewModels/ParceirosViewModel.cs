@@ -89,7 +89,7 @@ namespace FVApp.Core.ViewModels
         {
             get
             {
-                return new MvxCommand(() => ShowViewModel<ViewModels.ParceiroViewModel>(SelectedParceiro));
+                return new MvxCommand(() => ShowViewModel<ViewModels.ParceiroViewModel>());
             }
         }
     }

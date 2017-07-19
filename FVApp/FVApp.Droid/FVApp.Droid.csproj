@@ -190,6 +190,8 @@
     <Compile Include="Views\ConfigView.cs" />
     <Compile Include="Views\LoginView.cs" />
     <Compile Include="Views\MenuView.cs" />
+    <Compile Include="Views\ParceiroContatoView.cs" />
+    <Compile Include="Views\ParceiroEnderecoView.cs" />
     <Compile Include="Views\ParceirosView.cs" />
     <Compile Include="Views\ParceiroView.cs" />
   </ItemGroup>
@@ -249,6 +251,12 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\listviewparceiroslayout.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\ParceiroEnderecoView.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\ParceiroContatoView.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

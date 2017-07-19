@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        layout="@layout/toolbarBackFwd" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@layout/bordaVerde">
+        <TextView
+            android:text="@string/Endereco"
+            android:textSize="14dip"
+            style="@style/TextView" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etLogr"
+            android:hint="@string/Logr"
+            style="@style/editTextStyle"
+            local:MvxBind="Text Endereco" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etNum"
+            android:hint="@string/Num"
+            style="@style/editTextStyle"
+            local:MvxBind="Text Numero" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etCompl"
+            android:hint="@string/Compl"
+            style="@style/editTextStyle"
+            local:MvxBind="Text Complemento" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etBairro"
+            android:hint="@string/Bairro"
+            style="@style/editTextStyle"
+            local:MvxBind="Text Bairro" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etCidade"
+            android:hint="@string/Cidade"
+            style="@style/editTextStyle"
+            local:MvxBind="Text Cidade" />
+        <Mvx.MvxSpinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spEstado"
+            android:hint="@string/Estado"
+            style="@style/spinnerStyle"
+            local:MvxBind="ItemsSource Estados; SelectedItem Estado" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etCEP"
+            android:hint="@string/CEP"
+            style="@style/editTextStyle"
+            android:layout_marginBottom="20dp"
+            local:MvxBind="Text CEP" />
+    </LinearLayout>
+</LinearLayout>
