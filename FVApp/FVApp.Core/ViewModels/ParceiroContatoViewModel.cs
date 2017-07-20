@@ -29,7 +29,7 @@ namespace FVApp.Core.ViewModels
         private string _NomeContato;
         public string NomeContato
         {
-            get { return _Telefone; }
+            get { return _NomeContato; }
             set { SetProperty(ref _NomeContato, value); }
         }
 

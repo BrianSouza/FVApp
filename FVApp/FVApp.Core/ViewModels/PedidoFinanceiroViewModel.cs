@@ -110,7 +110,7 @@ namespace FVApp.Core.ViewModels
             foreach (var item in fps)
             {
                 FormPgto FP = new FormPgto();
-                FP.Code = item.Key;
+                FP.Code = item.Code;
                 FP.Descricao = item.Descricao;
                 LstFP.Add(FP);
             }
@@ -125,7 +125,7 @@ namespace FVApp.Core.ViewModels
             foreach (var item in cps)
             {
                 CondPagto cp = new CondPagto();
-                cp.Code = item.Key;
+                cp.Code = item.Code;
                 cp.Descricao = item.Descricao;
                 LstCP.Add(cp);
             }

@@ -8,6 +8,8 @@ namespace FVApp.Core.Entidades
 {
     public class FormPgto
     {
+
+        public int Key { get; set; }
         public string Code { get; set; }
 
         public string Descricao { get; set; }

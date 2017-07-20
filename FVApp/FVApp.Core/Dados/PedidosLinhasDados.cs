@@ -33,7 +33,7 @@ namespace FVApp.Core.Dados
         public bool SalvarLinhasPedidos(Collection<PedidoLinhas> linhas)
         {
            
-            if (string.IsNullOrEmpty(linhas[0].Key))
+            if (linhas[0].Key > 0)
             {
                 if (dbmService.Insert<Collection<PedidoLinhas>>(linhas) > 0)
                     return true;

@@ -31,7 +31,7 @@ namespace FVApp.Core.Dados
 
         public bool SalvarPedidos(Pedido ped)
         {
-            if (string.IsNullOrEmpty(ped.Key))
+            if (ped.Key > 0)
             {
                 if (dbmService.Insert<Pedido>(ped) > 0)
                     return true;

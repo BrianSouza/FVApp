@@ -27,7 +27,7 @@ namespace FVApp.Core.Dados
 
         public bool SalvarFormaPagamento(FormaPagamento fp)
         {
-            if (string.IsNullOrEmpty(fp.Key))
+            if (fp.Key > 0)
             {
                 if (dbmService.Insert<FormaPagamento>(fp) > 0)
                     return true;

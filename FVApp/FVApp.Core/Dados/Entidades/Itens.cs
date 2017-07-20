@@ -1,11 +1,14 @@
 ﻿
 using FVApp.Core.Dados.Interface;
+using SQLite.Net.Attributes;
 
 namespace FVApp.Core.Dados.Entidades
 {
     public class Itens : IKeyObject
     {
-        public string Key { get; set; }
+        [PrimaryKey, AutoIncrement]
+
+        public int Key { get; set; }
 
         public string ItemCode { get; set; }
 

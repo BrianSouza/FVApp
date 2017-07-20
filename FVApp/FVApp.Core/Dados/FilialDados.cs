@@ -31,7 +31,7 @@ namespace FVApp.Core.Dados
 
         public bool SalvarFilial(Filial filial)
         {
-            if (string.IsNullOrEmpty(filial.Key))
+            if (filial.Key == 0)
             {
                 if (dbmService.Insert<Filial>(filial) > 0)
                     return true;

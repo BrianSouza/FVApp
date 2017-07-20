@@ -8,6 +8,6 @@ namespace FVApp.Core.Dados.Interface
 {
     public interface IKeyObject
     {
-        string Key { get; set; }
+        int Key { get; set; }
     }
 }

@@ -27,7 +27,7 @@ namespace FVApp.Core.Dados
 
         public bool SalvarCondicao(CondicaoPagamento cp)
         {
-            if (string.IsNullOrEmpty(cp.Key))
+            if (cp.Key == 0)
             {
                 if (dbmService.Insert<CondicaoPagamento>(cp) > 0)
                     return true;

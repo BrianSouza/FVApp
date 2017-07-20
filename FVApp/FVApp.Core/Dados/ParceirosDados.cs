@@ -17,8 +17,6 @@ namespace FVApp.Core.Dados
                 return false;
         }
 
-        
-
         public Parceiro RetornarParceiro(string cardCode)
         {
             return dbmService.GetItem<Parceiro>(cardCode);
@@ -33,7 +31,7 @@ namespace FVApp.Core.Dados
 
         public bool SalvarParceiro(Parceiro pn)
         {
-            if(string.IsNullOrEmpty(pn.Key))
+            if(pn.Key == 0)
             {
                 if (dbmService.Insert<Parceiro>(pn) > 0)
                     return true;

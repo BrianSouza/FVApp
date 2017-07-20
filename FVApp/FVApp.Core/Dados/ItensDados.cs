@@ -31,7 +31,7 @@ namespace FVApp.Core.Dados
 
         public bool SalvarItens(Itens item)
         {
-            if (string.IsNullOrEmpty(item.Key))
+            if (item.Key>0)
             {
                 if (dbmService.Insert<Itens>(item) > 0)
                     return true;
