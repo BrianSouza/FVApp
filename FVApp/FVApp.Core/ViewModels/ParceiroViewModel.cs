@@ -48,7 +48,7 @@ namespace FVApp.Core.ViewModels
             }
         }
 
-       
+
         private string _Empresa;
         public string Empresa
         {
@@ -67,7 +67,7 @@ namespace FVApp.Core.ViewModels
                 SetProperty(ref _Empresas, value);
             }
         }
-       
+
         private string _Documento;
         public string Documento
         {
@@ -170,18 +170,24 @@ namespace FVApp.Core.ViewModels
             this.toastService = Mvx.Resolve<IMvxToastService>();
             this.validator = Mvx.Resolve<IValidator>();
         }
-        
+
         private Parceiro GetParceiro()
         {
             if (pn == null)
                 pn = new Parceiro();
-            
+
             pn.CardCode = this.CardCode;
             pn.CardName = this.CardName;
             pn.Empresa = this.Empresa;
             pn.TipoParceiro = this.TipoParceiro;
             pn.TipoDocumento = this.TipoDocumento;
             pn.Documento = this.Documento;
+
+            if (string.IsNullOrEmpty(pn.CardCode))
+                pn.PossuiCodigoSAP = false;
+            else
+                pn.PossuiCodigoSAP = true;
+
 
             return pn;
         }
@@ -233,7 +239,7 @@ namespace FVApp.Core.ViewModels
             NavegarFwd = new MvxCommand(Next);
             Voltar = new MvxCommand(Back);
         }
-        
+
         public IMvxCommand NavegarFwd
         {
             get;

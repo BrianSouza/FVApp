@@ -53,7 +53,7 @@
             local:MvxBind="Text Cidade" />
         <Mvx.MvxSpinner
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            
             android:id="@+id/spEstado"
             android:hint="@string/Estado"
             style="@style/spinnerStyle"

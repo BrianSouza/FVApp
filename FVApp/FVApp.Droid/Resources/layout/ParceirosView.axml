@@ -25,5 +25,5 @@
         local:MvxItemTemplate="@layout/listviewparceiroslayout"
         android:minWidth="25px"
         android:minHeight="25px"
-        style="@style/listiview"/>
+        style="@style/listiview" />
 </LinearLayout>

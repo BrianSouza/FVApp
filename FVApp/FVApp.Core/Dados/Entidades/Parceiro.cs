@@ -36,6 +36,9 @@ namespace FVApp.Core.Dados.Entidades
         public string TipoDocumento { get; set; }
 
         public string TipoParceiro { get; set; }
+        
+
+        public bool PossuiCodigoSAP { get; set; }
 
     }
 }
