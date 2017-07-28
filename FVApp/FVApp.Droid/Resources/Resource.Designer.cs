@@ -2560,6 +2560,12 @@ namespace FVApp.Droid
 			// aapt resource value: 0x7f030007
 			public const int splashArray = 2130903047;
 			
+			// aapt resource value: 0x7f030008
+			public const int verde = 2130903048;
+			
+			// aapt resource value: 0x7f030009
+			public const int Vermelho = 2130903049;
+			
 			static Mipmap()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();

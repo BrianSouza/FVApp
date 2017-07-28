@@ -3,19 +3,30 @@
     xmlns:mvx="http://schemas.android.com/apk/res-auto"
     android:orientation="horizontal"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    mvx:MvxBind="Background PossuiCodigoSAP,Converter=BoolToColor">
+    android:layout_height="match_parent">
+<!--<ImageView
+        android:src="@mipmap/verde"
+        android:layout_width="10dip"
+        android:layout_height="10dip"
+        android:id="@+id/imageView1"
+        android:visibility="gone"
+        mvx:MvxBind="Visibility PossuiCodigoSAP,Converter=BoolToVisibility" />
+    <ImageView
+        android:src="@mipmap/vermelho"
+        android:layout_width="10dip"
+        android:layout_height="10dip"
+        android:id="@+id/imageView2"
+        android:visibility="gone" />-->
     <LinearLayout
-        android:layout_marginLeft="10dip"
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-        <TextView
-            mvx:MvxBind="Text CardCode"
+      <mvx:ExtendedTextView
+            mvx:MvxBind="Text CardCode;BindableTextColor PossuiCodigoSAP,Converter=BoolToColor;"
             android:textSize="14dip"
             style="@style/TextViewList" />
-        <TextView
-            mvx:MvxBind="Text CardName"
+        <mvx:ExtendedTextView
+            mvx:MvxBind="Text CardName;BindableTextColor PossuiCodigoSAP,Converter=BoolToColor;"
             android:textSize="10dip"
             style="@style/TextViewList" />
     </LinearLayout>
