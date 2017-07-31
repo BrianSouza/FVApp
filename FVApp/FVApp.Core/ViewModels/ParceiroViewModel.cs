@@ -249,7 +249,8 @@ namespace FVApp.Core.ViewModels
         public void Next()
         {
             pn = GetParceiro();
-            ShowViewModel<ParceiroEnderecoViewModel>(pn);
+            if (ValidaCampos())
+                ShowViewModel<ParceiroEnderecoViewModel>(pn);
         }
         public IMvxCommand Voltar
         {
@@ -260,6 +261,34 @@ namespace FVApp.Core.ViewModels
         public void Back()
         {
             ShowViewModel<ParceirosViewModel>();
+        }
+
+        private bool ValidaCampos()
+        {
+            if (string.IsNullOrEmpty(pn.CardName))
+            {
+                toastService.DisplayError("Informe a razão social.");
+                return false;
+            }
+            else if (string.IsNullOrEmpty(pn.TipoParceiro))
+            {
+                toastService.DisplayError("Informe o tipo do parceiro.");
+                return false;
+            }
+            else if (string.IsNullOrEmpty(pn.TipoDocumento))
+            {
+                toastService.DisplayError("Informe o tipo de documento.");
+                return false;
+            }
+            else if (string.IsNullOrEmpty(pn.Documento) || (pn.Documento.Length <= 14))
+            {
+                toastService.DisplayError("Informe o número do documento.");
+                return false;
+            }
+
+
+            return true;
+
         }
 
     }
