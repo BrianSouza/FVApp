@@ -285,10 +285,7 @@ namespace FVApp.Core.ViewModels
                 toastService.DisplayError("Informe o número do documento.");
                 return false;
             }
-
-
             return true;
-
         }
 
     }

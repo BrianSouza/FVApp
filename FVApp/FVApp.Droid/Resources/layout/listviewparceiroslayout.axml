@@ -21,11 +21,11 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-      <mvx:ExtendedTextView
+        <ExtendedTextView
             mvx:MvxBind="Text CardCode;BindableTextColor PossuiCodigoSAP,Converter=BoolToColor;"
             android:textSize="14dip"
             style="@style/TextViewList" />
-        <mvx:ExtendedTextView
+        <ExtendedTextView
             mvx:MvxBind="Text CardName;BindableTextColor PossuiCodigoSAP,Converter=BoolToColor;"
             android:textSize="10dip"
             style="@style/TextViewList" />
