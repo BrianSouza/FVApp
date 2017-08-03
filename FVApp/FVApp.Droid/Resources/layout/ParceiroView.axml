@@ -103,12 +103,20 @@
         <MaskedEditText.MaskedEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/etNumDoc"
             android:hint="@string/NumDoc"
             style="@style/editTextStyle"
             android:layout_marginBottom="20dp"
-            local:MvxBind="Text Documento;Visibility BoolToVisibility,Converter=CPF;"
+            local:MvxBind="Text Documento;Visibility CPF,Converter=BoolToVisibility;"
             local:Mask="###.###.###-##"
+            android:inputType="number"/>
+    <MaskedEditText.MaskedEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/NumDoc"
+            style="@style/editTextStyle"
+            android:layout_marginBottom="20dp"
+            local:MvxBind="Text Documento;Visibility CNPJ,Converter=BoolToVisibility;"
+            local:Mask="##.###.###/####-##"
             android:inputType="number"/>
     </LinearLayout>
 </LinearLayout>

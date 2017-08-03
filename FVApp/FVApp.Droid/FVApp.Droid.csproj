@@ -182,7 +182,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Converters\BoolToColorValueConverter.cs" />
-    <Compile Include="CustomBinding\ExtendedMaskedView.cs" />
+    <Compile Include="Converters\BoolToVisibilityValueConverter.cs" />
+    <Compile Include="CustomBinding\ExtendedTextView.cs" />
     <Compile Include="Dados\ConfigDados.cs" />
     <Compile Include="DebugTrace.cs" />
     <Compile Include="LinkerPleaseInclude.cs" />

@@ -13,6 +13,7 @@ using MvvmCross.Platform;
 using MvvmCross.Plugins.Validation;
 using MvvmCross.Plugins.Validation.ForFieldBinding;
 using System.Collections.ObjectModel;
+using MvvmCross.Plugins.Visibility;
 
 namespace FVApp.Core.ViewModels
 {

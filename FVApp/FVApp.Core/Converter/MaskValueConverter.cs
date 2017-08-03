@@ -21,6 +21,7 @@ namespace FVApp.Core.Converter
         {
             string parametro = System.Convert.ToString(parameter).ToUpper();
             string mascara = string.Empty ;
+            value = value ?? string.Empty;
             switch (parametro)
             {
                 case "PHONE":
