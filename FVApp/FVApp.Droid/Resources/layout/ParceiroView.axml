@@ -100,13 +100,15 @@
                     local:MvxBind="Checked CPF" />
             </TableRow>
         </TableLayout>
-        <EditText
+        <MaskedEditText.MaskedEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/etNumDoc"
             android:hint="@string/NumDoc"
             style="@style/editTextStyle"
             android:layout_marginBottom="20dp"
-            local:MvxBind="Text Documento,Converter=Mask,ConverterParameter=CPF" />
+            local:MvxBind="Text Documento;Visibility BoolToVisibility,Converter=CPF;"
+            local:Mask="###.###.###-##"
+            android:inputType="number"/>
     </LinearLayout>
 </LinearLayout>

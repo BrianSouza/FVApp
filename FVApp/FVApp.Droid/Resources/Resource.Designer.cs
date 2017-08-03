@@ -26,6 +26,13 @@ namespace FVApp.Droid
 		
 		public static void UpdateIdValues()
 		{
+			global::MaskedEditText.Resource.Attribute.CharRepresentation = global::FVApp.Droid.Resource.Attribute.CharRepresentation;
+			global::MaskedEditText.Resource.Attribute.Mask = global::FVApp.Droid.Resource.Attribute.Mask;
+			global::MaskedEditText.Resource.Attribute.MaskFill = global::FVApp.Droid.Resource.Attribute.MaskFill;
+			global::MaskedEditText.Resource.Styleable.MaskedEditText = global::FVApp.Droid.Resource.Styleable.MaskedEditText;
+			global::MaskedEditText.Resource.Styleable.MaskedEditText_CharRepresentation = global::FVApp.Droid.Resource.Styleable.MaskedEditText_CharRepresentation;
+			global::MaskedEditText.Resource.Styleable.MaskedEditText_Mask = global::FVApp.Droid.Resource.Styleable.MaskedEditText_Mask;
+			global::MaskedEditText.Resource.Styleable.MaskedEditText_MaskFill = global::FVApp.Droid.Resource.Styleable.MaskedEditText_MaskFill;
 			global::MvvmCross.Binding.Droid.Resource.Attribute.MvxBind = global::FVApp.Droid.Resource.Attribute.MvxBind;
 			global::MvvmCross.Binding.Droid.Resource.Attribute.MvxDropDownItemTemplate = global::FVApp.Droid.Resource.Attribute.MvxDropDownItemTemplate;
 			global::MvvmCross.Binding.Droid.Resource.Attribute.MvxGroupItemTemplate = global::FVApp.Droid.Resource.Attribute.MvxGroupItemTemplate;
@@ -142,6 +149,15 @@ namespace FVApp.Droid
 		
 		public partial class Attribute
 		{
+			
+			// aapt resource value: 0x7f0100f8
+			public const int CharRepresentation = 2130772216;
+			
+			// aapt resource value: 0x7f0100f6
+			public const int Mask = 2130772214;
+			
+			// aapt resource value: 0x7f0100f7
+			public const int MaskFill = 2130772215;
 			
 			// aapt resource value: 0x7f0100ef
 			public const int MvxBind = 2130772207;
@@ -4837,6 +4853,20 @@ namespace FVApp.Droid
 			
 			// aapt resource value: 1
 			public const int ListPopupWindow_android_dropDownVerticalOffset = 1;
+			
+			public static int[] MaskedEditText = new int[] {
+					2130772214,
+					2130772215,
+					2130772216};
+			
+			// aapt resource value: 2
+			public const int MaskedEditText_CharRepresentation = 2;
+			
+			// aapt resource value: 0
+			public const int MaskedEditText_Mask = 0;
+			
+			// aapt resource value: 1
+			public const int MaskedEditText_MaskFill = 1;
 			
 			public static int[] MenuGroup = new int[] {
 					16842766,
