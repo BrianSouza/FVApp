@@ -281,7 +281,7 @@ namespace FVApp.Core.ViewModels
                 toastService.DisplayError("Informe o tipo de documento.");
                 return false;
             }
-            else if (string.IsNullOrEmpty(pn.Documento) || (pn.Documento.Length <= 14))
+            else if (string.IsNullOrEmpty(pn.Documento) || (pn.Documento.Length < 14))
             {
                 toastService.DisplayError("Informe o número do documento.");
                 return false;
