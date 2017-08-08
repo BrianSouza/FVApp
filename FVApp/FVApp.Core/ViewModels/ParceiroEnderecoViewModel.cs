@@ -154,7 +154,42 @@ namespace FVApp.Core.ViewModels
         public void Next()
         {
             pn = GetParceiro();
-            ShowViewModel<ParceiroContatoViewModel>(pn);
+            if (ValidaCampos())
+                ShowViewModel<ParceiroContatoViewModel>(pn);
+        }
+        private bool ValidaCampos()
+        {
+            if (string.IsNullOrEmpty(pn.Endereco))
+            {
+                toastService.DisplayError("Informe o endereço.");
+                return false;
+            }
+            else if (string.IsNullOrEmpty(pn.Numero))
+            {
+                toastService.DisplayError("Informe o número.");
+                return false;
+            }
+            else if (string.IsNullOrEmpty(pn.Bairro))
+            {
+                toastService.DisplayError("Informe o bairro.");
+                return false;
+            }
+            else if (string.IsNullOrEmpty(pn.Cidade))
+            {
+                toastService.DisplayError("Informe a cidade.");
+                return false;
+            }
+            else if (string.IsNullOrEmpty(pn.Estado))
+            {
+                toastService.DisplayError("Informe o estado.");
+                return false;
+            }
+            else if (string.IsNullOrEmpty(pn.CEP) || (pn.Documento.Length < 8))
+            {
+                toastService.DisplayError("Informe o cep.");
+                return false;
+            }
+            return true;
         }
 
         public IMvxCommand Voltar

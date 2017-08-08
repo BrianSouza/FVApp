@@ -21,15 +21,18 @@
             android:layout_height="wrap_content"
             android:id="@+id/etNome"
             android:hint="@string/Nome"
-            style="@style/editTextStyle" 
-            local:MvxBind="Text NomeContato"/>
-        <EditText
-            android:layout_width="match_parent"
+            style="@style/editTextStyle"
+            local:MvxBind="Text NomeContato" 
+            android:inputType="textCapCharacters"/>
+      <MaskedEditText.MaskedEditText
+          android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/etFone"
             android:hint="@string/Telefone"
             style="@style/editTextStyle"
-            android:layout_marginBottom="20dp" 
-            local:MvxBind="Text Telefone"/>
+            android:layout_marginBottom="20dp"
+            local:MvxBind="Text Telefone"
+          local:Mask="## ####-#####"
+            android:inputType="number"/>
     </LinearLayout>
 </LinearLayout>

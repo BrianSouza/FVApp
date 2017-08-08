@@ -104,7 +104,7 @@ namespace FVApp.Core.ViewModels
         {
             get
             {
-                return _Cliente;
+                return _Cliente ;
             }
             set
             {
@@ -281,7 +281,7 @@ namespace FVApp.Core.ViewModels
                 toastService.DisplayError("Informe o tipo de documento.");
                 return false;
             }
-            else if (string.IsNullOrEmpty(pn.Documento) || (pn.Documento.Length < 14))
+            else if (string.IsNullOrEmpty(pn.Documento) || (pn.Documento.Length < 11))
             {
                 toastService.DisplayError("Informe o número do documento.");
                 return false;
