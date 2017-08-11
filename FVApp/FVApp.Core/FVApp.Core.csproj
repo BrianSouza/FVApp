@@ -79,6 +79,7 @@
     <Compile Include="ViewModels\PedidoConfirmacaoViewModel.cs" />
     <Compile Include="ViewModels\PedidoFinanceiroViewModel.cs" />
     <Compile Include="ViewModels\PedidoItensViewModel.cs" />
+    <Compile Include="ViewModels\PedidosViewModel.cs" />
     <Compile Include="ViewModels\PedidoViewModel.cs" />
     <Compile Include="ViewModels\SyncViewModel.cs" />
   </ItemGroup>

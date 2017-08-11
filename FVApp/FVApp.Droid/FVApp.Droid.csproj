@@ -200,6 +200,8 @@
     <Compile Include="Views\ParceiroEnderecoView.cs" />
     <Compile Include="Views\ParceirosView.cs" />
     <Compile Include="Views\ParceiroView.cs" />
+    <Compile Include="Views\PedidosView.cs" />
+    <Compile Include="Views\PedidoView.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -263,6 +265,15 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\ParceiroContatoView.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\PedidoView.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\PedidosView.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\listviewpedidoslayout.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

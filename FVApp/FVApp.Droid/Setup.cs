@@ -28,6 +28,7 @@ namespace FVApp.Droid
             Mvx.RegisterType<IConfigDados>(() => new ConfigDados());
             Mvx.RegisterType<IDataBaseManager, DataBaseManager>();
             Mvx.RegisterType<IParceirosDados, ParceirosDados>();
+            Mvx.RegisterType<IPedidosDados, PedidoDados> ();
             Mvx.RegisterType<ISaveAndLoad, SaveAndLoad>();
             var db = Mvx.Resolve<IDataBaseManager>();
            

@@ -14,7 +14,7 @@ namespace FVApp.Core.ViewModels
         {
             get
             {
-                return new MvxCommand(() => ShowViewModel<PedidoViewModel>());
+                return new MvxCommand(() => ShowViewModel<PedidosViewModel>());
             }
         }
 

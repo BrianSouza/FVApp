@@ -90,6 +90,7 @@ namespace FVApp.Core.Dados
         public void CriarTabelas()
         {
             _conexao.CreateTable<Parceiro>();
+            _conexao.CreateTable<Pedido>();
 
         }
 

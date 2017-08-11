@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  <include
+      layout="@layout/toolbarBackAdd" />
+  <LinearLayout
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" />
+  <android.support.v7.widget.SearchView
+      android:id="@+id/svPeds"
+      style="@style/searchview"
+      local:MvxBind="Query Filtro"
+      android:inputType="text"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentEnd="true"
+      android:layout_centerVertical="true" />
+  <Mvx.MvxListView
+      android:id="@+id/mvxLVPed"
+      local:MvxBind="ItemsSource ListaPedidos;SelectedItem SelectedPedido;"
+      local:MvxItemTemplate="@layout/listviewpedidoslayout"
+      android:minWidth="25px"
+      android:minHeight="25px"
+      style="@style/listiview" />
+</LinearLayout>

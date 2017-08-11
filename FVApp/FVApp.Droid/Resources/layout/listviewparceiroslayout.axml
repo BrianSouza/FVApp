@@ -4,19 +4,6 @@
     android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-<!--<ImageView
-        android:src="@mipmap/verde"
-        android:layout_width="10dip"
-        android:layout_height="10dip"
-        android:id="@+id/imageView1"
-        android:visibility="gone"
-        mvx:MvxBind="Visibility PossuiCodigoSAP,Converter=BoolToVisibility" />
-    <ImageView
-        android:src="@mipmap/vermelho"
-        android:layout_width="10dip"
-        android:layout_height="10dip"
-        android:id="@+id/imageView2"
-        android:visibility="gone" />-->
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
