@@ -1,6 +1,7 @@
 ﻿
 using FVApp.Core.Dados.Interface;
 using SQLite.Net.Attributes;
+using System;
 
 namespace FVApp.Core.Dados.Entidades
 {
@@ -21,6 +22,10 @@ namespace FVApp.Core.Dados.Entidades
         public string FormarPagamento { get; set; }
 
         public string CondicaoPagamento { get; set; }
+
+        public DateTime DataCadastro { get; set; } 
+
+        public bool Integrado { get; set; }
 
     }
 }

@@ -9,11 +9,11 @@
       android:layout_width="match_parent"
       android:layout_height="match_parent">
     <ExtendedTextView
-        mvx:MvxBind="Text CardCode;BindableTextColor PossuiCodigoSAP,Converter=BoolToColor;"
+        mvx:MvxBind="Text DocEntry;BindableTextColor Integrado,Converter=BoolToColor;"
         android:textSize="14dip"
         style="@style/TextViewList" />
     <ExtendedTextView
-        mvx:MvxBind="Text CardName;BindableTextColor PossuiCodigoSAP,Converter=BoolToColor;"
+        mvx:MvxBind="Text CardName;BindableTextColor Integrado,Converter=BoolToColor;"
         android:textSize="10dip"
         style="@style/TextViewList" />
   </LinearLayout>
@@ -22,11 +22,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <ExtendedTextView
-        mvx:MvxBind="Text Vencimento;BindableTextColor PossuiCodigoSAP,Converter=BoolToColor;"
+        mvx:MvxBind="Text DataCadastro;BindableTextColor Integrado,Converter=BoolToColor;"
         android:textSize="14dip"
         style="@style/TextViewList" />
     <ExtendedTextView
-        mvx:MvxBind="Text Total;BindableTextColor PossuiCodigoSAP,Converter=BoolToColor;"
+        mvx:MvxBind="Text Total;BindableTextColor Integrado,Converter=BoolToColor;"
         android:textSize="10dip"
         style="@style/TextViewList" />
   </LinearLayout>

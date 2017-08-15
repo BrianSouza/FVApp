@@ -45,8 +45,12 @@ namespace FVApp.Core.ViewModels
             }
         }
 
-        [NCFieldRequired("Selecione um parceiro.")]
-        public INC<Parceiro> SelectedParceiro = new NC<Parceiro>();
+        private Parceiro _Parceiro;
+        public Parceiro Parceiro
+        {
+            get => _Parceiro;
+            set => SetProperty(ref _Parceiro,value);
+        }
 
         private ObservableCollection<Parceiro> _Parceiros;
         public ObservableCollection<Parceiro> Parceiros
@@ -58,13 +62,50 @@ namespace FVApp.Core.ViewModels
             }
         }
 
+        private Empresa _Empresa;
+        public Empresa Empresa
+        {
+            get => _Empresa;
+            set => SetProperty(ref _Empresa, value);
+        }
+
+        private ObservableCollection<Empresa> _Empresas;
+        public ObservableCollection<Empresa> Empresas
+        {
+            get { return _Empresas; }
+            set
+            {
+                SetProperty(ref _Empresas, value);
+            }
+        }
+
+        private string _TpPedido;
+        public string TpPedido
+        {
+            get => _TpPedido;
+            set => SetProperty(ref _TpPedido, value);
+        }
+
+        private ObservableCollection<string> _TiposPed;
+        public ObservableCollection<string> TiposPed
+        {
+            get { return _TiposPed; }
+            set
+            {
+                SetProperty(ref _TiposPed, value);
+            }
+        }
+
+
         public ICommand NavegarProximaTela
         {
             get
             {
-                return new MvxCommand(IrParaItens,ValidaSeSelecionouParceiro);
+                return new MvxCommand(IrParaItens);
             }
         }
+
+        
 
         private void IrParaItens()
         {
@@ -80,21 +121,13 @@ namespace FVApp.Core.ViewModels
             
         }
 
-        private bool ValidaSeSelecionouParceiro()
-        {
-            if (SelectedParceiro != null)
-            {
-                return true;
-            }
-            else return false;
-        }
 
         private bool CarregaArquivoPedido()
         {
             if (_SaL.ValidateExist("Pedido.txt"))
             {
-                _Ped.CardCode = SelectedParceiro.Value.CardCode;
-                _Ped.CardName = SelectedParceiro.Value.CardName;
+                _Ped.CardCode = Parceiro.CardCode;
+                _Ped.CardName = Parceiro.CardName;
 
                 string jsonPedido = _SaL.LoadText("Pedido.txt");
                 _Ped = JsonConvert.DeserializeObject<Ped>(jsonPedido);

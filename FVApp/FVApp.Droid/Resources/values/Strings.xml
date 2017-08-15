@@ -33,5 +33,6 @@
   <string name="Contato">Contato</string>
   <string name="Nome">Nome</string>
   <string name="Telefone">Telefone</string>
-
+  <string name="Cab">Cabeçalho</string>
+  <string name="TpPed">Tipo Pedido</string>
 </resources>
