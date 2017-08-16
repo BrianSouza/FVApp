@@ -36,7 +36,7 @@
             android:id="@+id/etPNPedido"
             android:hint="@string/Parceiro"
             style="@style/spinnerStyle"
-            local:MvxBind="ItemsSource Parceiros; SelectedItem Parceiro"
+            local:MvxBind="ItemsSource Parceiros.CardName; SelectedItem Parceiro"
             android:layout_marginBottom="20dip" />
     </LinearLayout>
 </LinearLayout>

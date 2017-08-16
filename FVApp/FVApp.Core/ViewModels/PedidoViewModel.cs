@@ -32,6 +32,17 @@ namespace FVApp.Core.ViewModels
             _ToastService = Mvx.Resolve<IMvxToastService>();
             _pnDados = Mvx.Resolve<IParceirosDados>();
             CarregaArquivoPedido();
+
+            TiposPed = new ObservableCollection<string>()
+            {
+                "Venda",
+                "Compra"
+            };
+
+            Parceiros = new ObservableCollection<Parceiro>();
+            Parceiros = _pnDados.RetornarParceiros();//depois, filtrar para só trazer pns integrados.
+
+
         }
 
         private int _DocEntry;

@@ -23,7 +23,7 @@
             android:hint="@string/Logr"
             style="@style/editTextStyle"
             local:MvxBind="Text Endereco"
-            android:inputType="textCapCharacters"/>
+            android:inputType="textCapCharacters" />
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -31,7 +31,7 @@
             android:hint="@string/Num"
             style="@style/editTextStyle"
             local:MvxBind="Text Numero"
-            android:inputType="textCapCharacters"/>
+            android:inputType="textCapCharacters" />
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -39,39 +39,38 @@
             android:hint="@string/Compl"
             style="@style/editTextStyle"
             local:MvxBind="Text Complemento"
-            android:inputType="textCapCharacters"/>
+            android:inputType="textCapCharacters" />
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/etBairro"
             android:hint="@string/Bairro"
             style="@style/editTextStyle"
-            local:MvxBind="Text Bairro" 
-            android:inputType="textCapCharacters"/>
+            local:MvxBind="Text Bairro"
+            android:inputType="textCapCharacters" />
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/etCidade"
             android:hint="@string/Cidade"
             style="@style/editTextStyle"
-            local:MvxBind="Text Cidade" 
-            android:inputType="textCapCharacters"/>
+            local:MvxBind="Text Cidade"
+            android:inputType="textCapCharacters" />
         <Mvx.MvxSpinner
             android:layout_width="match_parent"
             android:id="@+id/spEstado"
             android:hint="@string/Estado"
             style="@style/spinnerStyle"
             local:MvxBind="ItemsSource Estados; SelectedItem Estado" />
-      
-      <MaskedEditText.MaskedEditText
-          android:layout_width="match_parent"
+        <MaskedEditText.MaskedEditText
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/etCEP"
             android:hint="@string/CEP"
             style="@style/editTextStyle"
             android:layout_marginBottom="20dp"
-            local:MvxBind="Text CEP" 
-          local:Mask="#####-###"
-            android:inputType="number"/>
+            local:MvxBind="Text CEP"
+            local:Mask="#####-###"
+            android:inputType="number" />
     </LinearLayout>
 </LinearLayout>
