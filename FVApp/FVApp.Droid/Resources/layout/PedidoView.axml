@@ -4,39 +4,44 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <include
-        layout="@layout/toolbarBackFwd" />
-    <LinearLayout
-        android:orientation="vertical"
+  <include
+      layout="@layout/toolbarBackFwd" />
+  <LinearLayout
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="10dp"
+      android:background="@layout/bordaVerde">
+    <TextView
+        android:text="@string/Cab"
+        android:textSize="14dip"
+        style="@style/TextView" />
+    <Mvx.MvxSpinner
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:background="@layout/bordaVerde">
-        <TextView
-            android:text="@string/Cab"
-            android:textSize="14dip"
-            style="@style/TextView" />
-        <Mvx.MvxSpinner
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/etFilialPedido"
-            android:hint="@string/Filial"
-            style="@style/spinnerStyle"
-            local:MvxBind="ItemsSource Empresas; SelectedItem Empresa" />
-        <Mvx.MvxSpinner
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/etTpPedido"
-            android:hint="@string/TpPed"
-            style="@style/spinnerStyle"
-            local:MvxBind="ItemsSource TiposPed; SelectedItem TpPedido" />
-        <Mvx.MvxSpinner
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/etPNPedido"
-            android:hint="@string/Parceiro"
-            style="@style/spinnerStyle"
-            local:MvxBind="ItemsSource Parceiros.CardName; SelectedItem Parceiro"
-            android:layout_marginBottom="20dip" />
-    </LinearLayout>
+        android:id="@+id/etFilialPedido"
+        android:hint="@string/Filial"
+        style="@style/spinnerStyle"
+        local:MvxBind="ItemsSource Empresas; SelectedItem Empresa" 
+        android:minWidth="25px"
+        android:minHeight="25px"/>
+    <Mvx.MvxSpinner
+        android:layout_width="match_parent"
+        android:id="@+id/etTpPedido"
+        android:hint="@string/TpPed"
+        style="@style/spinnerStyle"
+        local:MvxBind="ItemsSource TiposPed; SelectedItem TpPedido"
+        android:minWidth="25px"
+        android:minHeight="25px"/>
+    <Mvx.MvxSpinner
+        android:layout_width="match_parent"
+        android:id="@+id/etPNPedido"
+        android:hint="@string/Parceiro"
+        style="@style/spinnerStyle"
+        local:MvxBind="ItemsSource Parceiros; SelectedItem Parceiro"
+        local:MvxDropDownItemTemplate="@layout/spinnerpnlayout"
+        local:MvxItemTemplate="@layout/spinnershowlayout"
+        android:layout_marginBottom="20dip"
+        android:minWidth="25px"
+        android:minHeight="25px"/>
+  </LinearLayout>
 </LinearLayout>
