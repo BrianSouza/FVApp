@@ -4,16 +4,15 @@
     android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <ExtendedTextView
-        mvx:MvxBind="Text CardCode;"
+    <TextView
+        mvx:MvxBind="Text Parceiro.CardCode;"
         android:textSize="14dip"
-        style="@style/TextView2" />
+         />
     <TextView
         android:textSize="14dip"
         style="@style/TextView2"
         Text=" - " />
-    <ExtendedTextView
-        mvx:MvxBind="Text CardName;"
-        android:textSize="10dip"
-        style="@style/TextView2" />
+    <TextView
+        mvx:MvxBind="Text Parceiro.CardName;"
+        android:textSize="10dip"/>
 </LinearLayout>
