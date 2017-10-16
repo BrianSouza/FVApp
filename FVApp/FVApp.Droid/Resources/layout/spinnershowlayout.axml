@@ -5,14 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <TextView
-        mvx:MvxBind="Text Parceiro.CardCode;"
-        android:textSize="14dip"
-         />
+        mvx:MvxBind="Text CardCode;"
+        android:textSize="14dip" />
     <TextView
         android:textSize="14dip"
         style="@style/TextView2"
         Text=" - " />
     <TextView
-        mvx:MvxBind="Text Parceiro.CardName;"
-        android:textSize="10dip"/>
+        mvx:MvxBind="Text CardName;"
+        android:textSize="10dip" />
 </LinearLayout>

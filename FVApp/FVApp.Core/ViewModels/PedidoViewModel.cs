@@ -41,7 +41,7 @@ namespace FVApp.Core.ViewModels
 
             Parceiros = new ObservableCollection<Parceiro>();
             Parceiros = _pnDados.RetornarParceiros();//depois, filtrar para só trazer pns integrados.
-
+            Parceiros = new ObservableCollection<Parceiro>(Parceiros.Where(t0 => t0.PossuiCodigoSAP.Equals(true)));
 
         }
 

@@ -17,7 +17,6 @@
             android:textSize="14dip"
             style="@style/TextView" />
         <Mvx.MvxSpinner
-            android:layout_width="match_parent"
             android:id="@+id/etFilialPedido"
             android:hint="@string/Filial"
             style="@style/spinnerStyle"
@@ -25,7 +24,6 @@
             android:minWidth="25px"
             android:minHeight="25px" />
         <Mvx.MvxSpinner
-            android:layout_width="match_parent"
             android:id="@+id/etTpPedido"
             android:hint="@string/TpPed"
             style="@style/spinnerStyle"
@@ -33,7 +31,6 @@
             android:minWidth="25px"
             android:minHeight="25px" />
         <Mvx.MvxSpinner
-            android:layout_width="match_parent"
             android:id="@+id/etPNPedido"
             android:hint="@string/Parceiro"
             style="@style/spinnerStyle"
