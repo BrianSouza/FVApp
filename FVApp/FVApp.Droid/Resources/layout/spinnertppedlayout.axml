@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mvx="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  <ExtendedTextView
+      mvx:MvxBind="Text ."
+      android:textSize="14dip"
+      style="@style/TextViewList" />
+</LinearLayout>

@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:mvx="http://schemas.android.com/apk/res-auto"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
     android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <TextView
-        mvx:MvxBind="Text CardCode;"
-        android:textSize="14dip" />
-    <TextView
-        android:textSize="14dip"
-        style="@style/TextView2"
-        Text=" - " />
-    <TextView
-        mvx:MvxBind="Text CardName;"
-        android:textSize="10dip" />
+  <ExtendedTextView
+     local:MvxBind="Text CardCode"
+     android:textSize="14dip"
+     style="@style/TextViewList2" />
+  <TextView
+      android:textSize="14dip"
+      style="@style/TextViewList2"
+      Text=" - " />
+  <ExtendedTextView
+      local:MvxBind="Text CardName"
+      android:textSize="10dip"
+      style="@style/TextViewList2" />
 </LinearLayout>

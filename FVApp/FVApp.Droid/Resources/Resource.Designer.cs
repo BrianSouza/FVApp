@@ -2549,22 +2549,25 @@ namespace FVApp.Droid
 			public const int spinnershowlayout = 2130968640;
 			
 			// aapt resource value: 0x7f040041
-			public const int SplashScreen = 2130968641;
+			public const int spinnertppedlayout = 2130968641;
 			
 			// aapt resource value: 0x7f040042
-			public const int support_simple_spinner_dropdown_item = 2130968642;
+			public const int SplashScreen = 2130968642;
 			
 			// aapt resource value: 0x7f040043
-			public const int toolbarBackAdd = 2130968643;
+			public const int support_simple_spinner_dropdown_item = 2130968643;
 			
 			// aapt resource value: 0x7f040044
-			public const int toolbarBackCheck = 2130968644;
+			public const int toolbarBackAdd = 2130968644;
 			
 			// aapt resource value: 0x7f040045
-			public const int toolbarBackFwd = 2130968645;
+			public const int toolbarBackCheck = 2130968645;
 			
 			// aapt resource value: 0x7f040046
-			public const int toolBarMenu = 2130968646;
+			public const int toolbarBackFwd = 2130968646;
+			
+			// aapt resource value: 0x7f040047
+			public const int toolBarMenu = 2130968647;
 			
 			static Layout()
 			{
@@ -3607,11 +3610,14 @@ namespace FVApp.Droid
 			// aapt resource value: 0x7f06016a
 			public const int TextView = 2131100010;
 			
-			// aapt resource value: 0x7f06016c
-			public const int TextView2 = 2131100012;
+			// aapt resource value: 0x7f06016d
+			public const int TextView2 = 2131100013;
 			
 			// aapt resource value: 0x7f06016b
 			public const int TextViewList = 2131100011;
+			
+			// aapt resource value: 0x7f06016c
+			public const int TextViewList2 = 2131100012;
 			
 			// aapt resource value: 0x7f060106
 			public const int Theme_AppCompat = 2131099910;
@@ -3925,17 +3931,17 @@ namespace FVApp.Droid
 			// aapt resource value: 0x7f060167
 			public const int btnLogin = 2131100007;
 			
-			// aapt resource value: 0x7f06016d
-			public const int btnMenu = 2131100013;
-			
 			// aapt resource value: 0x7f06016e
-			public const int btnMenu2 = 2131100014;
+			public const int btnMenu = 2131100014;
+			
+			// aapt resource value: 0x7f06016f
+			public const int btnMenu2 = 2131100015;
 			
 			// aapt resource value: 0x7f060169
 			public const int btnToolBar = 2131100009;
 			
-			// aapt resource value: 0x7f060171
-			public const int editTextStyle = 2131100017;
+			// aapt resource value: 0x7f060172
+			public const int editTextStyle = 2131100018;
 			
 			// aapt resource value: 0x7f060165
 			public const int editTextStyleLogin = 2131100005;
@@ -3949,14 +3955,14 @@ namespace FVApp.Droid
 			// aapt resource value: 0x7f060164
 			public const int linearStyle = 2131100004;
 			
-			// aapt resource value: 0x7f06016f
-			public const int listiview = 2131100015;
-			
 			// aapt resource value: 0x7f060170
-			public const int searchview = 2131100016;
+			public const int listiview = 2131100016;
 			
-			// aapt resource value: 0x7f060172
-			public const int spinnerStyle = 2131100018;
+			// aapt resource value: 0x7f060171
+			public const int searchview = 2131100017;
+			
+			// aapt resource value: 0x7f060173
+			public const int spinnerStyle = 2131100019;
 			
 			static Style()
 			{

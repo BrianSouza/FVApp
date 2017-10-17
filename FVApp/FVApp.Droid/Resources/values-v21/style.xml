@@ -97,6 +97,16 @@
 
   </style>
 
+  <style name="TextViewList2" >
+    <item name="android:textStyle">bold</item>
+    <item name="android:textColor">@color/brancoTexto</item>
+    <item name="android:layout_marginLeft">5dp</item>
+    <item name="android:layout_marginRight">5dp</item>
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">match_parent</item>
+
+  </style>
+
   <style name="TextView2" >
     <item name="android:textStyle">bold</item>
     <item name="android:padding">10dip</item>

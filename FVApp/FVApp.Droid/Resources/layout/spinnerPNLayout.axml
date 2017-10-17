@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:mvx="http://schemas.android.com/apk/res-auto"
+    xmlns:mvx="http://schemas.android.com/apk/res-auto"
     android:orientation="horizontal"
-    android:layout_width="match_parent"
+    android:layout_width="fill_parent"
     android:layout_height="match_parent">
     <ExtendedTextView
-        mvx:MvxBind="Text CardCode;"
+        mvx:MvxBind="Text CardCode"
         android:textSize="14dip"
         style="@style/TextViewList" />
     <TextView
@@ -13,7 +13,7 @@
         style="@style/TextViewList"
         Text=" - " />
     <ExtendedTextView
-        mvx:MvxBind="Text CardName;"
+        mvx:MvxBind="Text CardName"
         android:textSize="10dip"
         style="@style/TextViewList" />
 </LinearLayout>

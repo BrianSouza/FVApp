@@ -28,6 +28,7 @@
             android:hint="@string/TpPed"
             style="@style/spinnerStyle"
             local:MvxBind="ItemsSource TiposPed; SelectedItem TpPedido"
+            local:MvxDropDownItemTemplate="@layout/spinnertppedlayout"
             android:minWidth="25px"
             android:minHeight="25px" />
         <Mvx.MvxSpinner
@@ -37,6 +38,7 @@
             local:MvxBind="ItemsSource Parceiros; SelectedItem Parceiro"
             local:MvxDropDownItemTemplate="@layout/spinnerpnlayout"
             local:MvxItemTemplate="@layout/spinnershowlayout"
+            
             android:layout_marginBottom="20dip" />
     </LinearLayout>
 </LinearLayout>
